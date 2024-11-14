@@ -35,9 +35,11 @@ int options()
         }
         case 3: {
             printf("Vous souhaitez passer votre tour.\n");
+            int passer();
         }
         case 4: {
             printf("Vous souhaitez annuler votre coup precedent.\n");
+            int annuler();
         }
         default : {
             printf("Erreur\n");
