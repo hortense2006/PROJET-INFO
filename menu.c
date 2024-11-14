@@ -36,12 +36,15 @@ int menu()
         switch (chiffre) {
             case 1: {
                 printf("Vous souhaitez commencer une nouvelle partie.\n");
+                break;
             }
             case 2: {
                 printf("Vous souhaitez reprendre une partie.\n");
+                break;
             }
             case 3: {
                 printf("Vous souhaitez demander de l'aide.\n");
+                break;
             }
             case 4: {
                 printf("1 = Afficher\n");
@@ -50,17 +53,22 @@ int menu()
                         case 1: {
                             printf("Vous souhaitez afficher le score.\n");
                             int score(1,0,0);
+                            break;
                         }
                         case 2: {
                             int score(1,1,0);
+                            break;
                         }
                         case 3: {
                             int menu();
+                            break;
                         }
                     }
+                break;
                 }
             default : {
                 printf("Erreur\n");
+                break;
             }
         }
     return 0;
