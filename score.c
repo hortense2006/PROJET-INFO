@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int score(int S, int +, int, E)
+int S=0; +=0; R=0
+int score(int S, int +,int R)
     {
     if(S==1)
     {
@@ -14,15 +14,18 @@ int score(int S, int +, int, E)
         for (ny = 0; ny < y; ny++)
         {
             nx = 0;
-            \\
-            \\  appelle pseudo
-            \\
+            //
+            //  appelle pseudo
+            //
             nx++;
-            \\
-            \\  appelle score
-            \\
+            //
+            //  appelle score
+            //
             nx = 0;
         }
     }
-    return end-score;
+    if(R==1)
+    {
+        y=10
+    }
 }
