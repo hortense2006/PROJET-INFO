@@ -9,7 +9,7 @@ int timer(int Tmax)
     while (min <= Tmax)
         {
         sec += 1;
-        if (sec 60)
+        if (sec == 60)
         {
             sec = 0;
             min = min + 1;
