@@ -27,7 +27,7 @@ int options()
     switch (chiffre1) {
         case 1: {
             printf("Vous souhaitez déplacer votre pion.\n");
-            int deplacement_du_pion();
+            int pion();
         }
         case 2: {
             printf("Vous souhaitez poser une barriere.\n");
