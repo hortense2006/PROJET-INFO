@@ -11,16 +11,19 @@ int menu()
     int chiffre;
 
     // INTRODUCTION AU JEU
-    printf("Bienvenue dans le jeu Quoridor!\n");
+    int accueil();
+    {
+        printf("Bienvenue dans le jeu Quoridor!\n");
 
-    // OPTIONS DE CONNEXION
-    printf("Log in\n");
-    printf("Sign in\n");
-    if(1) { // 1 est vrai : choisit l'option 1
-        int login();
-    }
-    if(0) { // 0 est faux : choisit l'option 2
-        int signin();
+        // OPTIONS DE CONNEXION
+        printf("Log in\n");
+        printf("Sign in\n");
+        if(1) { // 1 est vrai : choisit l'option 1
+            int login();
+        }
+        if(0) { // 0 est faux : choisit l'option 2
+            int signin();
+        }
     }
     // PRESENTATION DU MENU
         printf("Bienvenue dans le menu\n",menu);
@@ -28,9 +31,10 @@ int menu()
         printf("2= Reprendre une partie\n",reprendre_une_partie);
         printf("3= Demander de l'aide\n",aide);
         printf("4= Afficher le score\n",score);
+        printf("5 = Quitter\n");
 
         // CHOISIR UN CHIFFRE RELIE A UNE OPTION DU MENU
-        printf("Selectionner un chiffre entre 1 et 4 :",chiffre);
+        printf("Selectionner un chiffre entre 1 et 5 :",chiffre);
         scanf("%d",&chiffre);
         // DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI
         switch (chiffre) {
@@ -66,6 +70,10 @@ int menu()
                     }
                 break;
                 }
+            case 5: {
+                int accueil();
+                break;
+            }
             default : {
                 printf("Erreur\n");
                 break;
