@@ -1,4 +1,5 @@
 # PROJET-INFO
+#include <stdbool.h>
 #include <stdio.h>
 int menu()
 {
@@ -21,7 +22,8 @@ int menu()
     printf("Sign in\n");
 
     // CONNEXION DU JOUEUR A SON COMPTE
-    if ("log in") {
+    int login();
+    {
         printf("Saisissez votre nom d'utilisateur:\n");
         scanf("%d", &user);
         printf("Saisissez votre mot de passe:\n");
@@ -29,32 +31,37 @@ int menu()
         int options();
     }
     // CREATION D'UN COMPTE
-    else {
+    int signin();
+    {
+        // PSEUDO
         printf("Choisissez un pseudo:\n");
         scanf("%d", &user);
-       if (user == //base de données); // on vérifie si le pseudo existe déjà.
-           {
-               printf("Ce nom existe deja\n");
-               printf("Est-ce vous ?");
-               printf("1 = C'est moi", chiffre4);
-               printf("2 = Ce n'est pas moi.", chiffre4);
-               if (chiffre4 = 1) {
-                   // renvoie à log in
+        if (user == //base de données); // on vérifie si le pseudo existe déjà.
+            {
+                printf("Ce nom existe deja\n");
+                printf("Est-ce vous ?");
+                if (1) { //1 est vrai
+                    int login();
+                }
+               if (0) { //O est faux
+                   printf("Vous devez choisir un autre pseudo.");
+                   int signin();
                }
-            else {
-                printf("Vous devez choisir un autre pseudo.");
             }
-           }
-       else {
-           printf("Votre nom d'utilisateur a ete enregistre.");
-           printf("Choisissez à présent un mot de passe.");
-           if (mdp < 12 && mdp > 12)  {
-               printf("Votre mot de passe n'as pas 12 caracteres.");
-           }
-           else {
-               printf("Votre mot de passe a été enregistré.");
-           }
-       }
+        else {
+            printf("Votre nom d'utilisateur a ete enregistre.");
+
+        // MOT DE PASSE
+        printf("Choisissez à présent un mot de passe.");
+            if (mdp < 12 && mdp > 12)  {
+                printf("Votre mot de passe n'as pas 12 caracteres.");
+            }
+            else {
+                printf("Votre mot de passe a été enregistré.");
+            }
+        }
+        printf("Felicitations ! Votre inscription est terminée");
+        int login();
     }
 
     // PRESENTATION DU MENU
