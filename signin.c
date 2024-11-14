@@ -3,11 +3,11 @@
 //
 #include <stdio.h>
 // CREATION D'UN COMPTE
-    int signin();
-    // DEFINITION DES VARIABLES
-    int user;
-    char mdp;
+    int signin()
     {
+        // DEFINITION DES VARIABLES
+        int user;
+        char mdp;
         // PSEUDO
         printf("Choisissez un pseudo:\n");
         scanf("%d", &user);
