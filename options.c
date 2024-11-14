@@ -31,7 +31,7 @@ int options()
         }
         case 2: {
             printf("Vous souhaitez poser une barriere.\n");
-            int positionnement_barriere();
+            int barrieres();
         }
         case 3: {
             printf("Vous souhaitez passer votre tour.\n");

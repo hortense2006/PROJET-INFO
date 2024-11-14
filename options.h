@@ -4,5 +4,7 @@
 
 #ifndef OPTIONS_H
 #define OPTIONS_H
-int options()
+int options();
+int deplacement_du_pion();
+int barrieres();
 #endif //OPTIONS_H
