@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int score(int O, int +) {
-    if(O==1)
+int score(int S, int +, int, E)
+    {
+    if(S==1)
     {
         int nx = 0, ny = 0;
         int x = 2, y = 10;
@@ -14,23 +15,14 @@ int score(int O, int +) {
         {
             nx = 0;
             \\
-            appelle pseudo
+            \\  appelle pseudo
             \\
             nx++;
             \\
-            appelle score
+            \\  appelle score
             \\
             nx = 0;
         }
-        for (nx = 0; nx < x; nx++)
-        {
-            printf("\n");
-            for (ny = 0; ny < y; ny++)
-            {
-                printf("%d  ", monTableau[nx][ny]);
-            }
-        }
-        printf("\n");}
     }
-    return 0;
+    return end-score;
 }
