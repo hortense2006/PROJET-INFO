@@ -79,11 +79,23 @@ switch (chiffre) {
         printf("Vous souhaitez demander de l'aide.\n");
     }
     case 4: {
-        printf("Vous souhaitez afficher le score.\n");
+        printf("1 = Afficher\n");
+        printf("2 = Afficher les 10 prochains");
+        switch(score) {
+            case 1: {
+                printf("Vous souhaitez afficher le score.\n");
+                int score(1,0,0);
+            }
+            case 2 {
+                int score(1,1,0);
+            }
+            case 3: {
+               int menu();
+            }
+        }
     }
     default : {
     printf("Erreur\n");}
 }
-
     return 0;
 }
