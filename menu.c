@@ -9,9 +9,57 @@ int menu()
     int aide = 3;
     int score = 4;
     int chiffre;
+    int user;
+    char mdp;
+    int chiffre4;
+
+    // INTRODUCTION AU JEU
+    printf("Bienvenue dans le jeu Quoridor!\n");
+
+    // OPTIONS DE CONNEXION
+    printf("Log in\n");
+    printf("Sign in\n");
+
+    // CONNEXION DU JOUEUR A SON COMPTE
+    if ("log in") {
+        printf("Saisissez votre nom d'utilisateur:\n");
+        scanf("%d", &user);
+        printf("Saisissez votre mot de passe:\n");
+        scanf("%c", &mdp);
+        int options();
+    }
+    // CREATION D'UN COMPTE
+    else {
+        printf("Choisissez un pseudo:\n");
+        scanf("%d", &user);
+       if (user == //base de données); // on vérifie si le pseudo existe déjà.
+           {
+               printf("Ce nom existe deja\n");
+               printf("Est-ce vous ?");
+               printf("1 = C'est moi", chiffre4);
+               printf("2 = Ce n'est pas moi.", chiffre4);
+               if (chiffre4 = 1) {
+                   // renvoie à log in
+               }
+            else {
+                printf("Vous devez choisir un autre pseudo.");
+            }
+           }
+       else {
+           printf("Votre nom d'utilisateur a ete enregistre.");
+           printf("Choisissez à présent un mot de passe.");
+           if (mdp < 12 && mdp > 12)  {
+               printf("Votre mot de passe n'as pas 12 caracteres.");
+           }
+           else {
+               printf("Votre mot de passe a été enregistré.");
+           }
+       }
+    }
+
     // PRESENTATION DU MENU
-    printf("Welcome to the Menu\n",menu);
-    printf("1= Nouvelle partie\n", nouvelle_partie);
+    printf("Bienvenue dans le menu\n",menu);
+    printf("1= Nouvelle partie \n", nouvelle_partie);
     printf("2= Reprendre une partie\n",reprendre_une_partie);
     printf("3= Demander de l'aide\n",aide);
     printf("4= Afficher le score\n",score);
