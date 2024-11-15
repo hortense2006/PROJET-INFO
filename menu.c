@@ -1,24 +1,39 @@
-
 #include <stdio.h>
-#include <signin.h>
 #include <login.h>
+#include <signin.h>
+#include <nouvelle_partie.h>
+#include <reprendre_une_partie.h>
+#include <aide.h>
+#include <score.h>
 
 // INTRODUCTION AU JEU
 int accueil()
 {
+    // DEFINITION DES VARIABLES
+    int chiffrea;
     printf("Bienvenue dans le jeu Quoridor!\n");
 
     // OPTIONS DE CONNEXION
-    printf("Log in\n");
-    printf("Sign in\n");
-    if(1) { // 1 est vrai : choisit l'option 1
-        login();
+    printf(" 1 = Log in\n");
+    printf("2 = Sign in\n");
+    switch (chiffrea) {
+        case 1: {
+            printf("Voulez vous vous connecter ?\n");
+            login();
+            break;
+        }
+        case 2: {
+            printf("Voulez-vous créer un compte ?\n");
+            signin();
+            break;
+        }
+        default :{
+            printf("Erreur\n");
+            accueil();
     }
-    if(0) { // 0 est faux : choisit l'option 2
-        signin();
     }
 }
-
+// MENU DU JEU
 int menu()
 {
     // DEFINITION DES VARIABLES
@@ -43,21 +58,68 @@ int menu()
         // DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI
         switch (chiffre) {
             case 1: {
-                printf("Vous souhaitez commencer une nouvelle partie.\n");
+                printf("Souhaitez vous commencer une nouvelle partie ? \n");
+                printf ("1 = Oui\n");
+                printf (" 2 = Non\n");
+                switch (chiffre) {
+                    case 1: {
+                        nouvelle_partie();
+                        break;
+                    }
+                    case 2: {
+                        menu();
+                    }
+                    default: {
+                        printf("Erreur !\n");
+                        menu();
+                    }
+                }
                 break;
             }
             case 2: {
-                printf("Vous souhaitez reprendre une partie.\n");
+                printf("Souhaitez vous reprendre une partie ? \n");
+                printf ("1 = Oui\n");
+                printf (" 2 = Non\n");
+                switch (chiffre) {
+                    case 1: {
+                        reprendre_une_partie();
+                        break;
+                    }
+                    case 2: {
+                        menu();
+                        break;
+                    }
+                    default: {
+                    printf("Erreur !\n");
+                    menu();
+                        break;
+                    }
+                }
                 break;
             }
             case 3: {
-                printf("Vous souhaitez demander de l'aide.\n");
-                aide();
+                printf("Souhaitez vous demander de l'aide ? \n");
+                printf ("1 = Oui\n");
+                printf (" 2 = Non\n");
+                switch (chiffre) {
+                    case 1: {
+                        aide();
+                        break;
+                    }
+                    case 2: {
+                        menu();
+                        break;
+                    }
+                    default : {
+                        printf("Erreur !\n");
+                        menu();
+                    }
+                }
                 break;
             }
             case 4: {
                 printf("1 = Afficher\n");
-                printf("2 = Afficher les 10 prochains");
+                printf("2 = Afficher les 10 prochains\n");
                     switch(score) {
                         case 1: {
                             printf("Vous souhaitez afficher le score.\n");
@@ -76,7 +138,23 @@ int menu()
                 break;
                 }
             case 5: {
-                accueil();
+                printf("Voulez vous quitter le jeu ?\n");
+                printf("1 = Oui\n");
+                printf("2 = Non\n");
+                switch (chiffre) {
+                    case 1: {
+                        accueil();
+                        break;
+                    }
+                    case 2: {
+                        menu();
+                        break;
+                    }
+                    default : {
+                        printf("Erreur !\n");
+                        accueil();
+                    }
+                }
                 break;
             }
             default : {
