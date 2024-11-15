@@ -3,7 +3,7 @@ project(PROJET-INFO C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(PROJET-INFO main.c
+add_executable(PROJET-INFO
         "accueil.c"
         "accueil.h"
         "aide.c"
@@ -11,8 +11,6 @@ add_executable(PROJET-INFO main.c
         "fonctions.h"
         "login.c"
         "login.h"
-        "main.c"
-        "main.h"
         "menu.c"
         "menu.h"
         "nouvelle partie.c"
