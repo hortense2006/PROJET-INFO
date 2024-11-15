@@ -21,7 +21,7 @@ int barriere() {
         printf("2 = La barriere est a la verticale\n",verticale);
 
         // CHOISIR UN CHIFFRE RELIE A UNE OPTION DE DEPLACEMENT
-        printf("Selectionner un chiffre entre 1 et 2 :\n",chiffre3);
+        printf("Selectionner un chiffre entre 1 et 2 :\n");
         scanf("%d",&chiffre3);
 
         // DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI
@@ -30,6 +30,8 @@ int barriere() {
                 printf("Voulez-vous poser votre barriere a l'horizontale ?\n");
                 printf("1 = Oui\n");
                 printf("2 = Non\n");
+                printf("Selectionner soit 1 soit 2 :\n");
+                scanf("%d",&chiffreg);
                 switch (chiffreg) {
                   case 1: {
                     qf
@@ -58,6 +60,8 @@ int barriere() {
                 printf("Voulez-vous poser votre barriere a la verticale ?\n");
                 printf("1 = Oui\n");
                 printf("2 = Non\n");
+                printf("Selectionner soit 1 soit 2 :\n");
+                scanf("%d",&chiffreh);
                 switch (chiffreh) {
                   case 1: {
                     fd
