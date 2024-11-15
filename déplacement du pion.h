@@ -4,5 +4,5 @@
 
 #ifndef DÉPLACEMENT_DU_PION_H
 #define DÉPLACEMENT_DU_PION_H
-
+int pion();
 #endif //DÉPLACEMENT_DU_PION_H
