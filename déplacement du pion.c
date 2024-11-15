@@ -27,6 +27,8 @@ int pion() {
             printf("Voulez-vous aller d'une case vers la gauche ?\n",gauche);
             printf("1 = Oui\n");
             printf("2 = Non\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d",&gauche);
             switch (gauche) {
               case 1: {
                 if (COORD mycoord != 0){
@@ -58,6 +60,8 @@ int pion() {
             printf("Voulez-vous aller d'une case vers la droite ?\n");
             printf("1 = Oui\n");
             printf("2 = Non\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d",&droite);
             switch (droite) {
               case 1: {
                 if (COORD mycoord !=1){
@@ -89,6 +93,8 @@ int pion() {
             printf("Voulez-vous avancer d'une case ?\n");
             printf("1 = Oui\n");
             printf("2 = Non\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d",&devant);
             switch (devant) {
               case 1: {
                 if (COORD mycoord !=1){
@@ -120,6 +126,8 @@ int pion() {
             printf("Voulez-vous reculer d'une case ?\n");
             printf("1 = Oui\n");
             printf("2 = Non\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d",&derriere);
             switch (derriere) {
               case 1: {
                 if (COORD mycoord !=1){
