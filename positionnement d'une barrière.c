@@ -9,7 +9,7 @@ int barriere() {
     int nbbarrieres;
     int verticale;
     int horizontale;
-    int chiffre3;
+    int chiffre3, chiffreg, chiffreh;
 
     // EST-CE-QUE C'EST POSSIBLE
     if (nbbarrieres != 0) {
@@ -30,7 +30,7 @@ int barriere() {
                 printf("Voulez-vous poser votre barriere a l'horizontale ?\n");
                 printf("1 = Oui\n");
                 printf("2 = Non\n");
-                switch (nbbarrieres) {
+                switch (chiffreg) {
                   case 1: {
                     qf
                     // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
@@ -55,8 +55,10 @@ int barriere() {
                 }
             }
             case 2: {
-                printf("Vous posez votre barriere a la verticale");
-                // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
+                printf("Voulez-vous posee votre barriere a la verticale ?\n");
+                printf("1 = Oui\n");
+                printf("2 = Non\n");
+                 // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
                 void gotoligcol(int lig2,int col2);
                 int lig2,col2;
                 // RESSOURCES
