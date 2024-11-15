@@ -15,6 +15,8 @@
        {
        printf("Saisissez votre nom d'utilisateur:\n");
        scanf("%c", &user);
+       while (user != '\n'){
+
        if (user // est dans base de donnees){
                printf("Vous pouvez saisir votre mot de passe\n");
         else {
