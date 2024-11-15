@@ -7,13 +7,14 @@
    int login()
    {
        // DEFINITION DES VARIABLES
-       int user;
+       char user;
        char mdp;
+
        // NOM D'UTILISATEUR
        int user()
        {
        printf("Saisissez votre nom d'utilisateur:\n");
-       scanf("%d", &user);
+       scanf("%c", &user);
        if (user // est dans base de donnees){
                printf("Vous pouvez saisir votre mot de passe\n");
         else {
