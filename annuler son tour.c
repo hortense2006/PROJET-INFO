@@ -16,6 +16,8 @@ int annuler(){
   printf("Voulez-vous annuler votre tour precedent?\n");
   printf("1. Oui\n");
   printf("2. Non\n");
+  printf("Saisissez un nombre.\n");
+  scanf("%d",&chiffrei);
   switch (chiffrei){
     case 1:{
       // ON VERIFIE QUE LE JOUEUR N'A PAS DEJA ANNULE UN TOUR
@@ -39,12 +41,10 @@ int annuler(){
        options();
        break;
      }
-       default:{
-         printf("Erreur!\n");
-         break;
-       }
-  }
-
+     default:{
+        printf("Erreur!\n");
+        break;
+     }
   }
   return 0;
 }
