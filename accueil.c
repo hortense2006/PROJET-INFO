@@ -16,12 +16,41 @@ int accueil()
     switch (chiffrea) {
         case 1: {
             printf("Voulez vous vous connecter ?\n");
-            login();
+            printf("1 = Oui.\n");
+            printf("2 = Non.\n");
+            switch (chiffrea) {
+              case 1: {
+                login();
+                break;
+              }
+              case 2: {
+                accueil();
+                break;
+              }
+              default: {
+                printf("Erreur!\n");
+                break;
+              }
+            }
             break;
         }
         case 2: {
             printf("Voulez-vous créer un compte ?\n");
-            signin();
+            printf("1 = Oui.\n");
+            printf("2 = Non.\n");
+            switch (chiffrea) {
+              case 1: {
+                signin();
+                break;
+              }
+              case 2: {
+                accueil();
+                break;
+              }
+              default: {
+                printf("Erreur!\n");
+                break;
+              }
             break;
         }
         default :{
