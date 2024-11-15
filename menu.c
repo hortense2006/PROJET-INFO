@@ -1,5 +1,7 @@
 
 #include <stdio.h>
+#include <signin.h>
+#include <login.h>
 int menu()
 {
     // DEFINITION DES VARIABLES
@@ -8,7 +10,7 @@ int menu()
     int reprendre_une_partie = 2;
     int aide = 3;
     int score = 4;
-    int chiffre;
+    int chiffre, nb, nb1;
 
     // INTRODUCTION AU JEU
     int accueil();
@@ -19,10 +21,10 @@ int menu()
         printf("Log in\n");
         printf("Sign in\n");
         if(1) { // 1 est vrai : choisit l'option 1
-            int login();
+            nb = login();
         }
         if(0) { // 0 est faux : choisit l'option 2
-            int signin();
+            nb1 = signin();
         }
     }
     // PRESENTATION DU MENU
@@ -48,6 +50,7 @@ int menu()
             }
             case 3: {
                 printf("Vous souhaitez demander de l'aide.\n");
+                int aide();
                 break;
             }
             case 4: {
