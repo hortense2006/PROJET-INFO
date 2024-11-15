@@ -6,8 +6,8 @@ set(CMAKE_C_STANDARD 23)
 add_executable(PROJET-INFO
         "annuler son tour.c"
         "annuler son tour.h"
-        "deplacement du pion.c"
-        "deplacement du pion.h"
+        "déplacement du pion.c"
+        "déplacement du pion.h"
         "options.c"
         "options.h"
         "passer son tour.c"
@@ -16,8 +16,8 @@ add_executable(PROJET-INFO
         "positionnement d'une barrière.h"
         annuler son tour.c
         annuler son tour.h
-        deplacement du pion.c
-        deplacement du pion.h
+        déplacement du pion.c
+        déplacement du pion.h
         options.c
         options.h
         passer son tour.c
