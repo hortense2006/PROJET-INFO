@@ -60,6 +60,7 @@
 
         // MOT DE PASSE
         printf("Choisissez à présent un mot de passe.");
+        scanf("%c", &mdp);
             if (mdp < 12 && mdp > 12)  {
                 printf("Votre mot de passe n'as pas 12 caracteres.");
             }
@@ -69,7 +70,9 @@
          // ASSOCIE LE MOT DE PASSE, LE NOM DU JOUEUR ET SON SCORE.
         struct Joueur
             {
-                int mdp, user, score;
+                char mdp, user;
+                int score;
+                scanf("%c""%c""%d",&joueur.mdp, &joueur.user, &joueur.score);
             }
     }
  return 0;
