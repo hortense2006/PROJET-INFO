@@ -45,7 +45,7 @@ int pion() {
     return 0;
 }
 
-#include "deplacement du pion.h"
+
 void gotoligcol(int lig2,int col2);
 int lig2,col2;
 // RESSOURCES
