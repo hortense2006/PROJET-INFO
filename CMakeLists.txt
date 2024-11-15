@@ -8,7 +8,6 @@ add_executable(PROJET-INFO
         "accueil.h"
         "aide.c"
         "aide.h"
-        "fonctions.h"
         "login.c"
         "login.h"
         "menu.c"
@@ -20,4 +19,20 @@ add_executable(PROJET-INFO
         "signin.c"
         "signin.h"
         "visuel du menu.c"
-        "visuel de menu.h")
+        "visuel de menu.h"
+        accueil.c
+        accueil.h
+        aide.c
+        aide.h
+        login.c
+        login.h
+        menu.c
+        menu.h
+        nouvelle partie.c
+        nouvelle partie.h
+        reprendre une partie.c
+        reprendre une partie.h
+        signin.c
+        signin.h
+        visuel du menu.c
+        visuel du menu.h)
