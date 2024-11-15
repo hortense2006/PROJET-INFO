@@ -16,7 +16,7 @@ int menu()
     int reprendre_une_partie = 2;
     int aide = 3;
     int score = 4;
-    int chiffre;
+    int chiffre, chiffreac, chiffread,chiffreae, chiffreaf;
 
     // PRESENTATION DU MENU
         printf("Bienvenue dans le menu\n",menu);
@@ -35,7 +35,9 @@ int menu()
                 printf("Souhaitez vous commencer une nouvelle partie ? \n");
                 printf ("1 = Oui\n");
                 printf (" 2 = Non\n");
-                switch (chiffre) {
+                printf("Selectionner un chiffre entre 1 et 2: ");
+                scanf("%d",&chiffreac);
+                switch (chiffreac) {
                     case 1: {
                         nouvelle_partie();
                         break;
@@ -54,7 +56,9 @@ int menu()
                 printf("Souhaitez vous reprendre une partie ? \n");
                 printf ("1 = Oui\n");
                 printf (" 2 = Non\n");
-                switch (chiffre) {
+                printf("Selectionner un chiffre entre 1 et 2: ");
+                scanf("%d",&chiffread);
+                switch (chiffread) {
                     case 1: {
                         reprendre_une_partie();
                         break;
@@ -75,7 +79,9 @@ int menu()
                 printf("Souhaitez vous demander de l'aide ? \n");
                 printf ("1 = Oui\n");
                 printf (" 2 = Non\n");
-                switch (chiffre) {
+                printf("Selectionner un chiffre entre 1 et 2: ");
+                scanf("%d",&chiffreae);
+                switch (chiffreae) {
                     case 1: {
                         aide();
                         break;
@@ -115,7 +121,9 @@ int menu()
                 printf("Voulez vous quitter le jeu ?\n");
                 printf("1 = Oui\n");
                 printf("2 = Non\n");
-                switch (chiffre) {
+                printf("Selectionner un chiffre entre 1 et 2: ");
+                scanf("%d",&chiffreaf);
+                switch (chiffreaf) {
                     case 1: {
                         accueil();
                         break;
