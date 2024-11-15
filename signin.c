@@ -12,14 +12,18 @@
         // PSEUDO
         printf("Choisissez un pseudo:\n");
         scanf("%d", &user);
-        if (user == //base de données); // on vérifie si le pseudo existe déjà.
+        while (user != '\n')
+        if (user == '\n') // on vérifie si le pseudo existe déjà.
             {
-                printf("Ce nom existe deja\n");
-                printf("Est-ce vous ?");
-                printf("1 = Oui\n");
-                printf("2 = Non\n");
-                switch (chiffreb){
-                  case 1:{
+          printf("Votre nom d'utilisateur a ete enregistre.\n");
+          }
+        else {
+            printf("Ce nom existe deja\n");
+            printf("Est-ce vous ?");
+            printf("1 = Oui\n");
+            printf("2 = Non\n");
+            switch (chiffreb){
+               case 1:{
                     printf("Voulez-vous vous connecter ?\n");
                     printf("1 = Oui\n");
                     printf("2 = Non\n");
@@ -40,20 +44,18 @@
                     }
                     break;
                     }
-                  case 2:{
+               case 2:{
                     printf("Vous devez choisir un autre pseudo.\n");
                     signin();
                     break;
                     }
-                  default:{
+               default:{
                     printf("Erreur\n");
                     signin();
                     break;
                   }
                 }
             }
-        else {
-            printf("Votre nom d'utilisateur a ete enregistre.", user);
         }
 
         // MOT DE PASSE
@@ -70,4 +72,6 @@
                 int mdp, user, score;
             }
     }
+ return 0;
+}
 #include "signin.h"
