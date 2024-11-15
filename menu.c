@@ -98,8 +98,11 @@ int menu()
                 break;
             }
             case 4: {
+                 printf("Souhaitez vous afficher le score ?\n");
                 printf("1 = Afficher\n");
                 printf("2 = Afficher les 10 prochains\n");
+                printf("Selectionner un chiffre entre 1 et 2: ");
+                scanf("%d",&score);
                     switch(score) {
                         case 1: {
                             printf("Vous souhaitez afficher le score.\n");
