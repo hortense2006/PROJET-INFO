@@ -29,8 +29,7 @@ int pion() {
             printf("2 = Non\n");
             switch (gauche) {
               case 1: {
-                if (// DEPLACEMENT POSSIBLE)
-                  {
+                if (COORD mycoord != 0){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
                      // RESSOURCES
@@ -61,8 +60,7 @@ int pion() {
             printf("2 = Non\n");
             switch (droite) {
               case 1: {
-                if (// DEPLACEMENT POSSIBLE)
-                  {
+                if (COORD mycoord !=1){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
                      // RESSOURCES
@@ -93,8 +91,7 @@ int pion() {
             printf("2 = Non\n");
             switch (devant) {
               case 1: {
-                if (// DEPLACEMENT POSSIBLE)
-                  {
+                if (COORD mycoord !=1){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
                      // RESSOURCES
@@ -125,8 +122,7 @@ int pion() {
             printf("2 = Non\n");
             switch (derriere) {
               case 1: {
-                if (// DEPLACEMENT POSSIBLE)
-                  {
+                if (COORD mycoord !=1){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
                      // RESSOURCES
@@ -149,6 +145,8 @@ int pion() {
                 pion();
                 break;
               }
+              break;
+            }
         }
         default: {
             printf("Erreur.\n");
