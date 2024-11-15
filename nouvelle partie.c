@@ -3,6 +3,9 @@
 //
 int nouvelle_partie()
 {
+  // APPEL PLATEAU
+  // APPEL PLACEMENT DU PION
+  // APPEL BARRIERES
   return 0;
   }
 #include "nouvelle partie.h"
