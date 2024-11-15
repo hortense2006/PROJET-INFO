@@ -5,6 +5,4 @@
 #ifndef OPTIONS_H
 #define OPTIONS_H
 int options();
-int pion();
-int barrieres();
 #endif //OPTIONS_H

@@ -2,6 +2,7 @@
 // Created by galti on 14/11/2024.
 //
 #include <stdio.h>
+#include <options.h>
 int passer(){
   // DECLARATION DES VARIABLES
   int joueur;
@@ -13,7 +14,7 @@ int passer(){
     }
     if (0){ // 0 est faux : le joueur ne passe pas son tour et joue
       tour = joueur;
-      int options();
+      options();
   }
   return 0;
   }

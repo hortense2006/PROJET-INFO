@@ -4,5 +4,5 @@
 
 #ifndef ANNULER_SON_TOUR_H
 #define ANNULER_SON_TOUR_H
-
+int annuler();
 #endif //ANNULER_SON_TOUR_H
