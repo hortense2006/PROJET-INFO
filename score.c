@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+
 int S=0; +=0; R=0
 int x = 3, y = 11
 int score(int S,+,R,*y)
