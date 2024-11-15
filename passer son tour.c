@@ -7,20 +7,42 @@
 #define MAX 4
 int passer(){
   // DECLARATION DES VARIABLES
+  int nbjoueur;
   int joueur;
   int tour;
   int chiffrei;
 // POUR UNE PARTIE A 4 JOUEURS
-  if (joueur < MIN || joueur > MAX){
+  if (nbjoueur < MIN || nbjoueur > MAX){
     printf("Erreur!\n");
   }
-  if (joueur =1 && joueur = MIN || joueur = 1 && joueur = MAX,joueur++){
+  if (joueur =MIN,joueur++){
     printf("Voulez-vous passer votre tour ?\n");
     printf("1. Oui\n");
     printf("2. Non\n");
     switch (chiffrei){
       case 1:{
-        tour = joueur + 1;
+        tour = joueur+1;
+        break;
+      }
+      case 2:{
+        tour = joueur;
+        options();
+        break;
+      }
+      default:{
+        printf("Erreur!\n");
+        options();
+        break;
+      }
+    }
+  }
+  if (joueur =MAX,joueur++){
+    printf("Voulez-vous passer votre tour ?\n");
+    printf("1. Oui\n");
+    printf("2. Non\n");
+    switch (chiffrei){
+      case 1:{
+        tour = joueur-1;
         break;
       }
       case 2:{
