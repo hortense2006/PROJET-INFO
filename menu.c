@@ -5,34 +5,8 @@
 #include <reprendre_une_partie.h>
 #include <aide.h>
 #include <score.h>
+#include <accueil.h>
 
-// INTRODUCTION AU JEU
-int accueil()
-{
-    // DEFINITION DES VARIABLES
-    int chiffrea;
-    printf("Bienvenue dans le jeu Quoridor!\n");
-
-    // OPTIONS DE CONNEXION
-    printf(" 1 = Log in\n");
-    printf("2 = Sign in\n");
-    switch (chiffrea) {
-        case 1: {
-            printf("Voulez vous vous connecter ?\n");
-            login();
-            break;
-        }
-        case 2: {
-            printf("Voulez-vous créer un compte ?\n");
-            signin();
-            break;
-        }
-        default :{
-            printf("Erreur\n");
-            accueil();
-    }
-    }
-}
 // MENU DU JEU
 int menu()
 {
