@@ -11,9 +11,11 @@
        char mdp;
        printf("Saisissez votre nom d'utilisateur:\n");
        scanf("%d", &user);
+       // SI LE NOM N'EXISTES PAS, LE DIRE
        printf("Saisissez votre mot de passe:\n");
        scanf("%c", &mdp);
-       options();
+       // SI LE MOT DE PASSE N'EXISTES PAS, LE DIRE
+   options();
    return 0;
    }
 #include "login.h"
