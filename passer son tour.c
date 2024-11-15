@@ -7,14 +7,28 @@ int passer(){
   // DECLARATION DES VARIABLES
   int joueur;
   int tour;
+  int chiffrei;
 
   for (joueur = 1; joueur <= 4; joueur++){
-    if (1){ // 1 est vrai : le joueur passe son tour
-      tour = joueur + 1;
+    printf("Voulez-vous passer votre tour ?\n");
+    printf("1. Oui\n");
+    printf("2. Non\n");
+    switch (chiffrei){
+      case 1:{
+        tour = joueur + 1;
+        break;
+      }
+      case 2:{
+        tour = joueur;
+        options();
+        break;
+      }
+      default:{
+        printf("Erreur!\n");
+        options();
+        break;
+      }
     }
-    if (0){ // 0 est faux : le joueur ne passe pas son tour et joue
-      tour = joueur;
-      options();
   }
   return 0;
   }
