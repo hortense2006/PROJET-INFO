@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include <pion.h>
-#include <barrieres.h>
+#include <barriere.h>
 #include <annuler.h>
 #include <passer.h>
 int options()
