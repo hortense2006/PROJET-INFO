@@ -3,7 +3,7 @@
 #include <signin.h>
 #include <nouvelle_partie.h>
 #include 'reprendre_une_partie.h'
-#include "aide.h"
+#include <aide.h>
 #include <score.h>
 #include <accueil.h>
 
