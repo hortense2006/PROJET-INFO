@@ -3,7 +3,7 @@ project(PROJET-INFO C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(PROJET-INFO main.c
+add_executable(PROJET-INFO
         "annuler son tour.c"
         "annuler son tour.h"
         "deplacement du pion.c"
