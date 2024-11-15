@@ -3,6 +3,13 @@
 //
 int annuler(){
 
+  // DEFINITION DES VARIABLES
+  int joueur;
+  int tour;
+  int j;
+
+  // LE JOUEUR ANNULE SON TOUR
+  // UNE SEULE ANNULATION POSSIBLE
 
 
   return 0;
