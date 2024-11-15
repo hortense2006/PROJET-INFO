@@ -22,8 +22,6 @@ int pion() {
 
     printf("Selectionner un chiffre entre 1 et 4:",chiffre2);
     scanf("%d",&chiffre2);
-
-    // SAISIR LES COORDONNEES DE LA NOUVELLE CASE + DIRE SI LE DEPLACEMENT EST POSSIBLE OU NON
     switch (chiffre2) {
         case 1: {
             printf("Voulez-vous aller d'une case vers la gauche ?\n",gauche);
@@ -31,8 +29,20 @@ int pion() {
             printf("2 = Non\n");
             switch (gauche) {
               case 1: {
-                // REDIRIGE AUTOMATIQUEMENT VERS LA CASE A GAUCHE
-                // VERIFIE SI LE MOUVEMENT EST POSSIBLE: SI NON, REDIRIGE VERS PION
+                if (// DEPLACEMENT POSSIBLE)
+                  {
+                  void gotoligcol(int lig2,int col2){
+                    int lig2,col2;
+                     // RESSOURCES
+                    COORD mycoord;
+                    mycoord.X =col2;
+                    mycoord.Y = lig2;
+                    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                  }
+                }
+                else {
+                  pion();
+                }
                 break;
               }
               case 2: {
@@ -51,8 +61,19 @@ int pion() {
             printf("2 = Non\n");
             switch (droite) {
               case 1: {
-                  // REDIRIGE AUTOMATIQUEMENT VERS LA CASE A DROITE
-                  // VERIFIE SI LE MOUVEMENT EST POSSIBLE: SI NON, REDIRIGE VERS PION
+                if (// DEPLACEMENT POSSIBLE)
+                  {
+                  void gotoligcol(int lig2,int col2){
+                    int lig2,col2;
+                     // RESSOURCES
+                    COORD mycoord;
+                    mycoord.X =col2;
+                    mycoord.Y = lig2;
+                    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                  }
+                }
+                else {
+                  pion();
                 break;
               }
               case 2: {
@@ -72,8 +93,19 @@ int pion() {
             printf("2 = Non\n");
             switch (devant) {
               case 1: {
-                // REDIRIGE AUTOMATIQUEMENT VERS LA CASE DEVANT
-                // VERIFIE SI LE MOUVEMENT EST POSSIBLE: SI NON, REDIRIGE VERS PION
+                if (// DEPLACEMENT POSSIBLE)
+                  {
+                  void gotoligcol(int lig2,int col2){
+                    int lig2,col2;
+                     // RESSOURCES
+                    COORD mycoord;
+                    mycoord.X =col2;
+                    mycoord.Y = lig2;
+                    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                  }
+                }
+                else {
+                  pion();
                 break;
               }
               case 2: {
@@ -93,8 +125,19 @@ int pion() {
             printf("2 = Non\n");
             switch (derriere) {
               case 1: {
-                // REDIRIGE AUTOMATIQUEMENT VERS LA CASE DERRIERE
-                // VERIFIE SI LE MOUVEMENT EST POSSIBLE: SI NON, REDIRIGE VERS PION
+                if (// DEPLACEMENT POSSIBLE)
+                  {
+                  void gotoligcol(int lig2,int col2){
+                    int lig2,col2;
+                     // RESSOURCES
+                    COORD mycoord;
+                    mycoord.X =col2;
+                    mycoord.Y = lig2;
+                    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                  }
+                }
+                else {
+                  pion();
                 break;
               }
               case 2: {
@@ -113,14 +156,4 @@ int pion() {
     }
     return 0;
 }
-
-
-void gotoligcol(int lig2,int col2);
-int lig2,col2;
-// RESSOURCES
-COORD mycoord;
-mycoord.X =col2;
-mycoord.Y = lig2;
-SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
-
 #include "déplacement du pion.h"
