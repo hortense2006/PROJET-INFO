@@ -13,4 +13,14 @@ add_executable(PROJET-INFO
         "passer son tour.c"
         "passer son tour.h"
         "positionnement d'une barrière.c"
-        "positionnement d'une barrière.h")
+        "positionnement d'une barrière.h"
+        annuler son tour.c
+        annuler son tour.h
+        deplacement du pion.c
+        deplacement du pion.h
+        options.c
+        options.h
+        passer son tour.c
+        passer son tour.h
+        positionnement d'une barrière.c
+        positionnement d'une barrière.h)
