@@ -67,10 +67,45 @@ int pion() {
             }
         }
         case 3: {
-            printf("Voulez-vous avancer d'une case.\n");
+            printf("Voulez-vous avancer d'une case ?\n");
+            printf("1 = Oui\n");
+            printf("2 = Non\n");
+            switch (devant) {
+              case 1: {
+                // REDIRIGE AUTOMATIQUEMENT VERS LA CASE DEVANT
+                // VERIFIE SI LE MOUVEMENT EST POSSIBLE: SI NON, REDIRIGE VERS PION
+                break;
+              }
+              case 2: {
+                pion();
+                break;
+              }
+              default: {
+                printf("Erreur!\n");
+                pion();
+                break;
+              }
+            }
         }
         case 4: {
-            printf("Vous reculez d'une case.\n");
+            printf("Voulez-vous reculer d'une case ?\n");
+            printf("1 = Oui\n");
+            printf("2 = Non\n");
+            switch (derriere) {
+              case 1: {
+                // REDIRIGE AUTOMATIQUEMENT VERS LA CASE DERRIERE
+                // VERIFIE SI LE MOUVEMENT EST POSSIBLE: SI NON, REDIRIGE VERS PION
+                break;
+              }
+              case 2: {
+                pion();
+                break;
+              }
+              default: {
+                printf("Erreur!\n");
+                pion();
+                break;
+              }
         }
         default: {
             printf("Erreur.\n");
