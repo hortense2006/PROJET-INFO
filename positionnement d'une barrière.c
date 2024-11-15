@@ -21,21 +21,38 @@ int barriere() {
         printf("2 = La barriere est a la verticale\n",verticale);
 
         // CHOISIR UN CHIFFRE RELIE A UNE OPTION DE DEPLACEMENT
-        printf("Selectionner un chiffre entre 1 et 2 :",chiffre3);
+        printf("Selectionner un chiffre entre 1 et 2 :\n",chiffre3);
         scanf("%d",&chiffre3);
 
         // DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI
         switch (chiffre3) {
             case 1: {
-                printf("Vous posez votre barriere a l'horizontale");
-                // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
-                void gotoligcol(int lig1,int col1);
-                int lig1,col1;
-                // RESSOURCES
-                COORD mycoord;
-                mycoord.X =col1;
-                mycoord.Y = lig1;
-                SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                printf("Voulez-vous poser votre barriere a l'horizontale ?\n");
+                printf("1 = Oui\n");
+                printf("2 = Non\n");
+                switch (nbbarrieres) {
+                  case 1: {
+                    qf
+                    // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
+                    void gotoligcol(int lig1,int col1){
+                       int lig1,col1;
+                      // RESSOURCES
+                        COORD mycoord;
+                        mycoord.X =col1;
+                        mycoord.Y = lig1;
+                        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                    }
+                    break;
+                    }
+                  case 2: {
+                    fdg
+                    break;
+                  }
+                    default:{
+                      printf("Erreur!\n");
+                      break;
+                    }
+                }
             }
             case 2: {
                 printf("Vous posez votre barriere a la verticale");
