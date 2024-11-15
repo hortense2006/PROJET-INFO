@@ -55,17 +55,33 @@ int barriere() {
                 }
             }
             case 2: {
-                printf("Voulez-vous posee votre barriere a la verticale ?\n");
+                printf("Voulez-vous poser votre barriere a la verticale ?\n");
                 printf("1 = Oui\n");
                 printf("2 = Non\n");
-                 // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
-                void gotoligcol(int lig2,int col2);
-                int lig2,col2;
-                // RESSOURCES
-                COORD mycoord;
-                mycoord.X =col2;
-                mycoord.Y = lig2;
-                SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                switch (chiffreh) {
+                  case 1: {
+                    fd
+                   // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
+                     void gotoligcol(int lig2,int col2){
+                          int lig2,col2;
+                      // RESSOURCES
+                          COORD mycoord;
+                          mycoord.X =col2;
+                          mycoord.Y = lig2;
+                          SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                     }
+                    break;
+                  }
+                  case 2: {
+                     dd
+                     break;
+                  }
+                    default:{
+                      printf("Erreur!\n");
+                      break;
+                    }
+                }
+
             }
             default: {
                 printf("Erreur\n");
