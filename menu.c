@@ -2,6 +2,23 @@
 #include <stdio.h>
 #include <signin.h>
 #include <login.h>
+
+// INTRODUCTION AU JEU
+int accueil()
+{
+    printf("Bienvenue dans le jeu Quoridor!\n");
+
+    // OPTIONS DE CONNEXION
+    printf("Log in\n");
+    printf("Sign in\n");
+    if(1) { // 1 est vrai : choisit l'option 1
+        login();
+    }
+    if(0) { // 0 est faux : choisit l'option 2
+        signin();
+    }
+}
+
 int menu()
 {
     // DEFINITION DES VARIABLES
@@ -10,23 +27,8 @@ int menu()
     int reprendre_une_partie = 2;
     int aide = 3;
     int score = 4;
-    int chiffre, nb, nb1;
+    int chiffre;
 
-    // INTRODUCTION AU JEU
-    int accueil();
-    {
-        printf("Bienvenue dans le jeu Quoridor!\n");
-
-        // OPTIONS DE CONNEXION
-        printf("Log in\n");
-        printf("Sign in\n");
-        if(1) { // 1 est vrai : choisit l'option 1
-            nb = login();
-        }
-        if(0) { // 0 est faux : choisit l'option 2
-            nb1 = signin();
-        }
-    }
     // PRESENTATION DU MENU
         printf("Bienvenue dans le menu\n",menu);
         printf("1= Nouvelle partie \n", nouvelle_partie);
@@ -50,7 +52,7 @@ int menu()
             }
             case 3: {
                 printf("Vous souhaitez demander de l'aide.\n");
-                int aide();
+                aide();
                 break;
             }
             case 4: {
@@ -59,22 +61,22 @@ int menu()
                     switch(score) {
                         case 1: {
                             printf("Vous souhaitez afficher le score.\n");
-                            int score(1,0,0);
+                            score(1,0,0);
                             break;
                         }
                         case 2: {
-                            int score(1,1,0);
+                            score(1,1,0);
                             break;
                         }
                         case 3: {
-                            int menu();
+                            menu();
                             break;
                         }
                     }
                 break;
                 }
             case 5: {
-                int accueil();
+                accueil();
                 break;
             }
             default : {
@@ -84,3 +86,4 @@ int menu()
         }
     return 0;
 }
+#include "menu.h"

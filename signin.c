@@ -2,6 +2,7 @@
 // Created by galti on 14/11/2024.
 //
 #include <stdio.h>
+#include <login.h>
 // CREATION D'UN COMPTE
     int signin()
     {
@@ -16,11 +17,11 @@
                 printf("Ce nom existe deja\n");
                 printf("Est-ce vous ?");
                 if (1) { //1 est vrai
-                    int login();
+                    login();
                 }
                if (0) { //O est faux
                    printf("Vous devez choisir un autre pseudo.");
-                   int signin();
+                   signin();
                }
             }
         else {
@@ -34,6 +35,10 @@
             }
             else {
                 printf("Votre mot de passe a été enregistré.");
+            }
+        struct Joueur
+            {
+                int mdp, user, score;
             }
     }
 #include "signin.h"

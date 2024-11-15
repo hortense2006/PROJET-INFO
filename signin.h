@@ -5,5 +5,4 @@
 #ifndef SIGNIN_H
 #define SIGNIN_H
 int signin();
-int login();
 #endif //SIGNIN_H
