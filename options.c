@@ -82,6 +82,7 @@ int options()
                  break;
               }
               default: {
+                printf("Erreur!\n");
                  options();
                  break;
               }
