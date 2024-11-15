@@ -10,7 +10,7 @@ int score(int S,+,R,*y)
         {
             &y= &y +10;
         }
-        int monTableau[x][&y];
+        int char monTableau[x][&y];
         for (ny = 1; ny < &y; ny++)
         {
             monTableau[0][0] = "Top"
