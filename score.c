@@ -1,18 +1,21 @@
 #include <stdio.h>
 int S=0; +=0; R=0
-int score(int S,+,R)
+int x = 3, y = 11
+int score(int S,+,R,*y)
     {
     if(S==1)
     {
         int nx = 0, ny = 0;
-        int x = 2, y = 10;
         if(+==1)
         {
-            y= y +10;
+            &y= &y +10;
         }
-        int monTableau[x][y];
-        for (ny = 0; ny < y; ny++)
+        int monTableau[x][&y];
+        for (ny = 1; ny < &y; ny++)
         {
+            monTableau[0][0] = "Top"
+            monTableau[1][0] = "Player"
+            monTableau[2][0] = "Score"
             nx = 0;
             //
             //  appelle pseudo
@@ -26,6 +29,6 @@ int score(int S,+,R)
     }
     if(R==1)
     {
-        y=10
+        &y=10
     }
 }
