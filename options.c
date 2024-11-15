@@ -33,6 +33,8 @@ int options()
             printf("Souhaitez-vous deplacer votre pion ?\n");
             printf("1= Oui.\n");
             printf("2 = Non.\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d",&chiffrec);
             switch (chiffrec) {
               case 1: {
                 pion();
@@ -53,6 +55,8 @@ int options()
             printf("Souhaitez-vous poser une barriere ?\n");
             printf("1= Oui.\n");
             printf("2 = Non.\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d",&chiffred);
             switch (chiffred) {
               case 1: {
                 barrieres();
@@ -72,6 +76,8 @@ int options()
             printf("Souhaitez-vous passer votre tour ?\n");
             printf("1= Oui.\n");
             printf("2 = Non.\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d",&chiffree);
             switch (chiffree) {
               case 1: {
                 passer();
@@ -92,6 +98,8 @@ int options()
             printf("Souhaitez-vous annuler votre coup precedent ?\n");
             printf("1= Oui.\n");
             printf("2 = Non.\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d",&chiffref);
             switch (chiffref) {
               case 1: {
                 annuler();
