@@ -1,6 +1,6 @@
 #include <stdio.h>
 int S=0; +=0; R=0
-int score(int S, int +,int R)
+int score(int S,+,R)
     {
     if(S==1)
     {
