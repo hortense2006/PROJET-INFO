@@ -8,55 +8,23 @@
 int passer(){
   // DECLARATION DES VARIABLES
   int nbjoueur;
-  int joueur1, joueur2, joueur3, joueur4;
-  int tour;
+  int joueur;
+  int tour_du_joueur;
   int chiffrei;
-// VERIFICATION DU NOMBRE DE JOUEURS
-  if (nbjoueur < MIN && nbjoueur > MAX){
-    printf("Erreur!\n");
+  int i;
+ if(nbjoueur > MAX && nbjoueur < MIN){
+   printf("Erreur !\n");
+   }
+   else if (nbjoueur < MAX && nbjoueur > MIN){
+     printf("Erreur !\n");
   }
-  // POUR UNE PARTIE A 2 JOUEURS
-
-  if (joueur =MIN,joueur++){
-    printf("Voulez-vous passer votre tour ?\n");
-    printf("1. Oui\n");
-    printf("2. Non\n");
-    switch (chiffrei){
-      case 1:{
-        tour = joueur+1;
-        break;
-      }
-      case 2:{
-        tour = joueur;
-        options();
-        break;
-      }
-      default:{
-        printf("Erreur!\n");
-        options();
-        break;
-      }
+  else (nbjoueur  == MAX || nbjoueur == MIN){
+    // LE JOUEUR DECIDE DE PASSER SON TOUR
+    if (tour_du_joueur == '\n'){
+      joueur = joueur +1;
     }
-  }
-  if (joueur =MAX,joueur++){
-    printf("Voulez-vous passer votre tour ?\n");
-    printf("1. Oui\n");
-    printf("2. Non\n");
-    switch (chiffrei){
-      case 1:{
-        tour = joueur-1;
-        break;
-      }
-      case 2:{
-        tour = joueur;
-        options();
-        break;
-      }
-      default:{
-        printf("Erreur!\n");
-        options();
-        break;
-      }
+    else{
+      printf("Le joueur a decide de jouer.\n");
     }
   }
   return 0;
