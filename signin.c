@@ -22,6 +22,8 @@
             printf("Est-ce vous ?");
             printf("1 = Oui\n");
             printf("2 = Non\n");
+            printf("Selectionner soit 1 soit 2:\n");
+            scanf("%d", &chiffreb);
             switch (chiffreb){
                case 1:{
                     printf("Voulez-vous vous connecter ?\n");
