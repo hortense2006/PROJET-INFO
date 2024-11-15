@@ -2,20 +2,26 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-
-int timer(int Tmax)
+int sec = 0, min = 0;
+int timer(int Tmax,ON,R,*sec,*min)
 {
-    int sec = 0, min = 0;
-    while (min <= Tmax)
+    if (ON == 1)
+    {
+        while (&min <= Tmax)
         {
-        sec += 1;
-        if (sec == 60)
-        {
-            sec = 0;
-            min = min + 1;
-        }
+            printf("%d:%d" &min,&sec);
+            &sec += 1;
+            if (&sec == 60)
+            {
+                &sec = 0;
+                &min = &min + 1;
+            }
         sleep(1);
-        printf("%d:%d"min,sec);
+        }
+    }
+    if (R == 1)
+    {
+      sec = 0, min = 0;
     }
     return "timer_end";
 }
