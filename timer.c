@@ -21,7 +21,7 @@ int timer(int Tmax,ON,R,*sec,*min)
     }
     if (R == 1)
     {
-      sec = 0, min = 0;
+      &sec = 0, &min = 0;
     }
     return "timer_end";
 }
