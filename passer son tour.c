@@ -8,13 +8,15 @@
 int passer(){
   // DECLARATION DES VARIABLES
   int nbjoueur;
-  int joueur;
+  int joueur1, joueur2, joueur3, joueur4;
   int tour;
   int chiffrei;
-// POUR UNE PARTIE A 4 JOUEURS
-  if (nbjoueur < MIN || nbjoueur > MAX){
+// VERIFICATION DU NOMBRE DE JOUEURS
+  if (nbjoueur < MIN && nbjoueur > MAX){
     printf("Erreur!\n");
   }
+  // POUR UNE PARTIE A 2 JOUEURS
+
   if (joueur =MIN,joueur++){
     printf("Voulez-vous passer votre tour ?\n");
     printf("1. Oui\n");
