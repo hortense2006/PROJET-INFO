@@ -9,13 +9,22 @@
        // DEFINITION DES VARIABLES
        int user;
        char mdp;
+       // NOM D'UTILISATEUR
+       int user()
+       {
        printf("Saisissez votre nom d'utilisateur:\n");
        scanf("%d", &user);
-       // SI LE NOM N'EXISTES PAS, LE DIRE
+       if (user // est dans base de donnees){
+               printf("Vous pouvez saisir votre mot de passe\n");
+        else {
+               printf("Le nom d'utilisateur n'existes pas.\n");
+        }
+       }
+       int mdp(){
        printf("Saisissez votre mot de passe:\n");
        scanf("%c", &mdp);
        // SI LE MOT DE PASSE N'EXISTES PAS, LE DIRE
-   options();
+       }
    return 0;
    }
 #include "login.h"
