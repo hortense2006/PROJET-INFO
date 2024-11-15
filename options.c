@@ -2,6 +2,10 @@
 // Created by galti on 14/11/2024.
 //
 #include <stdio.h>
+#include <pion.h>
+#include <barrieres.h>
+#include <annuler.h>
+#include <passer.h>
 int options()
 {
     // DEFINITION DES VARIABLES
@@ -10,7 +14,7 @@ int options()
     int poser_une_barriere = 2;
     int passer = 3;
     int annuler = 4;
-    int chiffre1;
+    int chiffre1, chiffrec, chiffred, chiffree, chiffref;
 
     // PRESENTATION DES OPTIONS DE JEU
     printf("Voici vos options de jeu\n",options);
@@ -26,23 +30,87 @@ int options()
     // DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI
     switch (chiffre1) {
         case 1: {
-            printf("Vous souhaitez déplacer votre pion.\n");
-            int pion();
+            printf("Souhaitez-vous deplacer votre pion ?\n");
+            printf("1= Oui.\n");
+            printf("2 = Non.\n");
+            switch (chiffrec) {
+              case 1: {
+                pion();
+                break;
+              }
+              case 2: {
+                options();
+                break;
+              }
+                default: {
+                  printf("Erreur!\n");
+                  options();
+                  break;
+                }
+            }
         }
         case 2: {
-            printf("Vous souhaitez poser une barriere.\n");
-            int barrieres();
+            printf("Souhaitez-vous poser une barriere ?\n");
+            printf("1= Oui.\n");
+            printf("2 = Non.\n");
+            switch (chiffred) {
+              case 1: {
+                barrieres();
+                break;
+              }
+              case 2: {
+                options();
+                break;
+              }
+              default: {
+                options();
+                break;
+              }
+            }
         }
         case 3: {
-            printf("Vous souhaitez passer votre tour.\n");
-            int passer();
+            printf("Souhaitez-vous passer votre tour ?\n");
+            printf("1= Oui.\n");
+            printf("2 = Non.\n");
+            switch (chiffree) {
+              case 1: {
+                passer();
+                break;
+              }
+              case 2: {
+                 options();
+                 break;
+              }
+              default: {
+                 options();
+                 break;
+              }
+            }
         }
         case 4: {
-            printf("Vous souhaitez annuler votre coup precedent.\n");
-            int annuler();
+            printf("Souhaitez-vous annuler votre coup precedent ?\n");
+            printf("1= Oui.\n");
+            printf("2 = Non.\n");
+            switch (chiffref) {
+              case 1: {
+                annuler();
+                break;
+              }
+              case 2: {
+                 options();
+                 break;
+              }
+              default: {
+                printf("Erreur!\n");
+                options();
+                break;
+              }
+            }
         }
         default : {
             printf("Erreur\n");
+            options();
+            break;
         }
     }
     return 0;
