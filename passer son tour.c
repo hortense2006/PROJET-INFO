@@ -3,13 +3,18 @@
 //
 #include <stdio.h>
 #include <options.h>
+#define MIN 2
+#define MAX 4
 int passer(){
   // DECLARATION DES VARIABLES
   int joueur;
   int tour;
   int chiffrei;
-
-  for (joueur = 1; joueur <= 4; joueur++){
+// POUR UNE PARTIE A 4 JOUEURS
+  if (joueur < MIN || joueur > MAX){
+    printf("Erreur!\n");
+  }
+  if (joueur =1 && joueur = MIN || joueur = 1 && joueur = MAX,joueur++){
     printf("Voulez-vous passer votre tour ?\n");
     printf("1. Oui\n");
     printf("2. Non\n");
@@ -31,5 +36,5 @@ int passer(){
     }
   }
   return 0;
-  }
+}
 #include "passer son tour.h"
