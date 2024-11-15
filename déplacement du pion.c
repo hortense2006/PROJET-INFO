@@ -26,9 +26,25 @@ int pion() {
     // SAISIR LES COORDONNEES DE LA NOUVELLE CASE + DIRE SI LE DEPLACEMENT EST POSSIBLE OU NON
     switch (chiffre2) {
         case 1: {
-            printf("Vous allez d'une case vers la gauche.\n");
-
-        }
+            printf("Voulez-vous aller d'une case vers la gauche ?\n",gauche);
+            printf("1 = Oui\n");
+            printf("2 = Non\n");
+            switch (gauche) {
+              case 1: {
+                // REDIRIGE AUTOMATIQUEMENT VERS LA CASE A GAUCHE
+                // VERIFIE SI LE MOUVEMENT EST POSSIBLE: SI NON, REDIRIGE VERS PION
+                break;
+              }
+              case 2: {
+                pion();
+                break;
+              }
+              default: {
+                printf("Erreur!\n");
+                pion();
+                break;
+              }
+            }
         case 2: {
             printf("Vous allez d'une case vers la droite.\n");
         }
