@@ -65,11 +65,12 @@ int barriere() {
                         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
                         /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                         if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
-                          printf("Cette case est déjà occupée.\n");
+                          printf("Cette case est deja occupee.\n");
                           printf("Faites un autre choix.\n");
                           barrieres();
                         else{
-                          printf("Votre choix est enregistre.\n");
+                          printf("Votre choix est valide.\n");
+                          /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
                         }
                     }
                     break;
@@ -103,11 +104,12 @@ int barriere() {
                           SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
                           /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                          if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
-                         printf("Cette case est déjà occupée.\n");
+                         printf("Cette case est deja occupee.\n");
                          printf("Faites un autre choix.\n");
                          barrieres();
                        else{
-                         printf("Votre choix est enregistre.\n");
+                         printf("Votre choix est valide.\n");
+                           /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
                        }
                      }
                     break;
