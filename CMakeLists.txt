@@ -23,4 +23,6 @@ add_executable(PROJET-INFO
         passer son tour.c
         passer son tour.h
         positionnement d'une barrière.c
-        positionnement d'une barrière.h)
+        positionnement d'une barrière.h
+        "passer au dessus du pion.c"
+        "passer au dessus du pion.h")
