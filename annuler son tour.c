@@ -11,7 +11,7 @@ int annuler(){
   int joueur;
   int tour_du_joueur;
   int tour_precedent;
-  int chiffrei;
+  int chiffrei, chiffreia;
   int i;
   printf("Voulez-vous annuler votre tour precedent?\n");
   printf("1. Oui\n");
@@ -23,17 +23,35 @@ int annuler(){
       // ON VERIFIE QUE LE JOUEUR N'A PAS DEJA ANNULE UN TOUR
       if (tour_du_joueur != tour_precedent ){
         printf("Le joueur n'a pas encore annule un tour.\n");
+        printf("Voulez-vous annuler votre tour precedent?\n");
+        printf("1. Oui\n");
+        printf("2. Non\n");
+        printf("Saisissez un nombre ?\n");
+        scanf("%d",&chiffreia);
+        switch (chiffreia){
+          case 1:{
+            // LE JOUEUR DECIDE D'ANNULER SON TOUR
+            if (tour_du_joueur == '\n'){
+              tour_du_joueur = tour_precedent;
+            }
+            else{
+              printf("Le joueur a decide de jouer.\n");
+            }
+          break;
+          }
+          case 2:{
+            options();
+            break;
+          }
+          default:{
+            printf("Erreur!\n");
+            options();
+            break;
+          }
       }
       else{
         printf("Le joueur a deja annule un tour.\n");
         options();
-      }
-      // LE JOUEUR DECIDE D'ANNULER SON TOUR
-      if (tour_du_joueur == '\n'){
-        tour_du_joueur = tour_precedent;
-      }
-      else{
-        printf("Le joueur a decide de jouer.\n");
       }
       break;
     }
