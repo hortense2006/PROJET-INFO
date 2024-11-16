@@ -3,6 +3,6 @@
 //
 #include <stdio.h>
 int bloque(){
-
+    /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
 }
 #include "blocage d'un pion.h"

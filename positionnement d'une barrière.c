@@ -6,7 +6,6 @@
 #include <bloques.h>
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
-// CODER : LA BARRIERE NE DOIT PAS BLOQUER LE PION ADVERSE
 int barriere() {
 
     // DEFINITION DES VARIABLES
@@ -72,7 +71,12 @@ int barriere() {
                         else{
                           printf("Votre choix est valide.\n");
                           /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
-                          bloque();
+                          if (){
+                            bloque();
+                            }
+                          else {
+                            printf("Votre choix est enregistre.\n");
+                          }
                         }
                     }
                     break;
@@ -112,7 +116,12 @@ int barriere() {
                        else{
                          printf("Votre choix est valide.\n");
                          /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
-                         bloque();
+                         if (){
+                            bloque();
+                            }
+                          else {
+                            printf("Votre choix est enregistre.\n");
+                          }
                        }
                      }
                     break;
