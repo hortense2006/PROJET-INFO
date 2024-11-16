@@ -104,6 +104,7 @@ int barriere() {
                          if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                          printf("Cette case est déjà occupée.\n");
                          printf("Faites un autre choix.\n");
+                         /*VERIFIER SI LE MOUVEMENT BLOQUE LE JOUEUR ADVERSE*/
                          barrieres();
                        else{
                          printf("Votre choix est enregistre.\n");
