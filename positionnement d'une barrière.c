@@ -6,11 +6,18 @@
 int barriere() {
 
     // DEFINITION DES VARIABLES
-    int nbbarrieres;
+    int nbbarrieres, nbbarrieres_total;
     int verticale;
     int horizontale;
     int chiffre3, chiffreg, chiffreh;
-
+    if (nbjoueurs == 2) {
+      nbbarrieres_total = 20;
+      joueur = (nbbarrieres_total)/2;
+    }
+    if (nbjoueurs == 4) {
+      nbbarrieres_total = 20;
+      joueur = (nbbarrieres_total)/4;
+    }
     // EST-CE-QUE C'EST POSSIBLE
     if (nbbarrieres != 0) {
         printf("Vous pouvez placer une barriere.\n");
