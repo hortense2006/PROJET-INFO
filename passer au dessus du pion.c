@@ -32,6 +32,8 @@ int au_dessus_du_pion(){
             printf("Cette case est déjà occupee par une barriere. Faites un autre choix.\n");
             pion();
         }
+    }
+    return 0;
 }
 
 #include "passer au dessus du pion.h"
