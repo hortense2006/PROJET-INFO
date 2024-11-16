@@ -13,34 +13,34 @@ int barriere() {
     int verticale;
     int horizontale;
     int chiffre3, chiffreg, chiffreh;
-    // NOMBRE DE BARRIERES TOTALES EN FONCTION DU PLATEAU
+    /* NOMBRE DE BARRIERES TOTALES EN FONCTION DU PLATEAU*/
     if ((taille_du_plateau = MAX) {
       nbbarrieres_total = 40;
     }
     if ((taille_du_plateau = MIN) {
          nbbarrieres_total = 20;
     }
-    // NOMBRE DE BARRIERES
+    /* NOMBRE DE BARRIERES*/
     if (nbjoueurs == 2) {
       nbbarrieres = (nbbarrieres_total)/2;
     }
     if (nbjoueurs == 4) {
       nbbarrieres = (nbbarrieres_total)/4;
     }
-    // EST-CE-QUE C'EST POSSIBLE
+    /* EST-CE-QUE C'EST POSSIBLE*/
     if (nbbarrieres != 0) {
         printf("Vous pouvez placer une barriere.\n");
     while (nbbarrieres != 0) {
-    // PRESENTATION DES OPTIONS DE DEPLACEMENT
+    /* PRESENTATION DES OPTIONS DE DEPLACEMENT*/
         printf("Vous  pouvez poser une barriere de 2 manieres:\n");
         printf("1 = La barriere est a l'horizontale\n",horizontale);
         printf("2 = La barriere est a la verticale\n",verticale);
 
-        // CHOISIR UN CHIFFRE RELIE A UNE OPTION DE DEPLACEMENT
+        /* CHOISIR UN CHIFFRE RELIE A UNE OPTION DE DEPLACEMENT*/
         printf("Selectionner un chiffre entre 1 et 2 :\n");
         scanf("%d",&chiffre3);
 
-        // DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI
+        /* DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI*/
         switch (chiffre3) {
             case 1: {
                 printf("Voulez-vous poser votre barriere a l'horizontale ?\n");
@@ -82,7 +82,7 @@ int barriere() {
                 switch (chiffreh) {
                   case 1: {
                     fd
-                   // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
+                   /* POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR*/
                      void gotoligcol(int lig2,int col2){
                           int lig2,col2;
                       // RESSOURCES
@@ -90,7 +90,7 @@ int barriere() {
                           mycoord.X =col2;
                           mycoord.Y = lig2;
                           SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
-                          // VERIFIER SI LE MOUVEMENT EST POSSIBLE
+                          /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                      }
                     break;
                   }
