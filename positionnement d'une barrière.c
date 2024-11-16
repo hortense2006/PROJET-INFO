@@ -10,6 +10,7 @@ int barriere() {
     int verticale;
     int horizontale;
     int chiffre3, chiffreg, chiffreh;
+    // NOMBRE DE BARRIERES
     if (nbjoueurs == 2) {
       nbbarrieres_total = 20;
       joueur = (nbbarrieres_total)/2;
