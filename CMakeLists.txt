@@ -27,4 +27,6 @@ add_executable(PROJET-INFO
         positionnement d'une barrière.c
         positionnement d'une barrière.h
         passer au dessus du pion.c
-        passer au dessus du pion.h)
+        passer au dessus du pion.h
+        "blocage d'un pion.c"
+        "blocage d'un pion.h")
