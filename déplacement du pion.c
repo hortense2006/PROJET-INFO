@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include <windows.h>
-// VERIFIER QUE LE MOUVEMENT CHOISI EST POSSIBLE
+
 int pion() {
     // DEFINITION DES VARIABLES
     int gauche  = 1;
@@ -11,6 +11,14 @@ int pion() {
     int devant = 3;
     int derriere = 4;
     int chiffre2;
+    int position_de_depart;
+    // POSITION INITIALE DU PION
+    if (nbjoueur ==2){
+      position_de_depart = ff
+    }
+    if (nbjoueur ==4){
+      position_de_depart = ff
+    }
     // PRESENTATION DES OPTIONS
     printf("Vous pouvez deplacer votre pion de 4 manieres :\n");
 
