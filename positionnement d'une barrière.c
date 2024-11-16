@@ -3,15 +3,23 @@
 //
 #include <stdio.h>
 #include <windows.h>
+#define MAX taille_plateau_max
+#define MIN taille_plateau_min
 int barriere() {
 
     // DEFINITION DES VARIABLES
     int nbbarrieres;
-    int nbbarrieres_total = 20;
+    int nbbarrieres_total;
     int verticale;
     int horizontale;
     int chiffre3, chiffreg, chiffreh;
-
+    // NOMBRE DE BARRIERES TOTALES EN FONCTION DU PLATEAU
+    if ((taille_du_plateau = MAX) {
+      nbbarrieres_total = 40;
+    }
+    if ((taille_du_plateau = MIN) {
+         nbbarrieres_total = 20;
+    }
     // NOMBRE DE BARRIERES
     if (nbjoueurs == 2) {
       nbbarrieres = (nbbarrieres_total)/2;
