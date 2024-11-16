@@ -62,7 +62,14 @@ int barriere() {
                         mycoord.X =col1;
                         mycoord.Y = lig1;
                         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
-                        // VERIFIER SI LE MOUVEMENT EST POSSIBLE
+                        /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
+                        if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
+                          printf("Cette case est déjà occupée.\n");
+                          printf("Faites un autre choix.\n");
+                          barrieres();
+                        else{
+                          printf("Votre choix est enregistre.\n");
+                        }
                     }
                     break;
                     }
@@ -94,6 +101,13 @@ int barriere() {
                           mycoord.Y = lig2;
                           SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
                           /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
+                         if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
+                         printf("Cette case est déjà occupée.\n");
+                         printf("Faites un autre choix.\n");
+                         barrieres();
+                       else{
+                         printf("Votre choix est enregistre.\n");
+                       }
                      }
                     break;
                   }
