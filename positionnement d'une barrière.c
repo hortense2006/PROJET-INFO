@@ -13,6 +13,7 @@ int barriere() {
     int verticale;
     int horizontale;
     int chiffre3, chiffreg, chiffreh;
+
     /* NOMBRE DE BARRIERES TOTALES EN FONCTION DU PLATEAU*/
     if ((taille_du_plateau = MAX) {
       nbbarrieres_total = 40;
@@ -20,6 +21,7 @@ int barriere() {
     if ((taille_du_plateau = MIN) {
          nbbarrieres_total = 20;
     }
+
     /* NOMBRE DE BARRIERES*/
     if (nbjoueurs == 2) {
       nbbarrieres = (nbbarrieres_total)/2;
@@ -27,6 +29,7 @@ int barriere() {
     if (nbjoueurs == 4) {
       nbbarrieres = (nbbarrieres_total)/4;
     }
+
     /* EST-CE-QUE C'EST POSSIBLE*/
     if (nbbarrieres != 0) {
         printf("Vous pouvez placer une barriere.\n");
@@ -112,9 +115,10 @@ int barriere() {
     }
 
     }
-    else
+    else{
         printf("Vous n'avez plus de barrieres.\n");
-    options();
+        options();
+    }
     return 0;
 }
 #include "positionnement d'une barrière.h"
