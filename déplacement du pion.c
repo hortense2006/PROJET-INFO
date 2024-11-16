@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include <windows.h>
+// VERIFIER QUE LE MOUVEMENT CHOISI EST POSSIBLE
 int pion() {
     // DEFINITION DES VARIABLES
     int gauche  = 1;
@@ -31,6 +32,7 @@ int pion() {
             scanf("%d",&gauche);
             switch (gauche) {
               case 1: {
+                // VERIFIER QUE LE MOUVEMENT EST POSSIBLE
                 if (COORD mycoord != 0){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
@@ -64,6 +66,7 @@ int pion() {
             scanf("%d",&droite);
             switch (droite) {
               case 1: {
+                // VERIFIER QUE LE MOUVEMENT EST POSSIBLE
                 if (COORD mycoord !=1){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
@@ -97,6 +100,7 @@ int pion() {
             scanf("%d",&devant);
             switch (devant) {
               case 1: {
+                // VERIFIER QUE LE MOUVEMENT EST POSSIBLE
                 if (COORD mycoord !=1){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
@@ -130,6 +134,7 @@ int pion() {
             scanf("%d",&derriere);
             switch (derriere) {
               case 1: {
+                // VERIFIER QUE LE MOUVEMENT EST POSSIBLE
                 if (COORD mycoord !=1){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
