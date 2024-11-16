@@ -14,8 +14,8 @@ int barriere() {
     // EST-CE-QUE C'EST POSSIBLE
     if (nbbarrieres != 0) {
         printf("Vous pouvez placer une barriere.\n");
-
-        // PRESENTATION DES OPTIONS DE DEPLACEMENT
+    while (nbbarrieres != 0) {
+    // PRESENTATION DES OPTIONS DE DEPLACEMENT
         printf("Vous  pouvez poser une barriere de 2 manieres:\n");
         printf("1 = La barriere est a l'horizontale\n",horizontale);
         printf("2 = La barriere est a la verticale\n",verticale);
@@ -92,9 +92,11 @@ int barriere() {
             }
         }
     }
+
+    }
     else
         printf("Vous n'avez plus de barrieres.\n");
-
+    options();
     return 0;
 }
 #include "positionnement d'une barrière.h"
