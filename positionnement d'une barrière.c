@@ -5,6 +5,7 @@
 #include <windows.h>
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
+// CODER : LA BARRIERE NE DOIT PAS BLOQUER LE PION ADVERSE
 int barriere() {
 
     // DEFINITION DES VARIABLES
@@ -104,7 +105,6 @@ int barriere() {
                          if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                          printf("Cette case est déjà occupée.\n");
                          printf("Faites un autre choix.\n");
-                         /*VERIFIER SI LE MOUVEMENT BLOQUE LE JOUEUR ADVERSE*/
                          barrieres();
                        else{
                          printf("Votre choix est enregistre.\n");
