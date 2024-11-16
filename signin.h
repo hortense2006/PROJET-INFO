@@ -5,4 +5,10 @@
 #ifndef SIGNIN_H
 #define SIGNIN_H
 int signin();
+// ASSOCIE LE MOT DE PASSE, LE NOM DU JOUEUR ET SON SCORE.
+struct Joueur
+{
+  char mdp, user;
+  int score;
+};
 #endif //SIGNIN_H
