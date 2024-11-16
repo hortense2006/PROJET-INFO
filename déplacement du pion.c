@@ -11,13 +11,18 @@ int pion() {
     int devant = 3;
     int derriere = 4;
     int chiffre2;
-    int position_de_depart;
+    int position_initiale_x;
+    int position_initiale_y;
     // POSITION INITIALE DU PION
     if (nbjoueur ==2){
-      position_de_depart = ff
-    }
-    if (nbjoueur ==4){
-      position_de_depart = ff
+      void gotoligcol(int lig2,int col2){
+        int lig2 = 1;
+        int col2 = E;
+        COORD mycoord;
+        mycoord.X =col2;
+        mycoord.Y = lig2;
+        position_initiale_x= mycoord.X;
+        position_initiale_y= mycoord.Y;
     }
     // PRESENTATION DES OPTIONS
     printf("Vous pouvez deplacer votre pion de 4 manieres :\n");
