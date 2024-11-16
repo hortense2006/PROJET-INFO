@@ -67,11 +67,12 @@ int barriere() {
                     break;
                     }
                   case 2: {
-                    fdg
+                    options();
                     break;
                   }
                     default:{
                       printf("Erreur!\n");
+                      options();
                       break;
                     }
                 }
@@ -84,7 +85,6 @@ int barriere() {
                 scanf("%d",&chiffreh);
                 switch (chiffreh) {
                   case 1: {
-                    fd
                    /* POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR*/
                      void gotoligcol(int lig2,int col2){
                           int lig2,col2;
@@ -98,11 +98,12 @@ int barriere() {
                     break;
                   }
                   case 2: {
-                     dd
+                     options();
                      break;
                   }
                     default:{
                       printf("Erreur!\n");
+                      options();
                       break;
                     }
                 }
