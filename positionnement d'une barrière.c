@@ -6,18 +6,18 @@
 int barriere() {
 
     // DEFINITION DES VARIABLES
-    int nbbarrieres, nbbarrieres_total;
+    int nbbarrieres;
+    int nbbarrieres_total = 20;
     int verticale;
     int horizontale;
     int chiffre3, chiffreg, chiffreh;
+
     // NOMBRE DE BARRIERES
     if (nbjoueurs == 2) {
-      nbbarrieres_total = 20;
-      joueur = (nbbarrieres_total)/2;
+      nbbarrieres = (nbbarrieres_total)/2;
     }
     if (nbjoueurs == 4) {
-      nbbarrieres_total = 20;
-      joueur = (nbbarrieres_total)/4;
+      nbbarrieres = (nbbarrieres_total)/4;
     }
     // EST-CE-QUE C'EST POSSIBLE
     if (nbbarrieres != 0) {
