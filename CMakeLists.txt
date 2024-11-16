@@ -29,4 +29,6 @@ add_executable(PROJET-INFO
         passer au dessus du pion.c
         passer au dessus du pion.h
         "blocage d'un pion.c"
-        "blocage d'un pion.h")
+        "blocage d'un pion.h"
+        bloquage d'un pion.c
+        blocage d'un pion.h)
