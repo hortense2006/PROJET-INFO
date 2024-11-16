@@ -59,6 +59,7 @@ int barriere() {
                         mycoord.X =col1;
                         mycoord.Y = lig1;
                         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                        // VERIFIER SI LE MOUVEMENT EST POSSIBLE
                     }
                     break;
                     }
@@ -89,6 +90,7 @@ int barriere() {
                           mycoord.X =col2;
                           mycoord.Y = lig2;
                           SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
+                          // VERIFIER SI LE MOUVEMENT EST POSSIBLE
                      }
                     break;
                   }
