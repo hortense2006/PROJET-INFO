@@ -24,7 +24,7 @@ int pion() {
         position_initiale_x= mycoord.X;
         position_initiale_y= mycoord.Y;
     }
-    // PRESENTATION DES OPTIONS
+    /* PRESENTATION DES OPTIONS*/
     printf("Vous pouvez deplacer votre pion de 4 manieres :\n");
 
     printf("1 = Aller vers la gauche.\n",gauche);
@@ -32,7 +32,7 @@ int pion() {
     printf("3 = Avancer d'une case.\n",devant);
     printf("4 = Reculer d'une case.\n",derriere);
 
-    // CHOIX D'UN CHIFFRE RELIE A UNE OPTION DE DEPLACEMENT
+    /* CHOIX D'UN CHIFFRE RELIE A UNE OPTION DE DEPLACEMENT*/
 
     printf("Selectionner un chiffre entre 1 et 4:",chiffre2);
     scanf("%d",&chiffre2);
@@ -47,7 +47,7 @@ int pion() {
               case 1: {
                 void gotoligcol(int lig2,int col2){
                   int lig2,col2;
-                  // RESSOURCES
+                  /* RESSOURCES*/
                   COORD mycoord;
                   mycoord.X =col2;
                   mycoord.Y = lig2;
@@ -81,19 +81,22 @@ int pion() {
             scanf("%d",&droite);
             switch (droite) {
               case 1: {
-                // VERIFIER QUE LE MOUVEMENT EST POSSIBLE
-                if (COORD mycoord !=1){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
-                     // RESSOURCES
+                     /* RESSOURCES*/
                     COORD mycoord;
                     mycoord.X =col2;
                     mycoord.Y = lig2;
                     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
                   }
-                }
-                else {
+                /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
+                if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
+                  printf("Cette case est déjà occupée.\n");
+                  printf("Faites un autre choix.\n");
                   pion();
+                else{
+                  printf("Votre choix est enregistre.\n");
+                }
                 break;
               }
               case 2: {
@@ -115,8 +118,6 @@ int pion() {
             scanf("%d",&devant);
             switch (devant) {
               case 1: {
-                // VERIFIER QUE LE MOUVEMENT EST POSSIBLE
-                if (COORD mycoord !=1){
                   void gotoligcol(int lig2,int col2){
                     int lig2,col2;
                      // RESSOURCES
@@ -125,9 +126,15 @@ int pion() {
                     mycoord.Y = lig2;
                     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord);
                   }
-                }
-                else {
-                  pion();
+                  /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
+                  if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
+                    printf("Cette case est déjà occupée.\n");
+                    printf("Faites un autre choix.\n");
+                    pion();
+                  }
+                  else{
+                    printf("Votre choix est enregistre.\n");
+                  }
                 break;
               }
               case 2: {
