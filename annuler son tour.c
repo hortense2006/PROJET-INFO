@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include "options.h"
+#include "annuler son tour.h"
 #define MIN 2
 #define MAX 4
 int annuler(){
@@ -16,7 +17,7 @@ int annuler(){
   printf("Saisissez un nombre.\n");
   scanf("%d",&chiffrei);
   switch (chiffrei){
-    case 1:{
+    case 1: {
       // ON VERIFIE QUE LE JOUEUR N'A PAS DEJA ANNULE UN TOUR
       if (tour_du_joueur != tour_precedent ){
         printf("Le joueur n'a pas encore annule un tour.\n");
@@ -34,7 +35,7 @@ int annuler(){
             else{
               printf("Le joueur a decide de jouer.\n");
             }
-          break;
+            break;
           }
           case 2:{
             options();
@@ -45,14 +46,15 @@ int annuler(){
             options();
             break;
           }
+        }
+        else {
+          printf("Le joueur a deja annule un tour.\n");
+          options();
+        }
+        break;
       }
-      else {
-        printf("Le joueur a deja annule un tour.\n");
-        options();
-      }
-      break;
     }
-     case 2:{
+    case 2 :{
        options();
        break;
      }
@@ -64,4 +66,4 @@ int annuler(){
   return 0;
 }
 
-#include "annuler son tour.h"
+
