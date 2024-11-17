@@ -8,7 +8,7 @@
 #include <options.h>
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
-int barriere(void) {
+void barriere() {
 
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres;
@@ -70,7 +70,7 @@ int barriere(void) {
                         if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                           printf("Cette case est deja occupee.\n");
                           printf("Faites un autre choix.\n");
-                          barriere();
+                          void barriere();
                         else{
                           printf("Votre choix est valide.\n");
                           /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
@@ -115,7 +115,7 @@ int barriere(void) {
                          if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                          printf("Cette case est deja occupee.\n");
                          printf("Faites un autre choix.\n");
-                         barriere();
+                         void barriere();
                        else{
                          printf("Votre choix est valide.\n");
                          /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/

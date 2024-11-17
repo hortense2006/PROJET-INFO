@@ -5,7 +5,7 @@
 #include <options.h>
 #define MIN 2
 #define MAX 4
-int annuler(){
+void annuler(void){
   // DECLARATION DES VARIABLES
   int tour_du_joueur;
   int tour_precedent;
