@@ -8,19 +8,19 @@
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
 /*DEFINITION DE TAILLE DU PLATEAU MAX*/
-struct plateaumax {
+struct taille_plateau_max {
   int longueur_max = 12;
   int largeur_max = 12;
 };
-struct plateaumin {
+struct taille_plateau_min {
   int longueur_min = 9;
   int largeur_min = 9;
 };
 int barriere() {
 
     /*DEFINITION DES VARIABLES*/
-    int nbbarrieres;
-    int nbbarrieres_total;
+    int nbbarrieres,nbbarrieres_total;
+    int nbjoueurs ;
     int taille_du_plateau;
     int nbjoueurs;
     int verticale;
