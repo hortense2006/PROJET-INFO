@@ -8,7 +8,7 @@
 #include <options.h>
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
-int barriere() {
+int barriere(void) {
 
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres;
