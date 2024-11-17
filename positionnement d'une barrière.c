@@ -7,6 +7,15 @@
 #include "positionnement d'une barrière.h"
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
+/*DEFINITION DE TAILLE DU PLATEAU MAX*/
+struct plateaumax {
+  int longueur_max = 12;
+  int largeur_max = 12;
+};
+struct plateaumin {
+  int longueur_min = 9;
+  int largeur_min = 9;
+};
 int barriere() {
 
     /*DEFINITION DES VARIABLES*/
