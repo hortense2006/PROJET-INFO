@@ -15,6 +15,7 @@ int pion() {
     int nbjoueur;
     int position_initiale_x;
     int position_initiale_y;
+
     // POSITION INITIALE DU PION
     if (nbjoueur ==2){
       void gotoligcol(int lig2,int col2){
@@ -25,6 +26,7 @@ int pion() {
         mycoord.Y = lig2;
         position_initiale_x= mycoord.X;
         position_initiale_y= mycoord.Y;
+      }
     }
     /* PRESENTATION DES OPTIONS*/
     printf("Vous pouvez deplacer votre pion de 4 manieres :\n");
