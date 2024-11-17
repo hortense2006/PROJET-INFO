@@ -71,7 +71,7 @@ int barriere() {
                         else{
                           printf("Votre choix est valide.\n");
                           /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
-                          if (){
+                          if (/*LA BARRIERE EST A COTE D'UN PION*/){
                             bloque();
                             }
                           else {
