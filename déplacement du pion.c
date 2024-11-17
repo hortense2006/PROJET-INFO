@@ -37,35 +37,36 @@ int pion() {
     scanf("%d",&chiffre2);
     switch (chiffre2) {
         case 1: {
-            printf("Voulez-vous aller d'une case vers la gauche ?\n");
-            printf("1 = Oui\n");
-            printf("2 = Non\n");
-            printf("Selectionner soit 1 soit 2:\n");
-            scanf("%d",&gauche);
-            switch (gauche) {
-              case 1: {
-                printf("Saisissez les nouvelles coordonnees x et y du pion:\n");
-                scanf("%d""%d",&position_x,&position_y);
-
-                /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
-                if (position_x !='\n'&& position_y !='\n') {
-                  printf("Cette case est déjà occupee.\n");
-                  au_dessus_du_pion();
-                else{
-                  printf("Votre choix est enregistre.\n");
-                }
-                break;
+          printf("Voulez-vous aller d'une case vers la gauche ?\n");
+          printf("1 = Oui\n");
+          printf("2 = Non\n");
+          printf("Selectionner soit 1 soit 2:\n");
+          scanf("%d",&gauche);
+          switch (gauche) {
+            case 1: {
+              printf("Saisissez les nouvelles coordonnees x et y du pion:\n");
+              scanf("%d""%d",&position_x,&position_y);
+              /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
+              if (position_x !='\n'&& position_y !='\n') {
+                printf("Cette case est déjà occupee.\n");
+                au_dessus_du_pion();
               }
-              case 2: {
-                pion();
-                break;
+              else{
+                printf("Votre choix est enregistre.\n");
               }
-              default: {
-                printf("Erreur!\n");
-                pion();
-                break;
-              }
+              break;
             }
+            case 2: {
+              pion();
+              break;
+            }
+            default: {
+              printf("Erreur!\n");
+              pion();
+              break;
+            }
+          }
+        }
         case 2: {
             printf("Voulez-vous aller d'une case vers la droite ?\n");
             printf("1 = Oui\n");
@@ -145,6 +146,7 @@ int pion() {
                 if (position_x !='\n'&& position_y !='\n') {
                   printf("Cette case est déjà occupee.\n");
                   au_dessus_du_pion();
+                }
                 else{
                   printf("Votre choix est enregistre.\n");
                 }

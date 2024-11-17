@@ -58,7 +58,7 @@ int barriere() {
             scanf("%d",&chiffreg);
             switch (chiffreg) {
               case 1: {
-                // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
+                // POSITIONNEMENT DE LA BARRIERE
                 printf("Saisissez les nouvelles coordonnees x et y du pion:\n");
                 scanf("%d""%d""%d",&ligne_1,&colonne_1,&colonne_2);
 
