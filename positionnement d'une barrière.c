@@ -19,10 +19,10 @@ int barriere() {
     int chiffre3, chiffreg, chiffreh;
 
     /* NOMBRE DE BARRIERES TOTALES EN FONCTION DU PLATEAU*/
-    if ((taille_du_plateau = MAX) {
+    if (taille_du_plateau = MAX) {
       nbbarrieres_total = 40;
     }
-    if ((taille_du_plateau = MIN) {
+    if (taille_du_plateau = MIN) {
          nbbarrieres_total = 20;
     }
 

@@ -5,7 +5,7 @@
 #include <windows.h>
 #include "passer au dessus du pion.h"
 
-void pion(void) {
+int pion() {
     // DEFINITION DES VARIABLES
     int gauche  = 1;
     int droite = 2;
