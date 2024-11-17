@@ -10,8 +10,7 @@ int passer(){
   int nbjoueur;
   int joueur;
   int tour_du_joueur;
-  int chiffrei;
-  int i;
+
   // TROIS CAS DE FIGURE POSSIBLES
  if(nbjoueur > MAX && nbjoueur < MIN){
    printf("Erreur !\n");

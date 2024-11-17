@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <windows.h>
 #include <bloque.h>
+#include <barriere.h>
+#include <options.h>
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
 int barriere() {
@@ -11,6 +13,8 @@ int barriere() {
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres;
     int nbbarrieres_total;
+    int taille_du_plateau;
+    int nbjoueurs;
     int verticale;
     int horizontale;
     int chiffre3, chiffreg, chiffreh;
@@ -54,7 +58,6 @@ int barriere() {
                 scanf("%d",&chiffreg);
                 switch (chiffreg) {
                   case 1: {
-                    qf
                     // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
                     void gotoligcol(int lig1,int col1){
                        int lig1,col1;
@@ -67,7 +70,7 @@ int barriere() {
                         if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                           printf("Cette case est deja occupee.\n");
                           printf("Faites un autre choix.\n");
-                          barrieres();
+                          barriere();
                         else{
                           printf("Votre choix est valide.\n");
                           /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
@@ -112,7 +115,7 @@ int barriere() {
                          if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                          printf("Cette case est deja occupee.\n");
                          printf("Faites un autre choix.\n");
-                         barrieres();
+                         barriere();
                        else{
                          printf("Votre choix est valide.\n");
                          /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/

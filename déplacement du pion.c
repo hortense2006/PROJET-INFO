@@ -12,6 +12,7 @@ int pion() {
     int devant = 3;
     int derriere = 4;
     int chiffre2;
+    int nbjoueur;
     int position_initiale_x;
     int position_initiale_y;
     int possible;

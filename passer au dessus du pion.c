@@ -2,8 +2,10 @@
 // Created by galti on 16/11/2024.
 //
 #include <stdio.h>
+#include <windows.h>
 #include <pion.h>
 int au_dessus_du_pion(){
+    int possible;
     /* PASSER AU DESSUS SI C'EST UN PION*/
     if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
       if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)== /*PION*/) {
