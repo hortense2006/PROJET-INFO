@@ -4,15 +4,15 @@
 #include <stdio.h>
 #include <login.h>
 // CREATION D'UN COMPTE
-    int signin()
-    {
-        // DEFINITION DES VARIABLES
-        int user, chiffreb, chiffrec;
-        char mdp;
-        // PSEUDO
-        printf("Choisissez un pseudo:\n");
-        scanf("%d", &user);
-        while (user != '\n')
+int signin()
+{
+    // DEFINITION DES VARIABLES
+    int user, chiffreb, chiffrec;
+    char mdp;
+    // PSEUDO
+    printf("Choisissez un pseudo:\n");
+    scanf("%d", &user);
+    while (user != '\n'){
         if (user == '\n') // on vérifie si le pseudo existe déjà.
             {
           printf("Votre nom d'utilisateur a ete enregistre.\n");
@@ -45,30 +45,29 @@
                         }
                     }
                     break;
-                    }
+               }
                case 2:{
                     printf("Vous devez choisir un autre pseudo.\n");
                     signin();
                     break;
-                    }
+               }
                default:{
                     printf("Erreur\n");
                     signin();
                     break;
-                  }
-                }
+               }
             }
         }
+    }
 
-        // MOT DE PASSE
-        printf("Choisissez à présent un mot de passe.");
-        scanf("%c", &mdp);
-        if (mdp < 12 && mdp > 12)  {
-            printf("Votre mot de passe n'as pas 12 caracteres.");
-        }
-        else {
-            printf("Votre mot de passe a été enregistré.");
-        }
+// MOT DE PASSE
+    printf("Choisissez à présent un mot de passe.");
+    scanf("%c", &mdp);
+    if (mdp < 12 && mdp > 12)  {
+         printf("Votre mot de passe n'as pas 12 caracteres.");
+    }
+    else {
+        printf("Votre mot de passe a été enregistré.");
     }
  return 0;
 }
