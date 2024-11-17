@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int score(int S)
+// S = BOUTON ON/OFF
 {
     if(S==1)
     {
@@ -10,14 +11,14 @@ int score(int S)
         int mTop[1][25];
         char mP[1][25];
         int mS[1][25];
-        mT[0][0] = "Top     ";
-        mT[1][0] = "Player  ";
-        mT[2][0] = "Score   ";
+        mT[0][0] = "Top";
+        mT[1][0] = "Player";
+        mT[2][0] = "Score";
         for (ny = 0; ny <= y; ny++)
         {
             mTop[0][ny] = ny +1; //appelle top
             mP[1][ny] = "Pseudo"; //appelle pseudo
-            mS[1][ny] =      0; //appelle score
+            mS[1][ny] = 0; //appelle score
         }
     }
 }
