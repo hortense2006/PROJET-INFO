@@ -37,23 +37,23 @@ int annuler(){
           break;
           }
           case 2:{
-            options();
+            void options();
             break;
           }
           default:{
             printf("Erreur!\n");
-            options();
+            void options();
             break;
           }
       }
       else {
         printf("Le joueur a deja annule un tour.\n");
-        options();
+        void options();
       }
       break;
     }
      case 2:{
-       options();
+       void options();
        break;
      }
      default:{

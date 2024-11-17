@@ -20,12 +20,12 @@ int au_dessus_du_pion(){
                   break;
               }
               case 2: {
-                  pion();
+                  void pion();
                   break;
               }
               default:{
-                  printf("Erreur!\n")
-                  pion();
+                  printf("Erreur!\n");
+                  void pion();
                   break;
               }
           }
@@ -33,7 +33,7 @@ int au_dessus_du_pion(){
       else {
           /* SINON C'EST UNE BARRIERE*/
           printf("Cette case est déjà occupee par une barriere. Faites un autre choix.\n");
-          pion();
+          void pion();
       }
     }
     return 0;

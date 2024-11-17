@@ -14,19 +14,22 @@ int passer(){
   // TROIS CAS DE FIGURE POSSIBLES
  if(nbjoueur > MAX && nbjoueur < MIN){
    printf("Erreur !\n");
+   void options();
    }
-   else if (nbjoueur < MAX && nbjoueur > MIN){
-     printf("Erreur !\n");
+ else if (nbjoueur < MAX && nbjoueur > MIN){
+   printf("Erreur !\n");
+   void options();
   }
-  else (nbjoueur  == MAX || nbjoueur == MIN){
-    // LE JOUEUR DECIDE DE PASSER SON TOUR
+ else (nbjoueur  == MAX || nbjoueur == MIN){
+ // LE JOUEUR DECIDE DE PASSER SON TOUR
     if (tour_du_joueur == '\n'){
       joueur = joueur +1;
     }
     else{
       printf("Le joueur a decide de jouer.\n");
+      void options();
     }
-  }
+ }
   return 0;
 }
 #include "passer son tour.h"
