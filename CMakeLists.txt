@@ -12,7 +12,9 @@ add_executable(PROJET-INFO
         "passer son tour.c"
         "positionnement d'une barrière.c"
         "annuler son tour.c"
+        "options.c"
         options.c
+        options.h
         annuler son tour.c
         annuler son tour.h
         blocage d'un pion.c

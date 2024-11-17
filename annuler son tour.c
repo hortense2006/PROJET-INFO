@@ -7,12 +7,9 @@
 #define MAX 4
 int annuler(){
   // DECLARATION DES VARIABLES
-  int nbjoueur;
-  int joueur;
   int tour_du_joueur;
   int tour_precedent;
   int chiffrei, chiffreia;
-  int i;
   printf("Voulez-vous annuler votre tour precedent?\n");
   printf("1. Oui\n");
   printf("2. Non\n");
@@ -49,7 +46,7 @@ int annuler(){
             break;
           }
       }
-      else{
+      else {
         printf("Le joueur a deja annule un tour.\n");
         options();
       }

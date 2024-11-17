@@ -8,7 +8,7 @@ int bloque(){
     /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
   switch (cote){
     case 1:{
-      cote = devant
+      cote = devant;
       if (cote != '\n'){
         printf("Le cote est deja occupe.\n");
         compteur = compteur + 1;
@@ -20,7 +20,7 @@ int bloque(){
       break;
     }
       case 2:{
-        cote = derriere
+        cote = derriere;
         if (cote != '\n'){
           printf("Le cote est deja occupe.\n");
           compteur = compteur + 1;
@@ -31,7 +31,7 @@ int bloque(){
         break;
       }
         case 3:{
-          cote = gauche
+          cote = gauche;
           if (cote != '\n'){
             printf("Le cote est deja occupe.\n");
             compteur = compteur + 1;
@@ -43,7 +43,7 @@ int bloque(){
           break;
         }
           case 4:{
-            cote = droite
+            cote = droite;
             if (cote != '\n'){
               printf("Le cote est deja occupe.\n");
               compteur = compteur + 1;
