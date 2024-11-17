@@ -28,10 +28,10 @@ int barriere() {
 
     /* NOMBRE DE BARRIERES*/
     if (nbjoueurs == 2) {
-      nbbarrieres = (nbbarrieres_total)/2;
+      nbbarrieres = nbbarrieres_total/2;
     }
     if (nbjoueurs == 4) {
-      nbbarrieres = (nbbarrieres_total)/4;
+      nbbarrieres = nbbarrieres_total/4;
     }
 
     /* EST-CE-QUE C'EST POSSIBLE*/

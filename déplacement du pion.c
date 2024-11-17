@@ -20,7 +20,7 @@ int pion() {
     if (nbjoueur ==2){
       void gotoligcol(int lig2,int col2){
         int lig2 = 1;
-        int col2 = E;
+        int col2 = 'E';
         COORD mycoord;
         mycoord.X =col2;
         mycoord.Y = lig2;

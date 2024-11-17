@@ -5,8 +5,9 @@
 #include "options.h"
 int bloque(){
   int cote, compteur = 0;
+  int devant, derriere, gauche, droite;
     /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
-  switch (cote){
+  switch (cote) {
     case 1:{
       cote = devant;
       if (cote != '\n'){
@@ -19,41 +20,42 @@ int bloque(){
       }
       break;
     }
-      case 2:{
-        cote = derriere;
-        if (cote != '\n'){
-          printf("Le cote est deja occupe.\n");
-          compteur = compteur + 1;
-        }
-        else{
-          printf("Le cote n'est pas occupe.\n");
-        }
-        break;
+    case 2:{
+      cote = derriere;
+      if (cote != '\n'){
+        printf("Le cote est deja occupe.\n");
+        compteur = compteur + 1;
       }
-        case 3:{
-          cote = gauche;
-          if (cote != '\n'){
-            printf("Le cote est deja occupe.\n");
-            compteur = compteur + 1;
-          }
-          else{
-            printf("Le cote n'est pas occupe.\n");
-            compteur = compteur;
-          }
-          break;
-        }
-          case 4:{
-            cote = droite;
-            if (cote != '\n'){
-              printf("Le cote est deja occupe.\n");
-              compteur = compteur + 1;
-            }
-            else {
-              printf("Le cote n'est pas occupe.\n");
-              compteur = compteur;
-            }
-            break;
-          }
+      else{
+        printf("Le cote n'est pas occupe.\n");
+      }
+      break;
+    }
+    case 3:{
+      cote = gauche;
+      if (cote != '\n'){
+        printf("Le cote est deja occupe.\n");
+        compteur = compteur + 1;
+      }
+      else{
+        printf("Le cote n'est pas occupe.\n");
+        compteur = compteur;
+      }
+      break;
+    }
+    case 4:{
+      cote = droite;
+      if (cote != '\n'){
+        printf("Le cote est deja occupe.\n");
+        compteur = compteur + 1;
+      }
+      else {
+        printf("Le cote n'est pas occupe.\n");
+        compteur = compteur;
+      }
+      break;
+    }
+  }
   printf("Il y a %d barrieres.\n", compteur);
   scanf("%d",&compteur);
     if (compteur != 3){

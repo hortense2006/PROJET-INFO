@@ -10,8 +10,8 @@ int  options()
 {
     // DEFINITION DES VARIABLES
     int options;
-    int deplacer_le_pion =1 ;
-    int poser_une_barriere = 2;
+    int pion = 1 ;
+    int barriere = 2;
     int passer = 3;
     int annuler = 4;
     int chiffre1, chiffrec, chiffred, chiffree, chiffref;
