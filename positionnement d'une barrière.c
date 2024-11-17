@@ -118,6 +118,8 @@ int barriere() {
                          /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
                          if (){
                             bloque();
+                            printf("Faites un autre choix.\n");
+                            options();
                             }
                           else {
                             printf("Votre choix est enregistre.\n");
