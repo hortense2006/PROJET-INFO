@@ -14,9 +14,9 @@ int pion() {
     int chiffre2;
     int nbjoueur;
     int position_initiale_x;
-    int position_x;
+    int position_x,positionx1,positionx2;
     int position_initiale_y;
-    int position_y;
+    int position_y,positiony1,positiony2;
 
     // POSITION INITIALE DU PION
     if (nbjoueur ==2){
