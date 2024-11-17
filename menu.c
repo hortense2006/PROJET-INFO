@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <login.h>
-#include <signin.h>
-#include <nouvelle_partie.h>
-#include 'reprendre_une_partie.h'
-#include <aide.h>
-#include <score.h>
-#include <accueil.h>
+#include "login.h"
+#include "signin.h"
+#include "nouvelle partie.h"
+#include "reprendre une partie.h"
+#include "aide.h"
+#include "score.h"
+#include "accueil.h"
 
 // MENU DU JEU
 int menu()
