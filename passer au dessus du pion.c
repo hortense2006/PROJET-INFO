@@ -2,7 +2,6 @@
 // Created by galti on 16/11/2024.
 //
 #include <stdio.h>
-#include <windows.h>
 #include "options.h"
 #include "passer au dessus du pion.h"
 int au_dessus_du_pion() {
