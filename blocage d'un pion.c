@@ -55,7 +55,8 @@ int bloque(){
             }
             break;
           }
-
+  printf("Il y a %d barrieres.\n", compteur);
+  scanf("%d",&compteur);
     if (compteur != 3){
       printf("Il y a moins de 3 barrieres, le choix est donc valide.\n");
     }
