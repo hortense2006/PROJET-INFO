@@ -19,7 +19,6 @@ int menu()
     int aide = 4;
     int score = 3;
     int next=0, choice=0;
-    int exit=0, exit2=0, exit3=0, exit4=0;
     int choice1,choice2,choice3,choice4;
 
 
