@@ -17,14 +17,14 @@ int options()
     int chiffre1, chiffrec, chiffred, chiffree, chiffref;
 
     // PRESENTATION DES OPTIONS DE JEU
-    printf("Voici vos options de jeu\n",options);
-    printf("1= Deplacer votre pion\n", deplacer_le_pion);
-    printf("2= Poser une barriere\n",poser_une_barriere);
-    printf("3= Passer votre tour\n",passer);
-    printf("4= Annuler votre coup precedent\n",annuler);
+    printf("Voici vos options de jeu\n");
+    printf("1= Deplacer votre pion\n");
+    printf("2= Poser une barriere\n");
+    printf("3= Passer votre tour\n");
+    printf("4= Annuler votre coup precedent\n");
 
     // CHOISIR UN CHIFFRE RELIE A UNE OPTION DE JEU
-    printf("Selectionner un chiffre entre 1 et 4 :",chiffre1);
+    printf("Selectionner un chiffre entre 1 et 4 :");
     scanf("%d",&chiffre1);
 
     // DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI
