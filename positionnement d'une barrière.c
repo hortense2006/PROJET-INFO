@@ -75,7 +75,7 @@ int barriere() {
                           printf("Votre choix est valide.\n");
                           /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
                           if (/*LA BARRIERE EST A COTE D'UN PION*/){
-                            bloque();
+                            void bloque();
                             }
                           else {
                             printf("Votre choix est enregistre.\n");
@@ -85,12 +85,12 @@ int barriere() {
                     break;
                     }
                   case 2: {
-                    options();
+                    void options();
                     break;
                   }
                     default:{
                       printf("Erreur!\n");
-                      options();
+                      void options();
                       break;
                     }
                 }
@@ -120,9 +120,9 @@ int barriere() {
                          printf("Votre choix est valide.\n");
                          /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
                          if (){
-                            bloque();
+                            void bloque();
                             printf("Faites un autre choix.\n");
-                            options();
+                            void options();
                             }
                           else {
                             printf("Votre choix est enregistre.\n");
@@ -132,12 +132,12 @@ int barriere() {
                     break;
                   }
                   case 2: {
-                     options();
+                     void options();
                      break;
                   }
                     default:{
                       printf("Erreur!\n");
-                      options();
+                      void options();
                       break;
                     }
                 }
@@ -152,7 +152,7 @@ int barriere() {
     }
     else{
         printf("Vous n'avez plus de barrieres.\n");
-        options();
+        void options();
     }
     return 0;
 }
