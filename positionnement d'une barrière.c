@@ -12,6 +12,7 @@ struct taille_plateau_max {
   int longueur_max = 12;
   int largeur_max = 12;
 };
+/*DEFINITION DE TAILLE DU PLATEAU MIN*/
 struct taille_plateau_min {
   int longueur_min = 9;
   int largeur_min = 9;
