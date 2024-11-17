@@ -3,8 +3,7 @@
 //
 #include <stdio.h>
 #include <windows.h>
-#include "au_dessus_du_pion.h"
-#include "pion.h"
+#include "passer au dessus du pion.h"
 
 void pion(void) {
     // DEFINITION DES VARIABLES

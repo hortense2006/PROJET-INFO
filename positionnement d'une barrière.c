@@ -3,8 +3,7 @@
 //
 #include <stdio.h>
 #include <windows.h>
-#include "bloque.h"
-#include "barriere.h"
+#include "blocage d'un pion.h"
 #include "options.h"
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min

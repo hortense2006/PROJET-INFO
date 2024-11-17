@@ -2,10 +2,10 @@
 // Created by galti on 14/11/2024.
 //
 #include <stdio.h>
-#include "pion.h"
-#include "barriere.h"
-#include "annuler.h"
-#include "passer.h"
+#include "déplacement du pion.h"
+#include "positionnement d'une barrière.h"
+#include "annuler son tour.h"
+#include "passer son tour.h"
 int  options()
 {
     // DEFINITION DES VARIABLES
