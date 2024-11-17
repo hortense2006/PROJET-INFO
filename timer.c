@@ -1,27 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 
-int sec = 0, min = 0;
-int timer(int Tmax,ON,R,*sec,*min)
+int timer(int Mmax,int Smax,int ON)
 {
+    int sec = 0, min = 0;
     if (ON == 1)
     {
-        while (&min <= Tmax)
+        while (min <= Mmax && sec <= Smax)
         {
-            printf("%d:%d" &min,&sec);
-            &sec += 1;
-            if (&sec == 60)
+            printf("%d:%d",min,sec);
+            sleep(1);
+            sec += 1;
+            if (sec == 60)
             {
-                &sec = 0;
-                &min = &min + 1;
+                sec = 0;
+                min = min + 1;
             }
-        sleep(1);
         }
+        printf("Votre temps pour ce tour est écoulé.");
+        return 0;
     }
-    if (R == 1)
-    {
-      &sec = 0, &min = 0;
-    }
-    return "timer_end";
 }
