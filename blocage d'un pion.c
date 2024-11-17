@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include "options.h"
+#include "blocage d'un pion.h"
 int bloque(){
   int cote, compteur = 0;
   int devant, derriere, gauche, droite;
@@ -66,4 +67,4 @@ int bloque(){
       options();
     }
 }
-#include "blocage d'un pion.h"
+

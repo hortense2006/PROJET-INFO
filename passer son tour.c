@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include "options.h"
+#include "passer son tour.h"
 #define MIN 2
 #define MAX 4
 int passer(){
@@ -11,16 +12,7 @@ int passer(){
   int joueur;
   int tour_du_joueur;
 
-  // TROIS CAS DE FIGURE POSSIBLES
- if(nbjoueur > MAX && nbjoueur < MIN){
-   printf("Erreur !\n");
-   options();
-   }
- else if (nbjoueur < MAX && nbjoueur > MIN){
-   printf("Erreur !\n");
-   options();
-  }
- else (nbjoueur  == MAX || nbjoueur == MIN){
+ if (nbjoueur  == MAX || nbjoueur == MIN){
  // LE JOUEUR DECIDE DE PASSER SON TOUR
     if (tour_du_joueur == '\n'){
       joueur = joueur +1;
@@ -29,7 +21,11 @@ int passer(){
       printf("Le joueur a decide de jouer.\n");
       options();
     }
+ else {
+   printf("Erreur!\n");
+   options();
+ }
  }
   return 0;
 }
-#include "passer son tour.h"
+

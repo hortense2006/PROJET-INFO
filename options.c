@@ -6,6 +6,7 @@
 #include "positionnement d'une barrière.h"
 #include "annuler son tour.h"
 #include "passer son tour.h"
+#include "options.h"
 int  options()
 {
     // DEFINITION DES VARIABLES
@@ -125,4 +126,4 @@ int  options()
     return 0;
 }
 
-#include "options.h"
+
