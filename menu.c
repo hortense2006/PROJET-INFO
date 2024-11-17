@@ -105,6 +105,7 @@ int menu()
                 scanf("%d",&score);
                     switch(score) {
                         case 1: {
+
                             printf("Vous souhaitez afficher le score.\n");
                             score(1,0,0);
                             break;
@@ -113,7 +114,7 @@ int menu()
                             score(1,1,0);
                             break;
                         }
-                        case 3: {
+                        default: {
                             menu();
                             break;
                         }
