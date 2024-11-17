@@ -6,7 +6,6 @@
 int bloque(){
   int cote, compteur = 0;
     /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
-    // le programme doit regarder chacun de cotes du pion
   switch (cote){
     case 1:{
       cote = devant
