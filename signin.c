@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include "login.h"
+#include "signin.h"
 // CREATION D'UN COMPTE
 int signin()
 {
@@ -71,4 +72,3 @@ int signin()
     }
  return 0;
 }
-#include "signin.h"

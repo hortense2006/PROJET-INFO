@@ -6,6 +6,7 @@
 #include "aide.h"
 #include "score.h"
 #include "accueil.h"
+#include "menu.h"
 
 // MENU DU JEU
 int menu()
@@ -150,4 +151,3 @@ int menu()
         }
     return 0;
 }
-#include "menu.h"

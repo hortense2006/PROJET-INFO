@@ -2,6 +2,7 @@
 // Created by galti on 15/11/2024.
 //
 #include <stdio.h>
+#include "aide.h"
 int aide(){
   printf("Les regles du jeu sont :\n");
   printf("\n");
@@ -21,4 +22,4 @@ int aide(){
   return 0;
   }
 
-#include "aide.h"
+

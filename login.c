@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "options.h"
 #include "accueil.h"
+#include "login.h"
 // CONNEXION DU JOUEUR A SON COMPTE
    int login()
    {
@@ -24,8 +25,8 @@
               }
               else{
                  printf("Vous pouvez saisir votre mot de passe.\n");
-                  printf("Saisissez votre mot de passe:\n");
-                  scanf("%c", &mdp);
+                 printf("Saisissez votre mot de passe:\n");
+                 scanf("%c", &mdp);
                   for (essai = 0; essai < 3; essai++){
                       printf("Saisissez votre mot de passe:\n");
                       scanf("%c", &mdp);
@@ -48,4 +49,4 @@
          }
    return 0;
    }
-#include "login.h"
+
