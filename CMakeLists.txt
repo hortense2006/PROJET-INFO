@@ -12,8 +12,6 @@ add_executable(PROJET-INFO
         "blocage d'un pion.h"
         "déplacement du pion.c"
         "déplacement du pion.h"
-        "passer au dessus du pion.c"
-        "passer au dessus du pion.h"
         "passer son tour.c"
         "passer son tour.h"
         "positionnement d'une barrièrec"
