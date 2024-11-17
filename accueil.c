@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "signin.h"
 #include "login.h"
+#include "accueil.h"
 int accueil()
 {
     // DEFINITION DES VARIABLES
@@ -34,10 +35,11 @@ int accueil()
               }
               default: {
                 printf("Erreur!\n");
+                accueil();
                 break;
               }
             }
-            break;
+        break;
         }
         case 2: {
             printf("Voulez-vous créer un compte ?\n");
@@ -59,11 +61,11 @@ int accueil()
                 break;
               }
             break;
+            }
         }
         default :{
             printf("Erreur\n");
             accueil();
         }
     }
-
-#include "accueil.h"
+}
