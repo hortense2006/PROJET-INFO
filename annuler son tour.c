@@ -2,10 +2,10 @@
 // Created by galti on 14/11/2024.
 //
 #include <stdio.h>
-#include <options.h>
+#include "options.h"
 #define MIN 2
 #define MAX 4
-void annuler(void){
+int annuler(){
   // DECLARATION DES VARIABLES
   int tour_du_joueur;
   int tour_precedent;
@@ -37,23 +37,23 @@ void annuler(void){
           break;
           }
           case 2:{
-            void options();
+            options();
             break;
           }
           default:{
             printf("Erreur!\n");
-            void options();
+            options();
             break;
           }
       }
       else {
         printf("Le joueur a deja annule un tour.\n");
-        void options();
+        options();
       }
       break;
     }
      case 2:{
-       void options();
+       options();
        break;
      }
      default:{
