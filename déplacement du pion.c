@@ -14,15 +14,24 @@ int pion() {
     int chiffre2;
     int nbjoueur;
     int position_initiale_x;
-    int positionx1, positionx2,position_x;
+    int position_x;
     int position_initiale_y;
-    int positiony1,positiony2,position_y;
+    int position_y;
 
     // POSITION INITIALE DU PION
     if (nbjoueur ==2){
         position_initiale_x = 1;
         position_initiale_y= 'E';
     }
+  /*DEFINITION DES DEUX PIONS ADVERSES*/
+  struct pion1 {
+      int positionx1;
+      int positiony1;
+    };
+  struct pion2 {
+      int positionx2;
+      int positiony2;
+    };
     /* PRESENTATION DES OPTIONS*/
     printf("Vous pouvez deplacer votre pion de 4 manieres :\n");
 
