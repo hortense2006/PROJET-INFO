@@ -2,7 +2,6 @@
 // Created by galti on 15/11/2024.
 //
 #include <stdio.h>
-#include "passer au dessus du pion.h"
 #include "déplacement du pion.h"
 
 int pion() {
