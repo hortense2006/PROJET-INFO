@@ -14,9 +14,9 @@ int pion() {
     int chiffre2;
     int nbjoueur;
     int position_initiale_x;
-    int position_x;
+    int positionx1, positionx2,position_x;
     int position_initiale_y;
-    int position_y;
+    int positiony1,positiony2,position_y;
 
     // POSITION INITIALE DU PION
     if (nbjoueur ==2){
@@ -49,7 +49,11 @@ int pion() {
               /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
               if (position_x !='\n'&& position_y !='\n') {
                 printf("Cette case est déjà occupee.\n");
-                au_dessus_du_pion();
+                // PASSER AU DESSUS DU PION
+                if ((positionx1 == positionx2) && (positiony1 == positiony2)) {
+                  positionx1 = positionx1 + 2;
+                  positiony1 = positiony1;
+                }
               }
               else{
                 printf("Votre choix est enregistre.\n");
@@ -81,7 +85,11 @@ int pion() {
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                 if (position_x !='\n'&& position_y !='\n') {
                   printf("Cette case est déjà occupee.\n");
-                  au_dessus_du_pion();
+                  // PASSER AU DESSUS DU PION
+                  if ((positionx1 == positionx2) && (positiony1 == positiony2)) {
+                    positionx1 = positionx1 - 2;
+                    positiony1 = positiony1;
+                  }
                   }
                 else{
                   printf("Votre choix est enregistre.\n");
@@ -113,7 +121,11 @@ int pion() {
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                 if (position_x !='\n'&& position_y !='\n') {
                   printf("Cette case est déjà occupee.\n");
-                  au_dessus_du_pion();
+                  // PASSER AU DESSUS DU PION
+                  if ((positionx1 == positionx2) && (positiony1 == positiony2)) {
+                    positionx1 = positionx1;
+                    positiony1 = positiony1 + 2;
+                  }
                   }
                   else{
                     printf("Votre choix est enregistre.\n");
@@ -145,7 +157,11 @@ int pion() {
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                 if (position_x !='\n'&& position_y !='\n') {
                   printf("Cette case est déjà occupee.\n");
-                  au_dessus_du_pion();
+                  // PASSER AU DESSUS DU PION
+                  if ((positionx1 == positionx2) && (positiony1 == positiony2)) {
+                    positionx1 = positionx1;
+                    positiony1 = positiony1 - 2;
+                  }
                 }
                 else{
                   printf("Votre choix est enregistre.\n");
