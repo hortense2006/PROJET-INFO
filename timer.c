@@ -17,7 +17,10 @@ int timer(int Mmax,int Smax,int ON)
                 min = min + 1;
             }
         }
-        printf("Votre temps pour ce tour est écoulé.");
-        return 0;
+        if (ON == 1 && min == Mmax && sec == Smax)
+        {
+            printf("Votre temps pour ce tour est écoulé.");
+            return "0";
+        }
     }
 }
