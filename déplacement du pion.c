@@ -15,7 +15,6 @@ int pion() {
     int nbjoueur;
     int position_initiale_x;
     int position_initiale_y;
-    int possible;
     // POSITION INITIALE DU PION
     if (nbjoueur ==2){
       void gotoligcol(int lig2,int col2){
