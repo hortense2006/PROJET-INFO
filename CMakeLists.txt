@@ -35,4 +35,12 @@ add_executable(PROJET-INFO
         signin.c
         signin.h
         visuel du menu.c
-        visuel du menu.h)
+        visuel du menu.h
+        accueil.c
+        aide.c
+        login.c
+        menu.c
+        "nouvelle partie.c"
+        "reprendre une partie.c"
+        signin.c
+        "visuel du menu.c")
