@@ -3,12 +3,12 @@
 //
 #include <stdio.h>
 #include <windows.h>
-#include <bloques.h>
+#include <bloque.h>
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
 int barriere() {
 
-    // DEFINITION DES VARIABLES
+    /*DEFINITION DES VARIABLES*/
     int nbbarrieres;
     int nbbarrieres_total;
     int verticale;
