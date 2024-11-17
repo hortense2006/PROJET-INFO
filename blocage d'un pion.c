@@ -2,8 +2,8 @@
 // Created by galti on 16/11/2024.
 //
 #include <stdio.h>
-#include <options.h>
-void bloque(void){
+#include "options.h"
+int bloque(){
   int cote, compteur = 0;
     /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
   switch (cote){
@@ -61,7 +61,7 @@ void bloque(void){
     }
     else{
       printf("Il y a deja 3 barrieres. Votre choix n'est donc pas possible.\n");
-      void options();
+      options();
     }
 }
 #include "blocage d'un pion.h"

@@ -2,11 +2,11 @@
 // Created by galti on 14/11/2024.
 //
 #include <stdio.h>
-#include <pion.h>
-#include <barriere.h>
-#include <annuler.h>
-#include <passer.h>
-void options()
+#include "pion.h"
+#include "barriere.h"
+#include "annuler.h"
+#include "passer.h"
+int  options()
 {
     // DEFINITION DES VARIABLES
     int options;
@@ -37,16 +37,16 @@ void options()
             scanf("%d",&chiffrec);
             switch (chiffrec) {
               case 1: {
-                void pion();
+                pion();
                 break;
               }
               case 2: {
-                void options();
+                options();
                 break;
               }
                 default: {
                   printf("Erreur!\n");
-                  void options();
+                  options();
                   break;
                 }
             }
@@ -59,15 +59,15 @@ void options()
             scanf("%d",&chiffred);
             switch (chiffred) {
               case 1: {
-                void barrieres();
+                barriere();
                 break;
               }
               case 2: {
-                void options();
+                options();
                 break;
               }
               default: {
-                void options();
+                options();
                 break;
               }
             }
@@ -84,12 +84,12 @@ void options()
                 break;
               }
               case 2: {
-                 void options();
+                 options();
                  break;
               }
               default: {
                 printf("Erreur!\n");
-                 void options();
+                 options();
                  break;
               }
             }
@@ -102,23 +102,23 @@ void options()
             scanf("%d",&chiffref);
             switch (chiffref) {
               case 1: {
-                void annuler();
+                annuler();
                 break;
               }
               case 2: {
-                 void options();
+                 options();
                  break;
               }
               default: {
                 printf("Erreur!\n");
-                void options();
+                options();
                 break;
               }
             }
         }
         default : {
             printf("Erreur\n");
-            void options();
+            options();
             break;
         }
     }

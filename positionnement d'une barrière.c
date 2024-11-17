@@ -3,12 +3,12 @@
 //
 #include <stdio.h>
 #include <windows.h>
-#include <bloque.h>
-#include <barriere.h>
-#include <options.h>
+#include "bloque.h"
+#include "barriere.h"
+#include "options.h"
 #define MAX taille_plateau_max
 #define MIN taille_plateau_min
-void barriere() {
+int barriere() {
 
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres;
@@ -70,12 +70,12 @@ void barriere() {
                         if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                           printf("Cette case est deja occupee.\n");
                           printf("Faites un autre choix.\n");
-                          void barriere();
+                          barriere();
                         else{
                           printf("Votre choix est valide.\n");
                           /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
                           if (/*LA BARRIERE EST A COTE D'UN PION*/){
-                            void bloque();
+                            bloque();
                             }
                           else {
                             printf("Votre choix est enregistre.\n");
@@ -85,12 +85,12 @@ void barriere() {
                     break;
                     }
                   case 2: {
-                    void options();
+                    options();
                     break;
                   }
                     default:{
                       printf("Erreur!\n");
-                      void options();
+                      options();
                       break;
                     }
                 }
@@ -115,14 +115,14 @@ void barriere() {
                          if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                          printf("Cette case est deja occupee.\n");
                          printf("Faites un autre choix.\n");
-                         void barriere();
+                         barriere();
                        else{
                          printf("Votre choix est valide.\n");
                          /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
                          if (){
-                            void bloque();
+                            bloque();
                             printf("Faites un autre choix.\n");
-                            void options();
+                            options();
                             }
                           else {
                             printf("Votre choix est enregistre.\n");
@@ -132,12 +132,12 @@ void barriere() {
                     break;
                   }
                   case 2: {
-                     void options();
+                     options();
                      break;
                   }
                     default:{
                       printf("Erreur!\n");
-                      void options();
+                      options();
                       break;
                     }
                 }
@@ -152,7 +152,7 @@ void barriere() {
     }
     else{
         printf("Vous n'avez plus de barrieres.\n");
-        void options();
+        options();
     }
     return 0;
 }

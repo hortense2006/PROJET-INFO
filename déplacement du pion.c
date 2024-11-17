@@ -3,7 +3,8 @@
 //
 #include <stdio.h>
 #include <windows.h>
-#include <au_dessus_du_pion.h>
+#include "au_dessus_du_pion.h"
+#include "pion.h"
 
 void pion(void) {
     // DEFINITION DES VARIABLES
@@ -94,7 +95,7 @@ void pion(void) {
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                 if (SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),mycoord)!='\n') {
                   printf("Cette case est déjà occupée.\n");
-                  void au_dessus_du_pion();
+                  au_dessus_du_pion();
                 else{
                   printf("Votre choix est enregistre.\n");
                 }

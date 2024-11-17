@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include <windows.h>
-#include <pion.h>
+#include "pion.h"
 int au_dessus_du_pion(){
     int possible;
     /* PASSER AU DESSUS SI C'EST UN PION*/
@@ -20,12 +20,12 @@ int au_dessus_du_pion(){
                   break;
               }
               case 2: {
-                  void pion();
+                  pion();
                   break;
               }
               default:{
                   printf("Erreur!\n");
-                  void pion();
+                  pion();
                   break;
               }
           }
@@ -33,7 +33,7 @@ int au_dessus_du_pion(){
       else {
           /* SINON C'EST UNE BARRIERE*/
           printf("Cette case est déjà occupee par une barriere. Faites un autre choix.\n");
-          void pion();
+          pion();
       }
     }
     return 0;
