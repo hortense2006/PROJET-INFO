@@ -44,6 +44,7 @@
               }
             }
             printf("Vous n'avez plus d'essais disponibles.\n");
+            accueil();
          }
    return 0;
    }
