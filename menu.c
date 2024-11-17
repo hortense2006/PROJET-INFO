@@ -19,15 +19,15 @@ int menu()
     int chiffre, chiffreac, chiffread,chiffreae, chiffreaf;
 
     // PRESENTATION DU MENU
-        printf("Bienvenue dans le menu\n",menu);
-        printf("1= Nouvelle partie \n", nouvelle_partie);
-        printf("2= Reprendre une partie\n",reprendre_une_partie);
-        printf("3= Demander de l'aide\n",aide);
-        printf("4= Afficher le score\n",score);
-        printf("5 = Quitter\n");
+        printf("Bienvenue dans le menu\n");
+        printf("1= Nouvelle partie \n");
+        printf("2= Reprendre une partie\n");
+        printf("3= Demander de l'aide\n");
+        printf("4= Afficher le score\n");
+        printf("5= Quitter\n");
 
         // CHOISIR UN CHIFFRE RELIE A UNE OPTION DU MENU
-        printf("Selectionner un chiffre entre 1 et 5 :",chiffre);
+        printf("Selectionner un chiffre entre 1 et 5 :");
         scanf("%d",&chiffre);
         // DETERMINER L'OPTION CHOISIE EN FONCTION DU CHIFFRE SAISI
         switch (chiffre) {
