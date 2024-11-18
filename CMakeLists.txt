@@ -15,4 +15,6 @@ add_executable(PROJET-INFO
         "passer son tour.c"
         "passer son tour.h"
         "positionnement d'une barrièrec"
-        "positionnement d'une barrière.h")
+        "positionnement d'une barrière.h"
+        "tour des joueurs.c"
+        "tour des joueurs.h")
