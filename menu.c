@@ -23,7 +23,7 @@ int menu()
     int exit3;
 
 
-    printf("\n\n\nEntrer 1 pour continuer!\n");
+    printf("\n\n\n Entrer 1 pour continuer!\n");
          if (scanf("%d", &next) == 1)
     {
         while(1)
@@ -43,8 +43,7 @@ int menu()
                     case 1:
                     {
                         printf("Souhaitez vous commencer une nouvelle partie ? \n");
-                        printf ("1 = Oui\n");
-                        printf (" 2 = Non\n");
+                        printf ("1 = Oui.                     2 = Non.\n");
                         printf("Selectionner un chiffre entre 1 et 2: ");
                         scanf("%d",&choice1);
                         switch (choice1) {
@@ -54,7 +53,6 @@ int menu()
                             }
                             default: {
                                 printf("Erreur !\n");
-
                                 break;
                             }
                         }
@@ -64,8 +62,7 @@ int menu()
                     case 2:
                     {
                         printf("Souhaitez vous reprendre une partie ? \n");
-                        printf ("1 = Oui\n");
-                        printf (" 2 = Non\n");
+                        printf ("1 = Oui.                     2 = Non.\n");
                         printf("Selectionner un chiffre entre 1 et 2: ");
                         scanf("%d",&choice2);
                         switch (choice2) {
@@ -85,15 +82,13 @@ int menu()
                     case 3:
                     {
                         printf("Souhaitez vous afficher le score ?\n");
-                        printf("1 = Afficher\n");
-                        printf("2 = Afficher les 10 prochains\n");
+                        printf("1 = Afficher.             2 = Afficher les 10 prochains.\n");
                         printf("Selectionner un chiffre entre 1 et 2: ");
                         scanf("%d",&score);
                         while(exit3 != 1)
                         {
                             switch(score) {
                                 case 1: {
-
                                     printf("Vous souhaitez afficher le score.\n");
                                     score(1,0,0);
                                     break;
@@ -118,8 +113,7 @@ int menu()
                     case 4:
                     {
                       printf("Souhaitez vous demander de l'aide ? \n");
-                      printf ("1 = Oui\n");
-                      printf (" 2 = Non\n");
+                      printf ("1 = Oui.                    2 = Non.\n");
                       printf("Selectionner un chiffre entre 1 et 2: ");
                       scanf("%d",&choice3);
                         switch (choice3) {

@@ -10,16 +10,15 @@
    {
        // DEFINITION DES VARIABLES
        char user;
-       char mdp;
-       int essai;
+       char mdp, essai;
 
        // NOM D'UTILISATEUR
        {
          for (essai = 0; essai < 3; essai++){
            printf("Saisissez votre nom d'utilisateur:\n");
            scanf("%c", &user);
-            while (user != '\n'){
-              if (user == '\n'){
+            while (user != '\0'){
+              if (user == '\0'){
                   printf("Votre nom d'utilisateur n'existes pas.\n");
                   essai = essai - 1;
               }
@@ -30,8 +29,8 @@
                   for (essai = 0; essai < 3; essai++){
                       printf("Saisissez votre mot de passe:\n");
                       scanf("%c", &mdp);
-                      while (mdp != '\n'){
-                          if (mdp == '\n'){
+                      while (mdp != '\0'){
+                          if (mdp == '\0'){
                               printf("Votre mot de passe est invalide.\n");
                               essai = essai - 1;
                           }

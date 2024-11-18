@@ -8,20 +8,18 @@
 int accueil()
 {
     // DEFINITION DES VARIABLES
-    int chiffrea;
-    int chiffreaa, chiffreab;
+    int chiffrea, chiffreaa, chiffreab;
+
     printf("Bienvenue dans le jeu Quoridor!\n");
 
     // OPTIONS DE CONNEXION
-    printf(" 1 = Log in\n");
-    printf("2 = Sign in\n");
+    printf(" 1 = Log in.                   2 = Sign in\n");
     printf("Selectionner soit 1 soit 2:\n");
     scanf("%d",&chiffrea);
     switch (chiffrea) {
         case 1: {
             printf("Voulez vous vous connecter ?\n");
-            printf("1 = Oui.\n");
-            printf("2 = Non.\n");
+            printf("1 = Oui.                   2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffreaa);
             switch (chiffreaa) {
@@ -29,12 +27,7 @@ int accueil()
                 login();
                 break;
               }
-              case 2: {
-                accueil();
-                break;
-              }
               default: {
-                printf("Erreur!\n");
                 accueil();
                 break;
               }
@@ -43,8 +36,7 @@ int accueil()
         }
         case 2: {
             printf("Voulez-vous créer un compte ?\n");
-            printf("1 = Oui.\n");
-            printf("2 = Non.\n");
+            printf("1 = Oui.                       2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffreab);
             switch (chiffreab) {
@@ -52,12 +44,7 @@ int accueil()
                 signin();
                 break;
               }
-              case 2: {
-                accueil();
-                break;
-              }
               default: {
-                printf("Erreur!\n");
                 break;
               }
             break;
