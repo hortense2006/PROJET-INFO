@@ -9,10 +9,9 @@
 
 int tour(){
   // ORDRE ALEATOIRE DES JOUEURS
-  int nbjoueurs = 0;
-  int joueur;
-  int position_x;
-  int position_y;
+  int nbjoueurs = 0, joueur;
+  int position_x, position_y;
+
   while (joueur <= nbjoueurs){
     for(joueur = 0; joueur <= 4; nbjoueurs++) {
       printf("%d", rand());
