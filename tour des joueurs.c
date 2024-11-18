@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define RAND MAX 4
+
 int tour(){
   // ORDRE ALEATOIRE DES JOUEURS
   int nbjoueurs = 0;
@@ -17,7 +18,4 @@ int tour(){
       scanf("%d",&joueur);
     }
   }
-
-
-  // SELON TAILLE DU PLATEAU
 
