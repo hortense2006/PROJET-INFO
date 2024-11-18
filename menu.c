@@ -18,24 +18,23 @@ int menu()
     int reprendre_une_partie = 2;
     int aide = 4;
     int score = 3;
-    int choice=0;
+    int next = 0,choice=0;
     int choice1,choice2,choice3,choice4;
     int exit3;
 
 
-    // PRESENTATION DU MENU
 
-    printf("Bienvenue dans le menu\n");
-    printf("1= Nouvelle partie.                        2= Reprendre une partie.\n");
-    printf("3= Afficher le score.                      4= Demander de l'aide.\n");
-
-        // CHOISIR UN CHIFFRE RELIE A UNE OPTION DU MENU
-    printf("\n\nSelectionner un chiffre entre 1 et 4 :");
-         if (scanf("%d", &choice) == 1)
+         if (scanf("%d", &next) == 1)
     {
         while(1)
         {
             // PRESENTATION DU MENU
+            printf("Bienvenue dans le menu\n");
+            printf("1= Nouvelle partie.                        2= Reprendre une partie.\n");
+            printf("3= Afficher le score.                      4= Demander de l'aide.\n");
+
+            // CHOISIR UN CHIFFRE RELIE A UNE OPTION DU MENU
+            printf("\n\nSelectionner un chiffre entre 1 et 4 :");
             if (scanf("%d", &choice) != 0)
             {
                 switch (choice)
