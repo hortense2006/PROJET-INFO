@@ -20,6 +20,7 @@ int menu()
     int score = 3;
     int next=0, choice=0;
     int choice1,choice2,choice3,choice4;
+    int exit3;
 
 
     // PRESENTATION DU MENU
