@@ -4,7 +4,7 @@
 #include <ctime>
 #include "Plateau.h"
 
-int plateau(int T,int S,int j,int p,int A)
+int plateau(int T,int S,int j,int pion,int A)
 {
     int posX1,posY1,posX2,posY2,posX3,posY3,posX4,posY4;
     if(T==9)
@@ -32,7 +32,8 @@ int plateau(int T,int S,int j,int p,int A)
             {
                 case 1:
                 {
-
+                    options();
+                    scanf("options()",
                     break;
                 }
             }
