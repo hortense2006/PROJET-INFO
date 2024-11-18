@@ -5,18 +5,8 @@
 #include "blocage d'un pion.h"
 #include "options.h"
 #include "positionnement d'une barrière.h"
-#define MAX taille_plateau_max
-#define MIN taille_plateau_min
-/*DEFINITION DE TAILLE DU PLATEAU MAX*/
-struct taille_plateau_max {
-  int longueur_max = 12;
-  int largeur_max = 12;
-};
-/*DEFINITION DE TAILLE DU PLATEAU MIN*/
-struct taille_plateau_min {
-  int longueur_min = 9;
-  int largeur_min = 9;
-};
+#define MAX plateau[12][12]
+#define MIN plateau[9][9]
 int barriere() {
 
     /*DEFINITION DES VARIABLES*/
