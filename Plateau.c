@@ -9,10 +9,14 @@ int plateau(int T,int S,int j,int p,int D)
 {
     // Taile   Start    Joueur    pion    Direction
     int posX1,posY1,posX2,posY2,posX3,posY3,posX4,posY4;
+
+    //Taille plateau
     if(T==9)
     {
         char plateauJ[9][9];
         char plateauB[9][9];
+
+        //Si premier tour donc START, initialisation des pions
         if(S==1)
         {
             if(j==2)
@@ -29,10 +33,14 @@ int plateau(int T,int S,int j,int p,int D)
             }
         }
     }
+
+    //Taille plateau
     if(T==12)
     {
         char plateauJ[12][12];
         char plateauB[12][12];
+
+        //Si premier tour donc START, initialisation des pions
         if(S==1)
         {
             if(j==2)
@@ -49,8 +57,11 @@ int plateau(int T,int S,int j,int p,int D)
             }
         }
     }
+
+    //Si non le premier tour donc START=0/NULL
     if(S==0)
     {
+        //ON modifie la position du point en fonction du joueur et de la direction souhaiter
         switch(p)
         {
             case 1:
