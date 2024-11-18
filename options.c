@@ -10,19 +10,13 @@
 int  options()
 {
     // DEFINITION DES VARIABLES
-    int options;
-    int pion = 1 ;
-    int barriere = 2;
-    int passer = 3;
-    int annuler = 4;
+    int options, pion = 1, barriere = 2, passer = 3, annuler = 4;
     int chiffre1, chiffrec, chiffred, chiffree, chiffref;
 
     // PRESENTATION DES OPTIONS DE JEU
     printf("Voici vos options de jeu\n");
-    printf("1= Deplacer votre pion\n");
-    printf("2= Poser une barriere\n");
-    printf("3= Passer votre tour\n");
-    printf("4= Annuler votre coup precedent\n");
+    printf("1= Deplacer votre pion.                    2= Poser une barriere.\n");
+    printf("3= Passer votre tour.                      4= Annuler votre coup precedent.\n");
 
     // CHOISIR UN CHIFFRE RELIE A UNE OPTION DE JEU
     printf("Selectionner un chiffre entre 1 et 4 :");
@@ -32,8 +26,7 @@ int  options()
     switch (chiffre1) {
         case 1: {
             printf("Souhaitez-vous deplacer votre pion ?\n");
-            printf("1= Oui.\n");
-            printf("2 = Non.\n");
+            printf("1= Oui.                  2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffrec);
             switch (chiffrec) {
@@ -41,12 +34,7 @@ int  options()
                 pion();
                 break;
               }
-              case 2: {
-                options();
-                break;
-              }
                 default: {
-                  printf("Erreur!\n");
                   options();
                   break;
                 }
@@ -54,17 +42,12 @@ int  options()
         }
         case 2: {
             printf("Souhaitez-vous poser une barriere ?\n");
-            printf("1= Oui.\n");
-            printf("2 = Non.\n");
+            printf("1= Oui.              2= Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffred);
             switch (chiffred) {
               case 1: {
                 barriere();
-                break;
-              }
-              case 2: {
-                options();
                 break;
               }
               default: {
@@ -75,8 +58,7 @@ int  options()
         }
         case 3: {
             printf("Souhaitez-vous passer votre tour ?\n");
-            printf("1= Oui.\n");
-            printf("2 = Non.\n");
+            printf("1= Oui.                  2= Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffree);
             switch (chiffree) {
@@ -84,12 +66,7 @@ int  options()
                 passer();
                 break;
               }
-              case 2: {
-                 options();
-                 break;
-              }
               default: {
-                printf("Erreur!\n");
                  options();
                  break;
               }
@@ -97,8 +74,7 @@ int  options()
         }
         case 4: {
             printf("Souhaitez-vous annuler votre coup precedent ?\n");
-            printf("1= Oui.\n");
-            printf("2 = Non.\n");
+            printf("1= Oui.               2= Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffref);
             switch (chiffref) {
@@ -106,12 +82,7 @@ int  options()
                 annuler();
                 break;
               }
-              case 2: {
-                 options();
-                 break;
-              }
               default: {
-                printf("Erreur!\n");
                 options();
                 break;
               }
