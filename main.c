@@ -11,7 +11,7 @@ int main(void)
 
     // INTRODUCTION AU JEU
     printf("\n\n\nQUORIDOR !\n\n\n");
-    printf("\n\n\nEntrer 1 pour continer!\n");
+
 
     if (scanf("%d", &next) == 1)
     {
