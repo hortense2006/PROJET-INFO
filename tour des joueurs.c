@@ -9,7 +9,7 @@
 int tour(){
   // ORDRE ALEATOIRE DES JOUEURS
   int nbjoueurs = 0;
-  int joueur1 = 0, joueur2 = 1, joueur3 = 2, joueur4 = 3, joueur;
+  int joueur;
   int position_x;
   int position_y;
   while (joueur <= nbjoueurs){
@@ -18,4 +18,6 @@ int tour(){
       scanf("%d",&joueur);
     }
   }
+  return 0;
+}
 
