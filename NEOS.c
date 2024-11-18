@@ -31,4 +31,5 @@ int NEOS(int posX, int posY, int D);
             break;
         }
     }
+    return posX,posY
 }
