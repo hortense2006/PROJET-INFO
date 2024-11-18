@@ -54,12 +54,10 @@ int menu()
                                 nouvelle_partie();
                                 break;
                             }
-                            case 2: {
-                                menu();
-                            }
                             default: {
                                 printf("Erreur !\n");
-                                menu();
+
+                                break;
                             }
                         }
                         break;
@@ -77,13 +75,8 @@ int menu()
                                 reprendre_une_partie();
                                 break;
                             }
-                            case 2: {
-                                menu();
-                                break;
-                            }
                             default: {
                                 printf("Erreur !\n");
-                                menu();
                                 break;
                             }
                         }
@@ -112,6 +105,7 @@ int menu()
                                     break;
                                 }
                                 default: {
+                                  printf("Erreur !\n");
                                     menu();
                                     break;
                                 }
