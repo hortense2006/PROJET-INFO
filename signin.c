@@ -13,34 +13,26 @@ int signin()
     // PSEUDO
     printf("Choisissez un pseudo:\n");
     scanf("%d", &user);
-    while (user != '\n'){
-        if (user == '\n') // on vérifie si le pseudo existe déjà.
+    while (user != '\0'){
+        if (user == '\0') // on vérifie si le pseudo existe déjà.
             {
           printf("Votre nom d'utilisateur a ete enregistre.\n");
           }
         else {
-            printf("Ce nom existe deja\n");
-            printf("Est-ce vous ?");
-            printf("1 = Oui\n");
-            printf("2 = Non\n");
+            printf("Ce nom existe deja. Est-ce vous ?\n");
+            printf("1 = Oui.                 2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d", &chiffreb);
             switch (chiffreb){
                case 1:{
                     printf("Voulez-vous vous connecter ?\n");
-                    printf("1 = Oui\n");
-                    printf("2 = Non\n");
+                    printf("1 = Oui.                2 = Non.\n");
                     switch (chiffrec){
                       case 1:{
                         login();
                         break;
                       }
-                      case 2:{
-                        signin();
-                        break;
-                      }
                         default:{
-                          printf("Erreur!\n");
                           signin();
                           break;
                         }
