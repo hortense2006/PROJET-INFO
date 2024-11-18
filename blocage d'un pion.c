@@ -11,7 +11,7 @@ int bloque(){
   switch (cote) {
     case 1:{
       cote = devant;
-      if (cote != '\n'){
+      if (cote != '\0'){
         printf("Le cote est deja occupe.\n");
         compteur = compteur + 1;
       }
@@ -23,7 +23,7 @@ int bloque(){
     }
     case 2:{
       cote = derriere;
-      if (cote != '\n'){
+      if (cote != '\0'){
         printf("Le cote est deja occupe.\n");
         compteur = compteur + 1;
       }
@@ -34,7 +34,7 @@ int bloque(){
     }
     case 3:{
       cote = gauche;
-      if (cote != '\n'){
+      if (cote != '\0'){
         printf("Le cote est deja occupe.\n");
         compteur = compteur + 1;
       }
@@ -46,7 +46,7 @@ int bloque(){
     }
     case 4:{
       cote = droite;
-      if (cote != '\n'){
+      if (cote != '\0'){
         printf("Le cote est deja occupe.\n");
         compteur = compteur + 1;
       }
