@@ -18,7 +18,7 @@ int menu()
     int reprendre_une_partie = 2;
     int aide = 4;
     int score = 3;
-    int next=0, choice=0;
+    int choice=0;
     int choice1,choice2,choice3,choice4;
     int exit3;
 
@@ -31,8 +31,7 @@ int menu()
 
         // CHOISIR UN CHIFFRE RELIE A UNE OPTION DU MENU
     printf("\n\nSelectionner un chiffre entre 1 et 4 :");
-        scanf("%d",&choice);
-         if (scanf("%d", &next) == 1)
+         if (scanf("%d", &choice) == 1)
     {
         while(1)
         {
