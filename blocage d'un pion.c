@@ -6,11 +6,10 @@
 #include "blocage d'un pion.h"
 int bloque(){
   int cote, compteur = 0;
-  int devant, derriere, gauche, droite;
+  int devant = 1, derriere = 2, gauche = 3, droite = 4;
+
     /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
-  switch (cote) {
-    case 1:{
-      cote = devant;
+  for (cote = 1; cote <= 4; cote++) {
       if (cote != '\0'){
         printf("Le cote est deja occupe.\n");
         compteur = compteur + 1;
@@ -19,43 +18,6 @@ int bloque(){
         printf("Le cote n'est pas occupe.\n");
         compteur = compteur;
       }
-      break;
-    }
-    case 2:{
-      cote = derriere;
-      if (cote != '\0'){
-        printf("Le cote est deja occupe.\n");
-        compteur = compteur + 1;
-      }
-      else{
-        printf("Le cote n'est pas occupe.\n");
-      }
-      break;
-    }
-    case 3:{
-      cote = gauche;
-      if (cote != '\0'){
-        printf("Le cote est deja occupe.\n");
-        compteur = compteur + 1;
-      }
-      else{
-        printf("Le cote n'est pas occupe.\n");
-        compteur = compteur;
-      }
-      break;
-    }
-    case 4:{
-      cote = droite;
-      if (cote != '\0'){
-        printf("Le cote est deja occupe.\n");
-        compteur = compteur + 1;
-      }
-      else {
-        printf("Le cote n'est pas occupe.\n");
-        compteur = compteur;
-      }
-      break;
-    }
   }
   printf("Il y a %d barrieres.\n", compteur);
   scanf("%d",&compteur);
