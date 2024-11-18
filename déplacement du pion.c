@@ -11,15 +11,13 @@ int pion() {
     int devant = 3;
     int derriere = 4;
     int chiffre2;
-    int nbjoueur;
+    int positionx1,positionx2,positiony1,positiony2,position_x,position_y;
 
     /* PRESENTATION DES OPTIONS*/
     printf("Vous pouvez deplacer votre pion de 4 manieres :\n");
 
-    printf("1 = Aller vers la gauche.\n");
-    printf("2 = Aller vers la droite\n");
-    printf("3 = Avancer d'une case.\n");
-    printf("4 = Reculer d'une case.\n");
+    printf("1 = Aller vers la gauche.           2. Aller vers la droite.\n");
+    printf("3 = Avancer d'une case.              4 = Reculer d'une case.\n");
 
     /* CHOIX D'UN CHIFFRE RELIE A UNE OPTION DE DEPLACEMENT*/
 
@@ -39,10 +37,13 @@ int pion() {
               /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
               if (position_x !='\n'&& position_y !='\n') {
                 printf("Cette case est déjà occupee.\n");
-                // PASSER AU DESSUS DU PION
-                if ((positionx1 == positionx2) && (positiony1 == positiony2)) {
-                  positionx1 = positionx1 + 2;
-                  positiony1 = positiony1;
+                if (position_y + 1 !='\n'|| position_y - 1 !='\n') {
+                  printf("Cette case est occupee par une barriere.\n");
+                }
+                else {
+                  // PASSER AU DESSUS DU PION
+                  position_x = position_x + 2;
+                  position_y = position_y;
                 }
               }
               else{
@@ -75,12 +76,15 @@ int pion() {
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                 if (position_x !='\n'&& position_y !='\n') {
                   printf("Cette case est déjà occupee.\n");
-                  // PASSER AU DESSUS DU PION
-                  if ((positionx1 == positionx2) && (positiony1 == positiony2)) {
-                    positionx1 = positionx1 - 2;
-                    positiony1 = positiony1;
+                  if (position_y + 1 !='\n'|| position_y - 1 !='\n') {
+                    printf("Cette case est occupee par une barriere.\n");
                   }
+                  else {
+                    // PASSER AU DESSUS DU PION
+                    position_x = position_x;
+                    position_y = position_y - 2;
                   }
+                }
                 else{
                   printf("Votre choix est enregistre.\n");
                 }
@@ -111,13 +115,15 @@ int pion() {
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                 if (position_x !='\n'&& position_y !='\n') {
                   printf("Cette case est déjà occupee.\n");
-                  // PASSER AU DESSUS DU PION
-                  if ((positionx1 == positionx2) && (positiony1 == positiony2)) {
-                    positionx1 = positionx1;
-                    positiony1 = positiony1 + 2;
+                  if (position_x + 1 !='\n'|| position_x - 1 !='\n') {
+                    printf("Cette case est occupee par une barriere.\n");
                   }
+                  else {
+                    // PASSER AU DESSUS DU PION
+                    position_y = position_y + 2;
+                    position_x = position_x;
                   }
-                  else{
+                else{
                     printf("Votre choix est enregistre.\n");
                   }
                 break;
@@ -147,10 +153,13 @@ int pion() {
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
                 if (position_x !='\n'&& position_y !='\n') {
                   printf("Cette case est déjà occupee.\n");
-                  // PASSER AU DESSUS DU PION
-                  if ((positionx1 == positionx2) && (positiony1 == positiony2)) {
-                    positionx1 = positionx1;
-                    positiony1 = positiony1 - 2;
+                  if (position_x + 1 !='\n'|| position_x - 1 !='\n') {
+                    printf("Cette case est occupee par une barriere.\n");
+                  }
+                  else {
+                    // PASSER AU DESSUS DU PION
+                    position_y = position_x - 2;
+                    position_x = position_x;
                   }
                 }
                 else{

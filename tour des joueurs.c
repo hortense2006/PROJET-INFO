@@ -2,6 +2,7 @@
 // Created by galti on 18/11/2024.
 //
 #include "tour des joueurs.h"
+#include "déplacement du pion.h"
 #include <stdio.h>
 #include <stdlib.h>
 #define RAND MAX 4
