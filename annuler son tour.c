@@ -8,9 +8,8 @@
 #define MAX 4
 int annuler(){
   // DECLARATION DES VARIABLES
-  int tour_du_joueur = 0;
-  int tour_precedent = 0;
-  int chiffrei, chiffreia;
+  int tour_du_joueur = 0, tour_precedent = 0, chiffrei, chiffreia;
+
   printf("Voulez-vous annuler votre tour precedent?\n");
   printf("1. Oui.                     2 = Non.\n");
   printf("Saisissez un nombre.\n");

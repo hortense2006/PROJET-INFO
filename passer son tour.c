@@ -8,23 +8,21 @@
 #define MAX 4
 int passer(){
   // DECLARATION DES VARIABLES
-  int nbjoueur;
-  int joueur;
-  int tour_du_joueur;
+  int nbjoueur, joueur, tour_du_joueur;
 
  if (nbjoueur  == MAX || nbjoueur == MIN){
  // LE JOUEUR DECIDE DE PASSER SON TOUR
-    if (tour_du_joueur == '\n'){
+    if (tour_du_joueur == '\0'){
       joueur = joueur +1;
     }
     else{
       printf("Le joueur a decide de jouer.\n");
       options();
     }
+ }
  else {
    printf("Erreur!\n");
    options();
- }
  }
   return 0;
 }

@@ -6,12 +6,8 @@
 
 int pion() {
     // DEFINITION DES VARIABLES
-    int gauche  = 1;
-    int droite = 2;
-    int devant = 3;
-    int derriere = 4;
-    int chiffre2;
-    int position_x,position_y;
+    int gauche  = 1, droite = 2, devant = 3, derriere = 4;
+    int chiffre2,position_x,position_y;
 
     /* PRESENTATION DES OPTIONS*/
     printf("Vous pouvez deplacer votre pion de 4 manieres :\n");

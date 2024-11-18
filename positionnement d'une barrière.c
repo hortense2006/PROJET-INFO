@@ -21,11 +21,8 @@ int barriere() {
 
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres,nbbarrieres_total;
-    int nbjoueurs ;
-    int taille_du_plateau;
-    int nbjoueurs;
-    int verticale;
-    int horizontale;
+    int nbjoueurs, taille_du_plateau ;
+    int verticale, horizontale;
     int chiffre3, chiffreg, chiffreh;
     int ligne_1,ligne_2, colonne_1,colonne_2;
 
@@ -51,8 +48,7 @@ int barriere() {
       while (nbbarrieres != 0) {
         /* PRESENTATION DES OPTIONS DE DEPLACEMENT*/
         printf("Vous  pouvez poser une barriere de 2 manieres:\n");
-        printf("1 = La barriere est a l'horizontale\n",horizontale);
-        printf("2 = La barriere est a la verticale\n",verticale);
+        printf("1 = La barriere est a l'horizontale.            2 = La barriere est a la verticale.\n");
 
         /* CHOISIR UN CHIFFRE RELIE A UNE OPTION DE DEPLACEMENT*/
         printf("Selectionner un chiffre entre 1 et 2 :\n");
@@ -62,8 +58,7 @@ int barriere() {
         switch (chiffre3) {
           case 1: {
             printf("Voulez-vous poser votre barriere a l'horizontale ?\n");
-            printf("1 = Oui\n");
-            printf("2 = Non\n");
+            printf("1 = Oui.                   2 = Non.\n");
             printf("Selectionner soit 1 soit 2 :\n");
             scanf("%d",&chiffreg);
             switch (chiffreg) {
@@ -73,7 +68,7 @@ int barriere() {
                 scanf("%d""%d""%d",&ligne_1,&colonne_1,&colonne_2);
 
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
-                if (ligne_1 !='\n'&& (colonne_1 !='\n'|| colonne_2 != '\n')) {
+                if (ligne_1 !='\0'&& (colonne_1 !='\0'|| colonne_2 != '\0')) {
                   printf("Cet emplacement est déjà occupe.\n");
                   barriere();
                 }
@@ -91,12 +86,7 @@ int barriere() {
                 }
                 break;
               }
-              case 2: {
-                options();
-                break;
-              }
               default:{
-                printf("Erreur!\n");
                 options();
                 break;
               }
@@ -104,8 +94,7 @@ int barriere() {
           }
           case 2: {
             printf("Voulez-vous poser votre barriere a la verticale ?\n");
-            printf("1 = Oui\n");
-            printf("2 = Non\n");
+            printf("1 = Oui.                       2 = Non.\n");
             printf("Selectionner soit 1 soit 2 :\n");
             scanf("%d",&chiffreh);
             switch (chiffreh) {
@@ -115,7 +104,7 @@ int barriere() {
                 scanf("%d""%d""%d",&ligne_1,&ligne_2,&colonne_1);
 
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
-                if (colonne_1 !='\n'&& (ligne_1 !='\n'|| ligne_2 != '\n')) {
+                if (colonne_1 !='\0'&& (ligne_1 !='\0'|| ligne_2 != '\0')) {
                   printf("Cet emplacement est déjà occupe.\n");
                   barriere();
                 }
@@ -126,12 +115,7 @@ int barriere() {
                 }
                 break;
               }
-              case 2: {
-                options();
-                break;
-              }
               default:{
-                printf("Erreur!\n");
                 options();
                 break;
               }
