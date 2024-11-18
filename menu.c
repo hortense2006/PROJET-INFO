@@ -106,7 +106,6 @@ int menu()
                                 }
                                 default: {
                                   printf("Erreur !\n");
-                                    menu();
                                     break;
                                 }
                             }
@@ -130,13 +129,8 @@ int menu()
                             aide();
                             break;
                           }
-                          case 2: {
-                            menu();
-                            break;
-                          }
                           default : {
                              printf("Erreur !\n");
-                             menu();
                           }
                         }
                         break;
