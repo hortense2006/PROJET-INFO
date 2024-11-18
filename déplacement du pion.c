@@ -100,10 +100,11 @@ int pion() {
                     // PASSER AU DESSUS DU PION
                     position_y = position_y + 2;
                   }
+                }
                 else{
                     printf("Votre choix est enregistre.\n");
-                  }
-                break;
+                }
+              break;
               }
               default: {
                 pion();
@@ -140,8 +141,8 @@ int pion() {
                 pion();
                 break;
               }
-              break;
             }
+          break;
         }
         default: {
             printf("Erreur.\n");

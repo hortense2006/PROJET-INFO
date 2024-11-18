@@ -22,7 +22,6 @@ int barriere() {
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres,nbbarrieres_total;
     int nbjoueurs, taille_du_plateau ;
-    int verticale, horizontale;
     int chiffre3, chiffreg, chiffreh;
     int ligne_1,ligne_2, colonne_1,colonne_2;
 
