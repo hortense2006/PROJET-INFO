@@ -23,7 +23,7 @@ int menu()
     int exit3;
 
 
-
+    printf("\n\n\nEntrer 1 pour continuer!\n");
          if (scanf("%d", &next) == 1)
     {
         while(1)
