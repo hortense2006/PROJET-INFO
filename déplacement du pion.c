@@ -8,9 +8,9 @@
 int pion() {
     // DEFINITION DES VARIABLES
     int chiffre2,position_x,position_y, i, j;
-  /*VISUEL DES BARRIERES*/
+  /*VISUEL DES PIONS*/
   table_ascii();
-  printf("Entrez les coordonnees de la  barriere de votre choix:\n");
+  printf("Entrez les coordonnees du pion de votre choix:\n");
   scanf("%d""%d",&i,&j);
 
     /* PRESENTATION DES OPTIONS*/
