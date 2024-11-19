@@ -32,9 +32,9 @@ int barriere() {
       nbbarrieres = nbbarrieres_total/4;
     }
   /*VISUEL DES BARRIERES*/
+  table_ascii();
   printf("Entrez les coordonnees de la  barriere de votre choix:\n");
   printf("%d""%d",&i,&j);
-  table_ascii();
 
     /* EST-CE-QUE C'EST POSSIBLE*/
     if (nbbarrieres != 0) {
