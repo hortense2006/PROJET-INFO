@@ -12,7 +12,7 @@ int barriere() {
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres,nbbarrieres_total;
     int nbjoueurs, taille_du_plateau ;
-    int chiffre3, chiffreg, chiffreh;
+    int chiffre3;
     int ligne_1,ligne_2, colonne_1,colonne_2;
 
     /* NOMBRE DE BARRIERES TOTALES EN FONCTION DU PLATEAU*/
@@ -49,11 +49,11 @@ int barriere() {
             printf("Voulez-vous poser votre barriere a l'horizontale ?\n");
             printf("1 = Oui.                   2 = Non.\n");
             printf("Selectionner soit 1 soit 2 :\n");
-            scanf("%d",&chiffreg);
-            switch (chiffreg) {
+            scanf("%d",&chiffre3);
+            switch (chiffre3) {
               case 1: {
                 // POSITIONNEMENT DE LA BARRIERE
-                printf("Saisissez les nouvelles coordonnees x et y du pion:\n");
+                printf("Saisissez les coordonnees de la ligne et des deux colonnes de la barriere:\n");
                 scanf("%d""%d""%d",&ligne_1,&colonne_1,&colonne_2);
 
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
@@ -67,7 +67,7 @@ int barriere() {
                 }
 
                 /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
-                if (/*LA BARRIERE EST A COTE D'UN PION*/){
+                if (colonne_1 + 1 != '\0'|| colonne_1 - 1 != '\0' || colonne_2 + 1 != '\0'|| colonne_2 - 1 != '\0') {
                   bloque();
                 }
                 else {
@@ -85,11 +85,11 @@ int barriere() {
             printf("Voulez-vous poser votre barriere a la verticale ?\n");
             printf("1 = Oui.                       2 = Non.\n");
             printf("Selectionner soit 1 soit 2 :\n");
-            scanf("%d",&chiffreh);
-            switch (chiffreh) {
+            scanf("%d",&chiffre3);
+            switch (chiffre3) {
               case 1: {
                 // POSITIONNEMENT DE LA BARRIERE A L'AIDE DU CURSEUR
-                printf("Saisissez les nouvelles coordonnees x et y du pion:\n");
+                printf("Saisissez les nouvelles coordonnees de la colonne et des deux lignes de la barriere:\n");
                 scanf("%d""%d""%d",&ligne_1,&ligne_2,&colonne_1);
 
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
@@ -100,7 +100,13 @@ int barriere() {
                 else{
                   printf("Votre choix est enregistre.\n");
                   nbbarrieres = nbbarrieres - 1;
-                  bloque();
+                  /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
+                  if (ligne_1 + 1 != '\0'|| ligne_1 - 1 != '\0' || ligne_2 + 1 != '\0'|| ligne_2 - 1 != '\0') {
+                    bloque();
+                  }
+                  else {
+                    printf("Votre choix est enregistre.\n");
+                  }
                 }
                 break;
               }

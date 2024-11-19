@@ -13,7 +13,7 @@ int passer(){
  if (nbjoueur  == MAX || nbjoueur == MIN){
  // LE JOUEUR DECIDE DE PASSER SON TOUR
     if (tour_du_joueur == '\0'){
-      joueur = joueur +1;
+      joueur = joueur + 1;
     }
     else{
       printf("Le joueur a decide de jouer.\n");
