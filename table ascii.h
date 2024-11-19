@@ -4,5 +4,5 @@
 
 #ifndef TABLE_ASCII_H
 #define TABLE_ASCII_H
-
+int table_ascii();
 #endif //TABLE_ASCII_H

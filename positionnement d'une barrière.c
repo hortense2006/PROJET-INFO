@@ -13,7 +13,7 @@ int barriere() {
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres,nbbarrieres_total;
     int nbjoueurs, taille_du_plateau ;
-    int chiffre3;
+    int chiffre3,i,j;
     int ligne_1,ligne_2, colonne_1,colonne_2;
 
     /* NOMBRE DE BARRIERES TOTALES EN FONCTION DU PLATEAU*/
@@ -32,7 +32,8 @@ int barriere() {
       nbbarrieres = nbbarrieres_total/4;
     }
   /*VISUEL DES BARRIERES*/
-  printf("Choisissez la barriere de votre choix.\n");
+  printf("Entrez les coordonnees de la  barriere de votre choix:\n");
+  printf("%d""%d",&i,&j);
   table_ascii();
 
     /* EST-CE-QUE C'EST POSSIBLE*/

@@ -4,9 +4,15 @@
 #include <stdio.h>
 int table_ascii(){
     int i,j;
+
     char tableau_ascii[i][j];
-    printf("Voici le tableau des caracteres disponibles:\n");
-    printf("%c",tableau_ascii[i][j]);
+    for (i=0;i<240;i+= 16){
+      for (j=0;j<15;j++){
+        printf("%c",tableau_ascii[i][j]);
+    }
+        printf("Voici le tableau des caracteres disponibles:\n");
+        printf("%c",tableau_ascii[i][j]);
+
 
     // Boucle à travers les valeurs ASCII de 0 à 127
     for (int i = 0; i < 15 ; i++) {
@@ -17,6 +23,10 @@ int table_ascii(){
         }
     }
 
+    int tableau[];
+    for (int i=0; i<20; i++){
+        printf("%d\n", tableau[i]);
+    }
 
 
 }
