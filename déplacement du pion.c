@@ -3,10 +3,15 @@
 //
 #include <stdio.h>
 #include "déplacement du pion.h"
+#include "table ascii.h"
 
 int pion() {
     // DEFINITION DES VARIABLES
-    int chiffre2,position_x,position_y;
+    int chiffre2,position_x,position_y, i, j;
+  /*VISUEL DES BARRIERES*/
+  table_ascii();
+  printf("Entrez les coordonnees de la  barriere de votre choix:\n");
+  scanf("%d""%d",&i,&j);
 
     /* PRESENTATION DES OPTIONS*/
     printf("Vous pouvez deplacer votre pion de 4 manieres :\n");
