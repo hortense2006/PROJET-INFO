@@ -8,7 +8,7 @@
 #define MAX 4
 int annuler(){
   // DECLARATION DES VARIABLES
-  int tour_du_joueur = 0, tour_precedent = 0, chiffrei, chiffreia, compteur = 1;
+  int tour_du_joueur = 0, tour_precedent = 0, chiffrei, compteur = 1;
 
   printf("Voulez-vous annuler votre tour precedent?\n");
   printf("1. Oui.                     2 = Non.\n");
@@ -22,16 +22,13 @@ int annuler(){
         printf("Voulez-vous annuler votre tour precedent?\n");
         printf("1. Oui.                   2 = Non.\n");
         printf("Saisissez soit 1 soit 2:\n");
-        scanf("%d",&chiffreia);
-        switch (chiffreia){
+        scanf("%d",&chiffrei);
+        switch (chiffrei){
           case 1:{
             // LE JOUEUR DECIDE D'ANNULER SON TOUR
             if (tour_du_joueur == '\0'){
               tour_du_joueur = tour_precedent;
-              compteur = compteur -1;
-            }
-            else{
-              printf("Le joueur a decide de jouer.\n");
+              compteur = compteur - 1;
             }
             break;
           }
@@ -40,10 +37,10 @@ int annuler(){
             break;
           }
         }
-        else {
+      else {
           printf("Le joueur a deja annule un tour.\n");
           options();
-        }
+      }
         break;
       }
     }
