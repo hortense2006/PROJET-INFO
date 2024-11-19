@@ -34,7 +34,7 @@ int barriere() {
   /*VISUEL DES BARRIERES*/
   table_ascii();
   printf("Entrez les coordonnees de la  barriere de votre choix:\n");
-  printf("%d""%d",&i,&j);
+  scanf("%d""%d",&i,&j);
 
     /* EST-CE-QUE C'EST POSSIBLE*/
     if (nbbarrieres != 0) {
