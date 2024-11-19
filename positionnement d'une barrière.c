@@ -30,6 +30,8 @@ int barriere() {
     if (nbjoueurs == 4) {
       nbbarrieres = nbbarrieres_total/4;
     }
+  /*VISUEL DES BARRIERES*/
+  printf("Choisissez la barriere de votre choix.\n");
 
     /* EST-CE-QUE C'EST POSSIBLE*/
     if (nbbarrieres != 0) {
