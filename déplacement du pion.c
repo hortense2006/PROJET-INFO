@@ -6,7 +6,6 @@
 
 int pion() {
     // DEFINITION DES VARIABLES
-    int gauche  = 1, droite = 2, devant = 3, derriere = 4;
     int chiffre2,position_x,position_y;
 
     /* PRESENTATION DES OPTIONS*/
@@ -24,8 +23,8 @@ int pion() {
           printf("Voulez-vous aller d'une case vers la gauche ?\n");
           printf("1 = Oui.                  2 = Non\n");
           printf("Selectionner soit 1 soit 2:\n");
-          scanf("%d",&gauche);
-          switch (gauche) {
+          scanf("%d",&chiffre2);
+          switch (chiffre2) {
             case 1: {
               position_x = position_x - 1;
               /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
@@ -36,7 +35,7 @@ int pion() {
                 }
                 else {
                   // PASSER AU DESSUS DU PION
-                  position_x = position_x + 2;
+                  position_x = position_x - 2;
                 }
               }
               else{
@@ -54,8 +53,8 @@ int pion() {
             printf("Voulez-vous aller d'une case vers la droite ?\n");
             printf("1 = Oui.                     2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
-            scanf("%d",&droite);
-            switch (droite) {
+            scanf("%d",&chiffre2);
+            switch (chiffre2) {
               case 1: {
                 position_x = position_x + 1;
 
@@ -85,8 +84,8 @@ int pion() {
             printf("Voulez-vous avancer d'une case ?\n");
             printf("1 = Oui.               2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
-            scanf("%d",&devant);
-            switch (devant) {
+            scanf("%d",&chiffre2);
+            switch (chiffre2) {
               case 1: {
               position_y = position_y + 1;
 
@@ -117,8 +116,8 @@ int pion() {
             printf("1 = Oui.           2 = Non.\n");
             printf("2 = Non\n");
             printf("Selectionner soit 1 soit 2:\n");
-            scanf("%d",&derriere);
-            switch (derriere) {
+            scanf("%d",&chiffre2);
+            switch (chiffre2) {
               case 1: {
               position_y = position_y - 1;
                 /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
@@ -129,7 +128,7 @@ int pion() {
                   }
                   else {
                     // PASSER AU DESSUS DU PION
-                    position_y = position_x - 2;
+                    position_y = position_y - 2;
                   }
                 }
                 else{
