@@ -17,4 +17,6 @@ add_executable(PROJET-INFO
         "positionnement d'une barrièrec"
         "positionnement d'une barrière.h"
         "tour des joueurs.c"
-        "tour des joueurs.h")
+        "tour des joueurs.h"
+        "table ascii.c"
+        "table ascii.h")

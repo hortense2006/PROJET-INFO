@@ -5,6 +5,7 @@
 #include "blocage d'un pion.h"
 #include "options.h"
 #include "positionnement d'une barrière.h"
+#include "table ascii.h"
 #define MAX plateau[12][12]
 #define MIN plateau[9][9]
 int barriere() {
@@ -32,6 +33,7 @@ int barriere() {
     }
   /*VISUEL DES BARRIERES*/
   printf("Choisissez la barriere de votre choix.\n");
+  table_ascii();
 
     /* EST-CE-QUE C'EST POSSIBLE*/
     if (nbbarrieres != 0) {
