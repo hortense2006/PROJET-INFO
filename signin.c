@@ -8,7 +8,7 @@
 int signin()
 {
     // DEFINITION DES VARIABLES
-    int user, chiffreb, chiffrec;
+    int user, chiffreb;
     char mdp;
     // PSEUDO
     printf("Choisissez un pseudo:\n");
@@ -27,7 +27,7 @@ int signin()
                case 1:{
                     printf("Voulez-vous vous connecter ?\n");
                     printf("1 = Oui.                2 = Non.\n");
-                    switch (chiffrec){
+                    switch (chiffreb){
                       case 1:{
                         login();
                         break;

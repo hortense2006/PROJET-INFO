@@ -8,7 +8,7 @@
 int accueil()
 {
     // DEFINITION DES VARIABLES
-    int chiffrea, chiffreaa, chiffreab;
+    int chiffrea;
 
     printf("Bienvenue dans le jeu Quoridor!\n");
 
@@ -21,8 +21,8 @@ int accueil()
             printf("Voulez vous vous connecter ?\n");
             printf("1 = Oui.                   2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
-            scanf("%d",&chiffreaa);
-            switch (chiffreaa) {
+            scanf("%d",&chiffrea);
+            switch (chiffrea) {
               case 1: {
                 login();
                 break;
@@ -38,8 +38,8 @@ int accueil()
             printf("Voulez-vous créer un compte ?\n");
             printf("1 = Oui.                       2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
-            scanf("%d",&chiffreab);
-            switch (chiffreab) {
+            scanf("%d",&chiffrea);
+            switch (chiffrea) {
               case 1: {
                 signin();
                 break;
