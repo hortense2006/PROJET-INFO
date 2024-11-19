@@ -6,7 +6,6 @@
 #include "blocage d'un pion.h"
 int bloque(){
   int cote, compteur = 0;
-  int devant = 1, derriere = 2, gauche = 3, droite = 4;
 
     /* VERIFIER QUE LA BARRIERE NE BLOQUE PAS LE PION ADVERSE*/
   for (cote = 1; cote <= 4; cote++) {
