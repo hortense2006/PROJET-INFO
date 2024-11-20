@@ -9,7 +9,6 @@
 int annuler(){
   // DECLARATION DES VARIABLES
   int tour_du_joueur = 0, tour_precedent = 0, chiffrei, compteur = 1;
-
   printf("Voulez-vous annuler votre tour precedent?\n");
   printf("1. Oui.                     2 = Non.\n");
   printf("Saisissez un nombre.\n");
