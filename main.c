@@ -50,6 +50,10 @@ int main(void)
                                 while(exit1 !=0)
                                 {
                                     nouvelle partie();
+
+                                    //verification
+                                    plateau();
+
                                     printf("Pour sortir tapez 0\n");
                                     scanf("%d",&exit1);
                                 }
@@ -80,6 +84,10 @@ int main(void)
                                 while(exit2 !=0)
                                 {
                                     reprendre une partie();
+
+                                    //verification
+                                    plateau();
+
                                     printf("Pour sortir tapez 0\n");
                                     scanf("%d",&exit2);
                                 }
