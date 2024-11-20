@@ -11,8 +11,8 @@ int barriere() {
     /*DEFINITION DES VARIABLES*/
     int nbbarrieres_joueur,nbbarrieres_total;
     int nbjoueurs, taille_du_plateau ;
-    int chiffre3,i,j;
-    int ligne_1,ligne_2, colonne_1,colonne_2;
+    int barriere_joueur,i,j;
+    int ligne_2, colonne_1;
 
     /* NOMBRE DE BARRIERES*/
     if (nbjoueurs == 2) {
@@ -25,6 +25,7 @@ int barriere() {
     }
   /*VISUEL DES BARRIERES*/
   printf("Saisissez le caractere de votre choix.\n");
+  scanf("%d",&barriere_joueur);
 
   if (nbbarrieres_joueur != 0) {
     printf("Vous pouvez placer une barriere.");
