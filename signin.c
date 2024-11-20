@@ -13,16 +13,20 @@ int signin()
     // PSEUDO
     printf("Choisissez un pseudo:\n");
     scanf("%d", &user);
-    while (user != '\0'){
-        if (user == '\0') // on vérifie si le pseudo existe déjà.
-            {
+        if (user == '\0'){
           printf("Votre nom d'utilisateur a ete enregistre.\n");
-          }
+        } // on vérifie si le pseudo existe déjà.
         else {
             printf("Ce nom existe deja. Est-ce vous ?\n");
             printf("1 = Oui.                 2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d", &chiffreb);
+            if (chiffreb == 1){}
+            else if (chiffreb == 2){}
+          }
+        else {
+
+
             switch (chiffreb){
                case 1:{
                     printf("Voulez-vous vous connecter ?\n");
