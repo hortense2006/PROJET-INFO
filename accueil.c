@@ -22,15 +22,11 @@ int accueil()
             printf("1 = Oui.                   2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffrea);
-            switch (chiffrea) {
-              case 1: {
-                login();
-                break;
-              }
-              default: {
-                accueil();
-                break;
-              }
+            if (chiffrea == 1) {
+              login();
+            }
+            else {
+              accueil();
             }
         break;
         }
@@ -39,17 +35,12 @@ int accueil()
             printf("1 = Oui.                       2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffrea);
-            switch (chiffrea) {
-              case 1: {
-                signin();
-                break;
-              }
-              default: {
-                break;
-              }
-            break;
+            if (chiffrea == 1) {
+              login();
             }
-        }
+            else {
+              accueil();
+            }
         default :{
             printf("Erreur\n");
             accueil();
