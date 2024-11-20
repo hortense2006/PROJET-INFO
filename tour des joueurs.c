@@ -9,7 +9,7 @@
 
 int tour(){
   // ORDRE ALEATOIRE DES JOUEURS
-  int nbjoueurs = 0, joueur;
+  int nbjoueurs = 0,joueur;
   int position_x, position_y;
 
   while (joueur <= nbjoueurs){

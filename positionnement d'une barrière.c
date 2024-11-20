@@ -3,7 +3,6 @@
 //
 #include <stdio.h>
 #include "positionnement d'une barrière.h"
-#include "table ascii.h"
 #define MAX plateau[12][12]
 #define MIN plateau[9][9]
 int barriere() {
