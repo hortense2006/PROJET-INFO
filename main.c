@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+
 #include "nouvelle partie.h"
 #include "reprendre une partie.h"
 #include "aide.h"
 #include "score.h"
-#include "menu.h"
+
+
 
 int main(void)
 {
@@ -105,7 +107,7 @@ int main(void)
                             {
                                 while(exit3 !=0)
                                 {
-                                    score();
+                                    score(1);
                                     printf("Pour sortir tapez 0\n");
                                     scanf("%d",&exit3);
                                 }
