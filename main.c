@@ -16,10 +16,13 @@ int main(void)
     int choice1,choice2,choice3,choice4;
     int exit1=1,exit2=1,exit3=1,exit4=1;
 
+    // ACCEUIL
     printf("QUORIDOR");
     printf("\n\n\nEntrer 1 pour continuer!\n");
-         if (scanf("%d", &next) == 1)
+    if (scanf("%d", &next) == 1)
     {
+
+        // BOUCLE GENERAL DU MENU
         while(1)
         {
             // PRESENTATION DU MENU
@@ -27,7 +30,6 @@ int main(void)
             printf("1= Nouvelle partie.                        2= Reprendre une partie.\n");
             printf("3= Afficher le score.                      4= Demander de l'aide.\n");
 
-            // CHOISIR UN CHIFFRE RELIE A UNE OPTION DU MENU
             printf("\n\nSelectionner un chiffre entre 1 et 4 :");
             if (scanf("%d", &choice) != 0)
             {
