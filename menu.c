@@ -13,13 +13,9 @@
 int menu()
 {
     // DEFINITION DES VARIABLES
-    int nouvelle_partie =1 ;
-    int reprendre_une_partie = 2;
-    int aide = 4;
-    int score = 3;
+    int nouvelle_partie =1, reprendre_une_partie =2,score=3, aide =4;
     int next = 0,choice=0;
     int exit3;
-
 
     printf("\n\n\n Entrer 1 pour continuer!\n");
          if (scanf("%d", &next) == 1)

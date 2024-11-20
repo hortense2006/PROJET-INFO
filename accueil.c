@@ -46,4 +46,5 @@ int accueil()
             accueil();
         }
     }
+return 0;
 }
