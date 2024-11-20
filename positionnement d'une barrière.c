@@ -24,6 +24,7 @@ int barriere() {
       nbbarrieres_joueur = nbbarrieres_total/4;
     }
   /*VISUEL DES BARRIERES*/
+  printf("Saisissez le caractere de votre choix.\n");
 
   if (nbbarrieres_joueur != 0) {
     printf("Vous pouvez placer une barriere.");
@@ -41,5 +42,8 @@ int barriere() {
           nbbarrieres_joueur = nbbarrieres_joueur -1;
         }
     }
+  else {
+    printf("Vous n'avez plus de barrieres.\n");
+  }
     return 0;
 }
