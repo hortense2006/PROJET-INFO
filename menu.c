@@ -6,14 +6,13 @@
 #include "reprendre une partie.h"
 #include "aide.h"
 #include "score.h"
-#include "accueil.h"
+#include "options.h""
 #include "menu.h"
 
 // MENU DU JEU
 int menu()
 {
     // DEFINITION DES VARIABLES
-    int menu;
     int nouvelle_partie =1 ;
     int reprendre_une_partie = 2;
     int aide = 4;
@@ -45,16 +44,13 @@ int menu()
                         printf ("1 = Oui.                     2 = Non.\n");
                         printf("Selectionner un chiffre entre 1 et 2: ");
                         scanf("%d",&choice);
-                        switch (choice) {
-                            case 1: {
-                                nouvelle_partie();
-                                break;
-                            }
-                            default: {
-                                printf("Erreur !\n");
-                                break;
-                            }
+                        if(choice == 1){
+                          nouvelle_partie();
                         }
+                        else{
+                         options();
+                        }
+
                         break;
                     }
                     //Reprendre une partie
@@ -64,15 +60,11 @@ int menu()
                         printf ("1 = Oui.                     2 = Non.\n");
                         printf("Selectionner un chiffre entre 1 et 2: ");
                         scanf("%d",&choice);
-                        switch (choice) {
-                            case 1: {
-                                reprendre_une_partie();
-                                break;
-                            }
-                            default: {
-                                printf("Erreur !\n");
-                                break;
-                            }
+                        if(choice == 1){
+                          reprendre_une_partie();
+                        }
+                        else{
+                          options();
                         }
                         break;
                     }
@@ -86,21 +78,16 @@ int menu()
                         scanf("%d",&score);
                         while(exit3 != 1)
                         {
-                            switch(score) {
-                                case 1: {
-                                    printf("Vous souhaitez afficher le score.\n");
-                                    score(1,0,0);
-                                    break;
-                                }
-                                case 2: {
-                                    score(1,1,0);
-                                    break;
-                                }
-                                default: {
-                                  menu();
-                                    break;
-                                }
-                            }
+                          if(choice == 1){
+                              printf("Vous souhaitez afficher le score.\n");
+                              score(1,0,0);
+                          }
+                          else if(choice == 2){
+                              score(1,1,0);
+                          }
+                          else {
+                            menu();
+                          }
                             printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                             sleep(5);
                             //score(1,0);
@@ -115,15 +102,12 @@ int menu()
                       printf ("1 = Oui.                    2 = Non.\n");
                       printf("Selectionner un chiffre entre 1 et 2: ");
                       scanf("%d",&choice);
-                        switch (choice) {
-                          case 1: {
-                            aide();
-                            break;
-                          }
-                          default : {
-                             printf("Erreur !\n");
-                          }
-                        }
+                      if(choice == 1){
+                        aide();
+                      }
+                      else if(choice == 2){
+                        options();
+                      }
                         break;
                     }
                     default:
