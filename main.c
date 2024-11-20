@@ -160,5 +160,5 @@ int main(void)
             }
         }
     }
-    return 0;
+    return "fin pre-mature";
 }
