@@ -9,7 +9,6 @@ int pion() {
     // DEFINITION DES VARIABLES
     int chiffre2,position_x,position_y, i, j;
   /*VISUEL DES PIONS*/
-  table_ascii();
   printf("Entrez les coordonnees du pion de votre choix:\n");
   scanf("%d""%d",&i,&j);
 
@@ -41,7 +40,7 @@ int pion() {
         else{
           printf("Votre choix est enregistre.\n");
         }
-        defautlt:{
+      defautlt:{}
           break;
         }
         case 2: {

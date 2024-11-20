@@ -13,40 +13,26 @@ int annuler(){
   printf("1. Oui.                     2 = Non.\n");
   printf("Saisissez un nombre.\n");
   scanf("%d",&chiffrei);
-  switch (chiffrei){
-    case 1: {
+  if(chiffrei == 1){
+    if (compteur!= 0){
       // ON VERIFIE QUE LE JOUEUR N'A PAS DEJA ANNULE UN TOUR
-      if (compteur!= 0){
-        printf("Le joueur n'a pas encore annule un tour.\n");
-        printf("Voulez-vous annuler votre tour precedent?\n");
-        printf("1. Oui.                   2 = Non.\n");
-        printf("Saisissez soit 1 soit 2:\n");
-        scanf("%d",&chiffrei);
-        switch (chiffrei){
-          case 1:{
-            // LE JOUEUR DECIDE D'ANNULER SON TOUR
-            if (tour_du_joueur == '\0'){
-              tour_du_joueur = tour_precedent;
-              compteur = compteur - 1;
-            }
-            break;
-          }
-          default:{
-            options();
-            break;
-          }
-        }
-      else {
-          printf("Le joueur a deja annule un tour.\n");
-          options();
+      printf("Le joueur n'a pas encore annule un tour.\n");
+      printf("Voulez-vous annuler votre tour precedent?\n");
+      printf("1. Oui.                   2 = Non.\n");
+      printf("Saisissez soit 1 soit 2:\n");
+      scanf("%d",&chiffrei);
+      // LE JOUEUR DECIDE D'ANNULER SON TOUR
+      if (chiffrei == 1){
+        tour_du_joueur = tour_precedent;
+        compteur = compteur - 1;
       }
-        break;
+      else{
+        printf("Erreur!\n");
       }
     }
-     default:{
-      options();
-        break;
-     }
+  }
+  else{
+    printf("Le joueur a deja annule un tour.\n");
   }
   return 0;
 }
