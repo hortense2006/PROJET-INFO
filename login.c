@@ -27,7 +27,7 @@
               for (essai = 0; essai < 3; essai++){
                   printf("Saisissez votre mot de passe:\n");
                   scanf("%c", &mdp);
-                      if (mdp == '\0'){
+                      if (mdp == '\0' || /*le mot de passe ne correspond pas au pseudo entré*/){
                           printf("Votre mot de passe est invalide.\n");
                           essai = essai - 1;
                       }
