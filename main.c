@@ -155,6 +155,7 @@ int main(void)
                     default:
                     {
                         printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEntrez un chiffre valide, merci.");
+                        break;
                     }
                 }
             }
