@@ -87,7 +87,11 @@ int plateau(int T,int S,int j,int p,int D)
         }
     }
 
-    //Affichage des tableaux
+    //Remplisage du tableau
+
+        //matrice
+
+    //Affichage du tableau
     for(i=T;i>=0;i=i-1)
     {
         for(j=0-T;j>=0;j=j-1)
@@ -97,3 +101,4 @@ int plateau(int T,int S,int j,int p,int D)
         }
     }
 }
+
