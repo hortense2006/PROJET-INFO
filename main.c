@@ -1,13 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "login.h"
-#include "signin.h"
 #include "nouvelle partie.h"
 #include "reprendre une partie.h"
 #include "aide.h"
 #include "score.h"
-#include "accueil.h"
 #include "menu.h"
 
 int main(void)
@@ -17,7 +14,7 @@ int main(void)
     int choice1,choice2,choice3,choice4;
     int exit1=1,exit2=1,exit3=1,exit4=1;
 
-    acceuil();
+    printf("QUORIDOR");
     printf("\n\n\nEntrer 1 pour continuer!\n");
          if (scanf("%d", &next) == 1)
     {
