@@ -170,5 +170,5 @@ int main(void)
             }
         }
     }
-    return "fin pre-mature";
+    return "fin premature";
 }
