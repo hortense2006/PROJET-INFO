@@ -28,47 +28,38 @@ int  options()
             printf("1= Oui.                  2 = Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffre1);
-            switch (chiffre1) {
-              case 1: {
-                pion();
-                break;
-              }
-              default: {
-                options();
-                break;
-              }
-            }
+          if (chiffre1 == 1) {
+            printf("Vous voulez deplacer votre pion.\n");
+          }
+          else {
+            printf("Erreur!\n");
+          }
         }
         case 2: {
             printf("Souhaitez-vous poser une barriere ?\n");
             printf("1= Oui.              2= Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffre1);
-            switch (chiffre1) {
-              case 1: {
-                barriere();
-                break;
-              }
-              default: {
-                options();
-                break;
-              }
+            if (chiffre1 == 1) {
+                printf("Vous voulez poser une barriere.\n");
+                barrieres();
             }
+            else {
+                printf("Erreur!\n");
+            }
+        break;
         }
         case 3: {
             printf("Souhaitez-vous passer votre tour ?\n");
             printf("1= Oui.                  2= Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffre1);
-            switch (chiffre1) {
-              case 1: {
+            if (chiffre1 == 1) {
+                printf("Vous vouler passer votre tour.\n");
                 passer();
-                break;
-              }
-              default: {
-                 options();
-                 break;
-              }
+            }
+            else {
+                printf("Erreur!\n");
             }
         }
         case 4: {
@@ -76,15 +67,12 @@ int  options()
             printf("1= Oui.               2= Non.\n");
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffre1);
-            switch (chiffre1) {
-              case 1: {
+            if (chiffre1 == 1) {
+                printf("Vous vouler annuler votre tour precedent.\n");
                 annuler();
-                break;
-              }
-              default: {
-                options();
-                break;
-              }
+            }
+            else {
+                printf("Erreur!\n");
             }
         }
         default : {

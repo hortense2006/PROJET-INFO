@@ -8,8 +8,6 @@ add_executable(PROJET-INFO
         "options.h"
         "annuler son tour.c"
         "annuler son tour.h"
-        "blocage d'un pion.c"
-        "blocage d'un pion.h"
         "déplacement du pion.c"
         "déplacement du pion.h"
         "passer son tour.c"
