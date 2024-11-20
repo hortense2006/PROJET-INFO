@@ -5,16 +5,16 @@
 #include "Plateau.h"
 #include "NEOS.h"
 
+// Taile   Start    Joueur    pion    Direction
 int plateau(int T,int S,int j,int p,int D)
 {
-    // Taile   Start    Joueur    pion    Direction
     int posX1,posY1,posX2,posY2,posX3,posY3,posX4,posY4;
 
     //Taille plateau
     if(T==9)
     {
         char plateauJ[9][9];
-        char plateauB[9][9];
+        char plateauB[11][11];
 
         //Si premier tour donc START, initialisation des pions
         if(S==1)
@@ -38,7 +38,7 @@ int plateau(int T,int S,int j,int p,int D)
     if(T==12)
     {
         char plateauJ[12][12];
-        char plateauB[12][12];
+        char plateauB[14][14];
 
         //Si premier tour donc START, initialisation des pions
         if(S==1)
@@ -84,6 +84,16 @@ int plateau(int T,int S,int j,int p,int D)
                 NOES(posX4,posY4,D);
                 break;
             }
+        }
+    }
+
+    //Affichage des tableaux
+    for(i=T;i>=0;i=i-1)
+    {
+        for(j=0-T;j>=0;j=j-1)
+        {
+            printf("%c",plateauB[j][i]);
+            printf("%c",plateauJ[j][i]);
         }
     }
 }
