@@ -6,7 +6,7 @@
 #include "reprendre une partie.h"
 #include "aide.h"
 #include "score.h"
-#include "options.h""
+#include "options.h"
 #include "menu.h"
 
 // MENU DU JEU
