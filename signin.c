@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include "login.h"
 #include "signin.h"
+#include "ecriture_pseudo.h"
+#include "ecriture_mdp.h"
 // CREATION D'UN COMPTE
 int signin()
 {
@@ -17,8 +19,9 @@ int signin()
       printf("Votre pseudo n'a pas le nombre de caracteres requis.\n");
     }
     else{
-        if (user !== '\0' && // !==nom deja utilise){
+        if (user !== '\0' && user != ecriture_pseudo(){
          printf("Votre nom d'utilisateur a ete enregistre.\n");
+          ecriture_pseudo();
          printf("Choisissez a present un mot de passe.\n");
          scanf("%c", &mdp);
            if (mdp < 12 && mdp > 12)  {
@@ -26,6 +29,7 @@ int signin()
               }
            else {
                printf("Votre mot de passe a été enregistré.");
+               ecriture_mdp();
          }
           // on vérifie si le pseudo existe déjà.
         else {
