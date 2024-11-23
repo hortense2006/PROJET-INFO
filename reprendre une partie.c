@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "reprendre une partie.h"
 #include "lecture_plateau.h"
-#include "tour_du_joueur.h"
+#include "tour des joueurs.h"
 int reprendre_une_partie(){
 // APPEL PLATEAU
 lecture_plateau();
