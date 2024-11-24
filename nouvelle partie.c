@@ -8,7 +8,7 @@
 int nouvelle_partie()
 {
   // APPEL PLATEAU
-    void affichagePlateau(Plateau *plateau, int playerX, int playerY)
+    affichagePlateau(Plateau *plateau, int playerX, int playerY)
   // APPEL POSITION INITIALE DU PION
   pion();
   // APPEL BARRIERES
