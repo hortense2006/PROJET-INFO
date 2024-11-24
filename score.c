@@ -20,6 +20,8 @@ int score(int S)
             mP[1][ny] = "Pseudo"; //appelle pseudo
             sauvegardepseudo();
             mS[1][ny] = 0; //appelle score
+            score();
+
         }
     }
 }
