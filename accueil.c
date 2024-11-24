@@ -38,12 +38,8 @@ int accueil()
             if (chiffrea == 1) {
               signin();
             }
-            else {
-              accueil();
-            }
         default :{
             printf("Erreur\n");
-            accueil();
         }
     }
 return 0;
