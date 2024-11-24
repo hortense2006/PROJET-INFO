@@ -25,9 +25,6 @@ int accueil()
             if (chiffrea == 1) {
               login();
             }
-            else {
-              accueil();
-            }
         break;
         }
         case 2: {
