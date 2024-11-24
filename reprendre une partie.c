@@ -10,6 +10,6 @@ int reprendre_une_partie(){
 lecture_plateau();
 
 // APPEL DE L'ORDRE DES JOUEURS + QUI DOIT JOUER
-tour();
+tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj);
 }
 
