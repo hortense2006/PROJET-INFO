@@ -16,7 +16,7 @@ int score(int S)
         mT[2][0] = "Score";
         for (ny = 0; ny <= y; ny++)
         {
-            mTop[0][ny] = ny +1; //appelle top
+            mTop[0][ny] = ny +1;
             mP[1][ny] = "Pseudo"; //appelle pseudo
             mS[1][ny] = 0; //appelle score
         }
