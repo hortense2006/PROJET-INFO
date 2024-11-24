@@ -4,5 +4,5 @@
 
 #ifndef ACCUEIL_H
 #define ACCUEIL_H
-int accueil()
+int accueil();
 #endif //ACCUEIL_H
