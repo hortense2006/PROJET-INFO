@@ -15,7 +15,6 @@ int aide(){
     printf("Regle 5: Si votre partie est a 4 joueurs, vous ne pouvez pas sauter plus d'un pion a la fois.\n\n");
 
     printf("Regle 6: Vous ne pouvez annuler votre tour precedent qu'une seule fois\n\n");
-
     printf("Regle 7: Vous pouvez acceder a votre score via le menu. Celui-ci est automatiquement sauvegarde.\n\n");
     return 0;
 }
