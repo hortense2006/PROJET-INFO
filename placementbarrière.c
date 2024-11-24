@@ -6,6 +6,11 @@
 #include "createplateau.h"
 #include "placementbarrière.h"
 #include "affichagePlateau.h"
+#include "NEOS.h"
+
+#define EMPTY 0
+#define PLAYER_BASE 10
+#define BARRIER_BASE 100
 
 // Ajoute une barrière à la matrice
 int placementBarrier(Plateau *plateau, int x, int y, char D)
@@ -21,7 +26,7 @@ int placementBarrier(Plateau *plateau, int x, int y, char D)
                 if (plateau->grille[x][y] != 0 && plateau->grille[x][y + 1] != 0)
                 {
                     plateau->grille[x][y] = BARRIER_BASE;
-                    plateau->grille[x][y + 1] = BARRIER_BASE
+                    plateau->grille[x][y + 1] = BARRIER_BASE;
                     return plateau;
                 }
                 else
@@ -36,7 +41,7 @@ int placementBarrier(Plateau *plateau, int x, int y, char D)
                 if (plateau->grille[x][y] != 0 && plateau->grille[x + 1][y] != 0)
                 {
                     plateau->grille[x][y] = BARRIER_BASE;
-                    plateau->grille[x + 1][y] = BARRIER_BASE
+                    plateau->grille[x + 1][y] = BARRIER_BASE;
                     return plateau;
                 }
                 else
@@ -51,7 +56,7 @@ int placementBarrier(Plateau *plateau, int x, int y, char D)
                 if (plateau->grille[x][y] != 0 && plateau->grille[x - 1][y] != 0)
                 {
                     plateau->grille[x][y] = BARRIER_BASE;
-                    plateau->grille[x - 1][y] = BARRIER_BASE
+                    plateau->grille[x - 1][y] = BARRIER_BASE;
                     return plateau;
                 }
                 else
@@ -66,7 +71,7 @@ int placementBarrier(Plateau *plateau, int x, int y, char D)
                 if (plateau->grille[x][y] != 0 && plateau->grille[x][y - 1] != 0)
                 {
                     plateau->grille[x][y] = BARRIER_BASE;
-                    plateau->grille[x][y - 1] = BARRIER_BASE
+                    plateau->grille[x][y - 1] = BARRIER_BASE;
                     return plateau;
                 }
                 else
@@ -76,8 +81,8 @@ int placementBarrier(Plateau *plateau, int x, int y, char D)
                 }
                 break;
             }
+            break;
         }
-        break;
     }
     else
     {

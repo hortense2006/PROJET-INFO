@@ -6,7 +6,7 @@
 #include "createplateau.h"
 #include "placementbarrière.h"
 #include "affichagePlateau.h"
-
+#include "NEOS.h"
 
 
 // Taille par défaut du plateau

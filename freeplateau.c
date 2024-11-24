@@ -6,6 +6,7 @@
 #include "createplateau.h"
 #include "placementbarrière.h"
 #include "affichagePlateau.h"
+#include "NEOS.h"
 
 // Libère la mémoire du plateau
 void freePlateau(Plateau *plateau)

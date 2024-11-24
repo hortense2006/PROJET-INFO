@@ -6,6 +6,11 @@
 #include "createplateau.h"
 #include "placementbarrière.h"
 #include "affichagePlateau.h"
+#include "NEOS.h"
+
+#define EMPTY 0
+#define PLAYER_BASE 10
+#define BARRIER_BASE 100
 
 // Affiche le plateau avec ncurses
 void affichagePlateau(Plateau *plateau, int playerX, int playerY)
