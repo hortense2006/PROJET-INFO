@@ -34,17 +34,15 @@ int mainPlateau(int T,int S,int j,int p,int D)
 
             if(j==2)
             {
-                posX1=0,posY1=8;
-                posX2=16,posY2=8;
-                posX3=100,posY3=100;
-                posX4=100,posY4=100;
+                placementBarrier(Plateau *plateau,0,8,A,0,N)
+                placementBarrier(Plateau *plateau,16,8,A,1,N)
             }
             if(j==4)
             {
-                posX1=0,posY1=8;
-                posX2=8,posY2=16;
-                posX3=16,posY3=8;
-                posX4=8,posY4=0;
+                placementBarrier(Plateau *plateau,0,8,A,0,N)
+                placementBarrier(Plateau *plateau,8,16,A,1,N)
+                placementBarrier(Plateau *plateau,16,8,A,2,N)
+                placementBarrier(Plateau *plateau,8,0,A,3,N)
             }
         }
     }
@@ -60,15 +58,15 @@ int mainPlateau(int T,int S,int j,int p,int D)
 
             if(j==2)
             {
-                posX1=0,posY1=11;
-                posX2=22,posY2=11;
+                placementBarrier(Plateau *plateau,0,11,A,0,N)
+                placementBarrier(Plateau *plateau,22,11,A,1,N)
             }
             if(j==4)
             {
-                posX1=0,posY1=11;
-                posX2=11,posY2=22;
-                posX3=22,posY3=11;
-                posX4=11,posY4=0;
+                placementBarrier(Plateau *plateau,0,11,A,0,N)
+                placementBarrier(Plateau *plateau,11,22,A,1,N)
+                placementBarrier(Plateau *plateau,22,11,A,2,N)
+                placementBarrier(Plateau *plateau,11,0,A,3,N)
             }
         }
     }
