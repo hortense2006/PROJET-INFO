@@ -20,7 +20,7 @@ int placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
         //Direction
         switch(D)
         {
-            //Placement de la position en fonction de la direction souhaiter
+            //Placement de la position en fonction de la direction souhaitée.
             case "N":
             {
                 if (plateau->grille[x][y] == EMPTY && plateau->grille[x][y + 1] == EMPTY)
