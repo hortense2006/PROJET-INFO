@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include "déplacement du pion.h"
-#include "placementPion.h"
+#include "NEOS.h"
 
 int pion() {
     // DEFINITION DES VARIABLES
@@ -17,7 +17,7 @@ int pion() {
   printf("1 = Aller vers la gauche.           2. Aller vers la droite.\n");
   printf("3 = Avancer d'une case.              4 = Reculer d'une case.\n");
   scanf("%d",&D);
-  void placementPion();
+  NEOS();
 
   /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
   if (x !='\0') {
