@@ -201,7 +201,10 @@ int main(void)
       int user;
       int mdp;
       int score;
-      int  Partie -> ordretour;
+      int  Partie -> ordretour; // ordre du joueur dans la partie
+      // position du pion au cours du temps (dans sauvegarde partie en cours)
+      // position des barrieres au cours du temps (dans sauvegarde partie en cours)
+      //nombres de barrières au cours du temps (et surtout au moment de l'arrêt de la partie)
 
     };
 }
