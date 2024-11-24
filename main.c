@@ -53,16 +53,29 @@ int main(void)
                         {
                             case 1:
                             {
+                                int T;
+                                while (T !=9 || T !=12)
+                                {
+                                    printf("Quelle taille entre 9 et 12 pour le plateau ?"\n)
+                                    scanf("%d",&T);
+                                }
+                                if (T == 9)
+                                {
+                                    T=16;
+                                }
+                                if (T == 12)
+                                {
+                                    T=22;
+                                }
+                                mainPlateau(T,S,"\0", "\0"
+                                Joueurs1->pion_visu, Joueurs1->bari_visu, Joueurs1->pos_J,
+                                Joueurs2->pion_visu, Joueurs2->bari_visu, Joueurs2->pos_J,
+                                Joueurs3->pion_visu, Joueurs3->bari_visu, Joueurs3->pos_J,
+                                Joueurs4->pion_visu, Joueurs4->bari_visu, Joueurs4->pos_J)
                                 while(exit1 !=0)
                                 {
-                                    mainPlateau(int T,int S, char BP, int J
-                                    Joueurs1->pion_visu, Joueurs1->bari_visu, Joueurs1->pos_J,
-                                    Joueurs2->pion_visu, Joueurs2->bari_visu, Joueurs2->pos_J,
-                                    Joueurs3->pion_visu, Joueurs3->bari_visu, Joueurs3->pos_J,
-                                    Joueurs4->pion_visu, Joueurs4->bari_visu, Joueurs4->pos_J)
 
-                                    //verification
-                                    plateau();
+
 
                                     printf("Pour sortir tapez 0\n");
                                     scanf("%d",&exit1);
