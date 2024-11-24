@@ -3,11 +3,11 @@
 //
 #include <stdio.h>
 #include "reprendre une partie.h"
-#include "ecriture_plateau.h"
+#include "lecture_plateau.h"
 #include "tour des joueurs.h"
 int reprendre_une_partie(){
 // APPEL PLATEAU
-ecriture_plateau(char plateau[17][17])
+lecture_plateau(char* pplateau);
 
 // APPEL DE L'ORDRE DES JOUEURS + QUI DOIT JOUER
 tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj);
