@@ -8,7 +8,7 @@
 #include "affichagePlateau.h"
 
 // Ajoute une barrière à la matrice
-void placementBarrier(Plateau *plateau, int x, int y, char D)
+int placementBarrier(Plateau *plateau, int x, int y, char D)
 {
     if (x % 2 == 1 && y % 2 == 1 && x < plateau->taille - 1 && y < plateau->taille - 1)
     {
@@ -18,29 +18,70 @@ void placementBarrier(Plateau *plateau, int x, int y, char D)
             //Placement de la position en fonction de la direction souhaiter
             case "N":
             {
-                plateau->grille[x][y] = BARRIER_BASE;
-                plateau->grille[x][y + 1] = BARRIER_BASE
+                if (plateau->grille[x][y] != 0 && plateau->grille[x][y + 1] != 0)
+                {
+                    plateau->grille[x][y] = BARRIER_BASE;
+                    plateau->grille[x][y + 1] = BARRIER_BASE
+                    return plateau;
+                }
+                else
+                {
+                    printf("Case déja prise\n");
+                    return 0;
+                }
                 break;
             }
             case "E":
             {
-                plateau->grille[x][y] = BARRIER_BASE;
-                plateau->grille[x + 1][y] = BARRIER_BASE
+                if (plateau->grille[x][y] != 0 && plateau->grille[x + 1][y] != 0)
+                {
+                    plateau->grille[x][y] = BARRIER_BASE;
+                    plateau->grille[x + 1][y] = BARRIER_BASE
+                    return plateau;
+                }
+                else
+                {
+                    printf("Case déja prise\n");
+                    return 0;
+                }
                 break;
             }
             case "S":
             {
-                plateau->grille[x][y] = BARRIER_BASE;
-                plateau->grille[x - 1][y] = BARRIER_BASE
+                if (plateau->grille[x][y] != 0 && plateau->grille[x - 1][y] != 0)
+                {
+                    plateau->grille[x][y] = BARRIER_BASE;
+                    plateau->grille[x - 1][y] = BARRIER_BASE
+                    return plateau;
+                }
+                else
+                {
+                    printf("Case déja prise\n");
+                    return 0;
+                }
                 break;
             }
             case "O":
             {
-                plateau->grille[x][y] = BARRIER_BASE;
-                plateau->grille[x][y - 1] = BARRIER_BASE
+                if (plateau->grille[x][y] != 0 && plateau->grille[x][y - 1] != 0)
+                {
+                    plateau->grille[x][y] = BARRIER_BASE;
+                    plateau->grille[x][y - 1] = BARRIER_BASE
+                    return plateau;
+                }
+                else
+                {
+                    printf("Case déja prise\n");
+                    return 0;
+                }
                 break;
             }
         }
         break;
+    }
+    else
+    {
+        printf("Coordonné d'origine non valide.\n");
+        return 0;
     }
 }
