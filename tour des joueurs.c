@@ -10,6 +10,7 @@
 int tour(Partie -> nbjoueurs, Partie -> ordretour){
   // ORDRE ALEATOIRE DES JOUEURS
   int joueur = 0, var3, var, var1, var2, tableau[4], i;
+
   // FONCTION DE COMPARAISON POUR QSORT
 
   int comparer (const void *a, const void *b);
