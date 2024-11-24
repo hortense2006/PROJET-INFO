@@ -85,8 +85,8 @@ int mainPlateau(int T,int S,int j,int p,int D)
 
 
     // Ajout d'une barrière pour tester
-    placeBarrier(plateau, 1, 1, 'H');
-    placeBarrier(plateau, 3, 3, 'V');
+    placeBarrier(plateau, 1, 1, d);
+    placeBarrier(plateau, 3, 3, d);
 
     // Boucle de jeu
     while ((ch = getch()) != 'q') { // Appuyer sur 'q' pour quitter
@@ -118,3 +118,6 @@ int mainPlateau(int T,int S,int j,int p,int D)
     }
     return 0;
 }
+
+
+

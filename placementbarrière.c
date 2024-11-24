@@ -16,25 +16,25 @@ void placementBarrier(Plateau *plateau, int x, int y, char D)
         switch(D)
         {
             //Placement de la position en fonction de la direction souhaiter
-            case 1:
+            case "N":
             {
                 plateau->grille[x][y] = BARRIER_BASE;
                 plateau->grille[x][y + 1] = BARRIER_BASE
                 break;
             }
-            case 2:
+            case "E":
             {
                 plateau->grille[x][y] = BARRIER_BASE;
                 plateau->grille[x + 1][y] = BARRIER_BASE
                 break;
             }
-            case 3:
+            case "S":
             {
                 plateau->grille[x][y] = BARRIER_BASE;
                 plateau->grille[x - 1][y] = BARRIER_BASE
                 break;
             }
-            case 4:
+            case "O":
             {
                 plateau->grille[x][y] = BARRIER_BASE;
                 plateau->grille[x][y - 1] = BARRIER_BASE

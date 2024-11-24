@@ -25,4 +25,3 @@ Plateau *createPlateau(int taille)
     }
     return plateau;
 }
-
