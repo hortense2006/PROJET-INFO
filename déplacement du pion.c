@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include "déplacement du pion.h"
+#include "placementPion.h"
 
 int pion() {
     // DEFINITION DES VARIABLES
