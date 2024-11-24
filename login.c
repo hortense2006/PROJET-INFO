@@ -18,7 +18,8 @@
          for (essai = 0; essai < 3; essai++){
            printf("Saisissez votre nom d'utilisateur:\n");
            scanf("%c", &user);
-           if (user == '\0'&& user != lecture_pseudo()){ // le programme est supposé vérifier si le joueur a rien entré, ou alors si le pseudo est déjà enregistré.
+           if (user == '\0'&& user != lecture_pseudo()){
+// le programme est supposé vérifier si le joueur a rien entré, ou alors si le pseudo est déjà enregistré.
               printf("Votre nom d'utilisateur n'existes pas.\n");
               essai = essai - 1;
               }
@@ -29,7 +30,8 @@
               for (essai = 0; essai < 3; essai++){
                   printf("Saisissez votre mot de passe:\n");
                   scanf("%c", &mdp);
-                      if (mdp == '\0' || mdp != lecture_mdp()){ // le programme est supposé vérifier si le joueur n'a rien entré, ou alors si le mot de passe ne correspond pas au pseudo donné.
+                      if (mdp == '\0' || mdp != lecture_mdp()){
+// le programme est supposé vérifier si le joueur n'a rien entré, ou alors si le mot de passe ne correspond pas au pseudo donné.
                           printf("Votre mot de passe est invalide.\n");
                           essai = essai - 1;
                       }
@@ -38,11 +40,9 @@
                           menu();
                       }
                   printf("Vous n'avez plus d'essais disponibles.\n");
-                  accueil();
               }
             }
             printf("Vous n'avez plus d'essais disponibles.\n");
-            accueil();
          }
    return 0;
    }
