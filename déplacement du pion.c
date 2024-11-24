@@ -7,17 +7,18 @@
 
 int pion() {
     // DEFINITION DES VARIABLES
-    int x,y, i, j, D;
+    int x,y, visuelpion,D;
+
   /*VISUEL DES PIONS*/
   printf("Entrez les coordonnees du pion de votre choix:\n");
-  scanf("%d""%d",&i,&j);
+  scanf("%d""%d",&visuelpion);
 
   /* PRESENTATION DES OPTIONS*/
   printf("Indiquez la direction D du placement de votre pion:\n");
   printf("1 = Aller vers la gauche.           2. Aller vers la droite.\n");
   printf("3 = Avancer d'une case.              4 = Reculer d'une case.\n");
   scanf("%d",&D);
-  NEOS(posX,posY,D);
+  NEOS(posX,posY,D); // La fonction NEOS s'occupe des déplacements du pion (Nord, Sud, Est, Ouest)
 
   /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
   if (x !='\0') {
