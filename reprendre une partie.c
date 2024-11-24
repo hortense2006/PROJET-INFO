@@ -3,10 +3,13 @@
 //
 #include <stdio.h>
 #include "reprendre une partie.h"
+#include "lecture_plateau.h"
+#include "tour des joueurs.h"
 int reprendre_une_partie(){
 // APPEL PLATEAU
-// APPEL PLACEMENT DU PION DANS LA BASE DE DONNEES
-// APPEL PLACEMENTS DES BARRIERES DANS LA BASE DE DONNEES
+lecture_plateau(char* pplateau);
+
 // APPEL DE L'ORDRE DES JOUEURS + QUI DOIT JOUER
+tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj);
 }
 

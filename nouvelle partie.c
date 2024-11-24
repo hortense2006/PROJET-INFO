@@ -3,11 +3,12 @@
 //
 #include <stdio.h>
 #include "nouvelle partie.h"
+#include "affichagePlateau.h"
 int nouvelle_partie()
 {
   // APPEL PLATEAU
-  // APPEL PLACEMENT DU PION
-  // APPEL BARRIERES
+    affichagePlateau(Plateau *plateau, int playerX, int playerY)
+
   return 0;
   }
 
