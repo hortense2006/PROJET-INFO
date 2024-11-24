@@ -205,6 +205,7 @@ int main(void)
       // position du pion au cours du temps (dans sauvegarde partie en cours)
       // position des barrieres au cours du temps (dans sauvegarde partie en cours)
       //nombres de barrières au cours du temps (et surtout au moment de l'arrêt de la partie)
+      int i,j; // caractere choisi pour le pion (dans la table ascii)
 
     };
 }
