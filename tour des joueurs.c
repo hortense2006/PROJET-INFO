@@ -7,9 +7,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-int tour(Partie -> nbjoueurs, Partie -> ordretour){
+int tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj){
   // ORDRE ALEATOIRE DES JOUEURS
-  int joueur = 0, var3, var, var1, var2, tableau[4], i;
+  int joueur = 0, joueur1, joueur2, joueur3, joueur4, tableau[nbj], i, a, b;
 
   // FONCTION DE COMPARAISON POUR QSORT
 
@@ -22,23 +22,43 @@ int tour(Partie -> nbjoueurs, Partie -> ordretour){
   srand(time(NULL));
 
   // ON GENERE LES 4 VARIABLES
-  for (i = 0; i < 4; var++){
-    tableau[i] = rand() % 4;
-  }
-  // ON LES AFFICHE DANS UN TABLEAU
-  for (int i = 0; i < 4; i++){
-    printf("%d ", tableau[i]);
-  }
+  joueur1 = rand();
+  joueur2 = rand();
+  joueur3= rand();
+  joueur4 = rand();
 
   // TRI DU TABLEAU
-  qsort(tableau,4,sizeof(int), comparer);
 
+  tableau[1] = joueur1;
+  tableau[2] = joueur2;
+  tableau[3] = joueur3 ;
+  tableau[4] = joueur4 ;
+
+  qsort(tableau,nbj,sizeof(int), comparer(const void *a, const void *b));
+
+  for(i=0; i<nbj; i++){
+     if(tableau[1] == joueur1){
+       var = tableau[i];
+       Partie -> ordrejoueur = ordrejoueur + "joueur1";
+     }
+     else if(tableau[2] == joueur2){
+       var1 = tableau[i];
+       Partie -> ordrejoueur = ordrejoueur + ",joueur2";
+     }
+     else if(tableau[3] == joueur3){
+       var2 = tableau[i];
+       Partie -> ordrejoueur = ordrejoueur + ",joueur3";
+     }
+     else if(tableau[4] == joueur4){
+       var3 = tableau[i];
+       Partie -> ordrejoueur = ordrejoueur + ",joueur4";
+     }
   // AFFICHAGE DES VARIABLES TRIEES
   printf("L'ordre des joueurs est :\n");
-  for(i = 0; i < 4; var++){
-    printf("%d ",tableau[i]);
+  for(i = 0; i < nbj; i++){
+      printf("%d ",tableau[i]);
   }
 
-  return 0;
+  return Partie -> ordrejoueurs = "";
 }
 
