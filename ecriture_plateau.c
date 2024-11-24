@@ -19,3 +19,4 @@ void ecriture_plateau(char plateau[17][17]){
     fclose(pFichierPlateauW);
     pFichierPlateauW = NULL;
 }
+

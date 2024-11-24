@@ -22,3 +22,4 @@ void lecture_plateau(char* pplateau){
     fclose(pFichierPlateauR);
     pFichierPlateauR = NULL;
 }
+
