@@ -6,10 +6,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <time.h>
 
 int tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj){
   // ORDRE ALEATOIRE DES JOUEURS
-  int joueur = 0, joueur1, joueur2, joueur3, joueur4, tableau[nbj], i, a, b;
+  int joueur = 0, joueur1, joueur2, joueur3, joueur4, i, a, b;
+  int tableau[nbj];
 
   // FONCTION DE COMPARAISON POUR QSORT
 
@@ -38,20 +40,20 @@ int tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj){
 
   for(i=0; i< nbj; i++){
      if(tableau[1] == joueur1){
-       var = tableau[i];
-       Partie -> ordrejoueur = ordrejoueur + "joueur1";
+       joueur1 = tableau[i];
+       Partie -> ordrejoueur = Partie -> ordrejoueur + "joueur1";
      }
      else if(tableau[2] == joueur2){
-       var1 = tableau[i];
-       Partie -> ordrejoueur = ordrejoueur + ",joueur2";
+       joueur2 = tableau[i];
+       Partie -> ordrejoueur = Partie ->ordrejoueur + ",joueur2";
      }
      else if(tableau[3] == joueur3){
-       var2 = tableau[i];
-       Partie -> ordrejoueur = ordrejoueur + ",joueur3";
+       joueur3 = tableau[i];
+       Partie -> ordrejoueur = Partie ->ordrejoueur + ",joueur3";
      }
      else if(tableau[4] == joueur4){
-       var3 = tableau[i];
-       Partie -> ordrejoueur = ordrejoueur + ",joueur4";
+       joueur4 = tableau[i];
+       Partie -> ordrejoueur = Partie -> ordrejoueur + ",joueur4";
      }
   // AFFICHAGE DES VARIABLES TRIEES
   printf("L'ordre des joueurs est :\n");
