@@ -77,7 +77,7 @@ int mainPlateau(int T,int S,int j,int p,int D, char BP)
         {
             case 'B':
             {
-                printf("A quelle coordonné x et y voulez vous\n");
+                printf("Quelles coordonnées x et y voulez vous\n");
                 placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
             }
             break;

@@ -14,7 +14,7 @@
 #define BARRIER_BASE 100
 
 // Ajoute et modification d'un pion à la matrice
-void placementPion(Plateau *plateau, int x, int y, char AM, int J, char D);
+int placementPion(Plateau *plateau, int x, int y, char AM, int J, char D);
 {
     if (x % 2 == 0 && y % 2== 0)
     {
