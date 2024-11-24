@@ -24,10 +24,10 @@ int tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj){
   srand(time(NULL));
 
   /* ON GENERE LES 4 VARIABLES DE MANIERE ALEATOIRE*/
-  joueur1 = srand();
-  joueur2 = srand();
-  joueur3= srand();
-  joueur4 = srand();
+  joueur1 = rand();
+  joueur2 = rand();
+  joueur3= rand();
+  joueur4 = rand();
 
   // TRI DU TABLEAU
 
