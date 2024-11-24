@@ -5,19 +5,15 @@
 #include "déplacement du pion.h"
 #include <stdio.h>
 #include <stdlib.h>
-#define RAND MAX 4
 
-int tour(){
+int tour(Partie -> nbjoueurs, Partie -> ordretour){
   // ORDRE ALEATOIRE DES JOUEURS
-  int nbjoueurs = 0,joueur;
-  int position_x, position_y;
+  int joueur = 0, var3, var, var1, var2;
 
-  while (joueur <= nbjoueurs){
-    for(joueur = 0; joueur <= 4; nbjoueurs++) {
-      printf("%d", rand());
-      scanf("%d",&joueur);
-    }
+  while (joueur <= Partie -> nbjoueurs ; joueur++){
+    scanf(rand(),&joueur);
   }
-  return 0;
+
+  return ;
 }
 
