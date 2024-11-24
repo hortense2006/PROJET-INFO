@@ -10,7 +10,7 @@
 int  options()
 {
     // DEFINITION DES VARIABLES
-    int pion = 1, barrieres = 2, passer = 3, annuler = 4, chiffre1;
+    int pion = 1, barrieres = 2, passer = 3, annuler = 4, chiffre1, joueur;
 
     // PRESENTATION DES OPTIONS DE JEU
     printf("Voici vos options de jeu :\n");
@@ -44,7 +44,9 @@ int  options()
             scanf("%d",&chiffre1);
             if (chiffre1 == 1) {
                 printf("Vous voulez poser une barriere.\n");
-                barrieres(joueur -> nbbarriere, Plateau *plateau); // joueur ->nbbarriere = le nombre de barrières attribué au joueur.
+                barrieres(joueur -> nbbarriere, Plateau *plateau);
+                // joueur ->nbbarriere = le nombre de barrières attribué au joueur.
+                //Plateau *plateau fait appel au plateau tel qu'il est en cours de partie.
             }
             else {
                 printf("Erreur!\n");
