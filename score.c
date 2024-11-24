@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "sauvegarde_du_pseudo.h"
 int score(int S)
 // S = BOUTON ON/OFF
 {
-    if(S==1)
+    if(S==1) // Le bouton ON/OFF est activé.
     {
         int y = 25, ny = 0;
         char mT[3][1];
@@ -18,7 +18,10 @@ int score(int S)
         {
             mTop[0][ny] = ny +1;
             mP[1][ny] = "Pseudo"; //appelle pseudo
+            ecriture_pseudo(); // le pseudo est extrait de la base de données
             mS[1][ny] = 0; //appelle score
+            score();
+
         }
     }
 }
