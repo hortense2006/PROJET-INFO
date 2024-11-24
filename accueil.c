@@ -39,6 +39,7 @@ int accueil()
             printf("Erreur\n");
         }
     }
+      // on définit une structure pour chaque joueur, afin d'associer au joueur toutes les variables le concernant.
       struct joueur1{
         int user;
         int mdp;
