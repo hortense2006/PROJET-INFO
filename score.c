@@ -18,7 +18,7 @@ int score(int S)
         {
             mTop[0][ny] = ny +1;
             mP[1][ny] = "Pseudo"; //appelle pseudo
-            sauvegardepseudo();
+            ecriture_pseudo();
             mS[1][ny] = 0; //appelle score
             score();
 
