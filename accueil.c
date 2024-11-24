@@ -36,7 +36,7 @@ int accueil()
             printf("Selectionner soit 1 soit 2:\n");
             scanf("%d",&chiffrea);
             if (chiffrea == 1) {
-              login();
+              signin();
             }
             else {
               accueil();

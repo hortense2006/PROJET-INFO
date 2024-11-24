@@ -6,7 +6,8 @@
 int nouvelle_partie()
 {
   // APPEL PLATEAU
-  // APPEL PLACEMENT DU PION
+
+  pion();
   // APPEL BARRIERES
   return 0;
   }

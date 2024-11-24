@@ -15,7 +15,7 @@ int signin()
     // PSEUDO
     printf("Choisissez un pseudo:\n");
     scanf("%c", &user);
-    if (user < 20 || user > 20){
+    if (user < 1 || user > 20){
       printf("Votre pseudo n'a pas le nombre de caracteres requis.\n");
     }
     else{
@@ -24,7 +24,7 @@ int signin()
           ecriture_pseudo();
          printf("Choisissez a present un mot de passe.\n");
          scanf("%c", &mdp);
-           if (mdp < 12 && mdp > 12)  {
+           if (mdp < 1 && mdp > 12)  {
                    printf("Votre mot de passe n'as pas 12 caracteres.");
               }
            else {
