@@ -13,10 +13,13 @@ int pion() {
   scanf("%d""%d",&i,&j);
 
   /* PRESENTATION DES OPTIONS*/
-  printf("Vous pouvez deplacer votre pion de 4 manieres :\n");
+
   printf("1 = Aller vers la gauche.           2. Aller vers la droite.\n");
   printf("3 = Avancer d'une case.              4 = Reculer d'une case.\n");
+  printf("Indiquez la direction D du placement de votre pion:\n");
+  scanf("%d",&D);
   void placementPion();
+
   /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
   if (position_x !='\0') {
     printf("Cette case est déjà occupee.\n");
