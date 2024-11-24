@@ -14,22 +14,10 @@
 #define BARRIER_BASE 100
 
 // Ajoute et modification d'un pion à la matrice
-int placementPion(Plateau *plateau, int x, int y, char AM, int J, char D);
+int placementPion(Plateau *plateau, int x, int y, int J, char D);
 {
     if (x % 2 == 0 && y % 2== 0)
     {
-        //Direction
-        switch(AM)
-        {
-            case "A":
-            {
-                plateau->grille[x][y] = PLAYER_BASE + J;
-                return plateau;
-                break;
-            }
-            break;
-            case "M":
-            {
                 //Direction
                 switch(D)
                 {

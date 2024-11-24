@@ -13,7 +13,7 @@
 #define BARRIER_BASE 100
 
 // Ajoute une barrière à la matrice
-int placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
+int placementBarrier(Plateau *plateau, int x, int y, char D, joueur -> nbbarriere, int J)
 {
     if (x % 2 == 1 && y % 2 == 1 && x < plateau->taille - 1 && y < plateau->taille - 1)
     {
@@ -25,8 +25,8 @@ int placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
             {
                 if (plateau->grille[x][y] == EMPTY && plateau->grille[x][y + 1] == EMPTY)
                 {
-                    plateau->grille[x][y] = BARRIER_BASE*J +nB-1;
-                    plateau->grille[x][y + 1] = BARRIER_BASE*J +nB-1;
+                    plateau->grille[x][y] = BARRIER_BASE*J +joueur -> nbbarriere-1;
+                    plateau->grille[x][y + 1] = BARRIER_BASE*J +joueur -> nbbarriere-1;
                     return plateau;
                 }
                 else
@@ -40,8 +40,8 @@ int placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
             {
                 if (plateau->grille[x][y] == EMPTY && plateau->grille[x + 1][y] == EMPTY)
                 {
-                    plateau->grille[x][y] = BARRIER_BASE*J +nB-1;
-                    plateau->grille[x + 1][y] = BARRIER_BASE*J +nB-1;
+                    plateau->grille[x][y] = BARRIER_BASE*J +joueur -> nbbarriere-1;
+                    plateau->grille[x + 1][y] = BARRIER_BASE*J +joueur -> nbbarriere-1;
                     return plateau;
                 }
                 else
@@ -55,8 +55,8 @@ int placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
             {
                 if (plateau->grille[x][y] == EMPTY && plateau->grille[x - 1][y] == EMPTY)
                 {
-                    plateau->grille[x][y] = BARRIER_BASE*J +nB-1;
-                    plateau->grille[x - 1][y] = BARRIER_BASE*J +nB-1;
+                    plateau->grille[x][y] = BARRIER_BASE*J +joueur -> nbbarriere-1;
+                    plateau->grille[x - 1][y] = BARRIER_BASE*J +joueur -> nbbarriere-1;
                     return plateau;
                 }
                 else
@@ -70,8 +70,8 @@ int placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
             {
                 if (plateau->grille[x][y] == EMPTY && plateau->grille[x][y - 1] == EMPTY)
                 {
-                    plateau->grille[x][y] = BARRIER_BASE*J +nB-1;
-                    plateau->grille[x][y - 1] = BARRIER_BASE*J +nB-1;
+                    plateau->grille[x][y] = BARRIER_BASE*J +joueur -> nbbarriere-1;
+                    plateau->grille[x][y - 1] = BARRIER_BASE*J +joueur -> nbbarriere-1;
                     return plateau;
                 }
                 else

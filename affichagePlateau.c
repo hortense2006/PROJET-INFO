@@ -13,7 +13,7 @@
 #define BARRIER_BASE 100
 
 // Affiche le plateau avec ncurses
-void affichagePlateau(Plateau *plateau, plateau->taille,
+int affichagePlateau(Plateau *plateau, plateau->taille,
                       Joueurs1->pion_visu, Joueurs1->bari_visu, Joueurs1->pos_J,
                       Joueurs2->pion_visu, Joueurs2->bari_visu, Joueurs2->pos_J,
                       Joueurs3->pion_visu, Joueurs3->bari_visu, Joueurs3->pos_J,

@@ -19,7 +19,11 @@
 
 
 // Taile   Start    Joueur    pion    Direction
-int mainPlateau(int T,int S,int j,int p,int D, char BP)
+int mainPlateau(int T,int S, char BP, int J
+      Joueurs1->pion_visu, Joueurs1->bari_visu, Joueurs1->pos_J,
+      Joueurs2->pion_visu, Joueurs2->bari_visu, Joueurs2->pos_J,
+      Joueurs3->pion_visu, Joueurs3->bari_visu, Joueurs3->pos_J,
+      Joueurs4->pion_visu, Joueurs4->bari_visu, Joueurs4->pos_J)
 {
 
 
@@ -77,14 +81,37 @@ int mainPlateau(int T,int S,int j,int p,int D, char BP)
         {
             case 'B':
             {
-                printf("Quelles coordonnées x et y voulez vous\n");
-                placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
+                int x, y, d;
+                if (joueur -> nbbarriere < 10 )
+                {
+                    printf("Vous pouvez placer une barriere.");
+                    printf("Entrez les coordonnees x, y de la  barriere de votre choix:\n");
+                    printf("Quelle est la direction d de la barriere N, O, E ou S ?\n");
+                    scanf("%d%d%c",x,y,d);
+                    printf("Quelles coordonnées x et y voulez vous\n");
+                    placementBarrier(Plateau *plateau,x,y,d,joueur -> nbbarriere, J):
+                    joueur->nbbarriere = joueur->nbbarriere + 1
+                }
+                break;
+            }
+            case 'A':
+            {
+                int x, y, d;
+                printf("Quelles coordonnées x et y êtes vous\n");
+                printf("Quelle est la direction d du deplacement du pion N, O, E ou S ?\n");
+                scanf("%c",d);
+                placementPion(Plateau *plateau,x,y,J,d):
+                break;
             }
             break;
         }
     }
-        // Affiche le plateau mis à jour
-        affichagePlateau(plateau, playerX, playerY);
+    // Affiche le plateau mis à jour
+    affichagePlateau(Plateau *plateau, plateau->taille,
+                  Joueurs1->pion_visu, Joueurs1->bari_visu, Joueurs1->pos_J,
+                  Joueurs2->pion_visu, Joueurs2->bari_visu, Joueurs2->pos_J,
+                  Joueurs3->pion_visu, Joueurs3->bari_visu, Joueurs3->pos_J,
+                  Joueurs4->pion_visu, Joueurs4->bari_visu, Joueurs4->pos_J):
     }
     return 0;
 }
