@@ -7,6 +7,7 @@
 #include "annuler son tour.h"
 #include "passer son tour.h"
 #include "options.h"
+#include "affichagePlateau.h"
 int  options()
 {
     // DEFINITION DES VARIABLES
