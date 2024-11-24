@@ -10,9 +10,10 @@ int tour(Partie -> nbjoueurs, Partie -> ordretour){
   // ORDRE ALEATOIRE DES JOUEURS
   int joueur = 0, var3, var, var1, var2;
 
-  while (joueur <= Partie -> nbjoueurs ; joueur++){
-    scanf(rand(),&joueur);
-  }
+  scanf(rand(),var);
+  scanf(rand(),var1);
+  scanf(rand(),var2);
+  scanf(rand(),var3);
 
   return ;
 }
