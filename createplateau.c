@@ -17,12 +17,12 @@ typedef struct
 // Crée une matrice pour le plateau
 Plateau *createPlateau(int taille)
 {
-    Plateau *plateau = (Plateau *)malloc(sizeof(Plateau));
+    Plateau *plateau = (Plateau *)malloc(sizeof(Plateau)); // on alloue de la place dans le plateau.
     plateau->taille = taille;
-    plateau->grille = (int **)malloc(taille * sizeof(int *));
+    plateau->grille = (int **)malloc(taille * sizeof(int *)); // on spécifie l'espace alloué à le case dans le plateau.
     for (int i = 0; i < taille; i++)
     {
-        plateau->grille[i] = (int *)calloc(taille, sizeof(int));
+        plateau->grille[i] = (int *)calloc(taille, sizeof(int)); // on appelle la case du plateau choisie.
     }
     return plateau;
 }
