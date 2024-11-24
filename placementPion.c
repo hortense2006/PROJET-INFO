@@ -33,7 +33,7 @@ void placementPion(Plateau *plateau, int x, int y, char AM, int J, char D);
                 //Direction
                 switch(D)
                 {
-                    //Placement de la position en fonction de la direction souhaiter
+                    //Placement de la position en fonction de la direction souhaitée
                     case "N":
                     {
                         if (plateau->grille[x][y + 1] >= BARRIER_BASE || plateau->grille[x][y + 1] == "\0" )
