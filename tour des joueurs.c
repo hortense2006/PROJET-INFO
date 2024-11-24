@@ -21,11 +21,11 @@ int tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj){
   // ON INITIALISE LE GENERATEUR DE VARIABLES ALEATOIRES
   srand(time(NULL));
 
-  // ON GENERE LES 4 VARIABLES
-  joueur1 = rand();
-  joueur2 = rand();
-  joueur3= rand();
-  joueur4 = rand();
+  /* ON GENERE LES 4 VARIABLES DE MANIERE ALEATOIRE*/
+  joueur1 = srand();
+  joueur2 = srand();
+  joueur3= srand();
+  joueur4 = srand();
 
   // TRI DU TABLEAU
 
@@ -34,9 +34,9 @@ int tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj){
   tableau[3] = joueur3 ;
   tableau[4] = joueur4 ;
 
-  qsort(tableau,nbj,sizeof(int), comparer(const void *a, const void *b));
+  qsort(tableau,nbj,sizeof(int), comparer(const void *a, const void *b)); // La fonction qsort trie les nombres aléatoires obtenus dans l'ordre croissant.
 
-  for(i=0; i<nbj; i++){
+  for(i=0; i< nbj; i++){
      if(tableau[1] == joueur1){
        var = tableau[i];
        Partie -> ordrejoueur = ordrejoueur + "joueur1";
