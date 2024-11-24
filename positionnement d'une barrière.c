@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include "positionnement d'une barrière.h"
-#include "placementbarrière.h"
+#include "placementBarrière.h"
 
 #define MAX plateau[12][12]
 #define MIN plateau[9][9]
