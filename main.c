@@ -197,4 +197,10 @@ int main(void)
         }
     }
     return "fin premature";
+    struct joueur{
+      int user;
+      int mdp;
+      int score;
+
+    };
 }
