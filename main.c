@@ -23,26 +23,7 @@ int main(void)
     printf("BIENVENUE DANS LE JEU QUORIDOR");
     printf("\n\n\nEntrer 1 pour continuer!\n");
 
-    /* OPTIONS DE CONNEXION*/
-    printf(" 1 = Log in.                   2 = Sign in\n");
-    printf("Selectionner soit 1 soit 2:\n");
-    scanf("%d",&chiffrea);
-    switch (chiffrea) {
-        case 1: {
-          while(exit != 0) {
-            login();
-            printf("Pour sortir tapez 0.\n");
-          }
-        }
-        case 2: {
-          while (exit5 != 0) {
-              signin();
-              printf("Pour sortir tapez 0.\n");
-          }
-        default :{
-           printf("Erreur\n");
-           accueil();
-        }
+   accueil();
 
 
     if (scanf("%d", &next) == 1)
