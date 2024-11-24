@@ -6,6 +6,9 @@
 #include "reprendre une partie.h"
 #include "aide.h"
 #include "score.h"
+#include "login.h"
+#include "signin.h"
+#include "accueil.h"
 
 
 
@@ -14,11 +17,34 @@ int main(void)
     // DEFINITION DES VARIABLES
     int next = 0,choice=0;
     int choice1,choice2,choice3,choice4;
-    int exit1=1,exit2=1,exit3=1,exit4=1;
+    int exit = 1,exit1=1,exit2=1,exit3=1,exit4=1, exit5=1;
 
-    // ACCEUIL
-    printf("QUORIDOR");
+    /* ACCUEIL DU JEU*/
+    printf("BIENVENUE DANS LE JEU QUORIDOR");
     printf("\n\n\nEntrer 1 pour continuer!\n");
+
+    /* OPTIONS DE CONNEXION*/
+    printf(" 1 = Log in.                   2 = Sign in\n");
+    printf("Selectionner soit 1 soit 2:\n");
+    scanf("%d",&chiffrea);
+    switch (chiffrea) {
+        case 1: {
+          while(exit != 0) {
+            login();
+            printf("Pour sortir tapez 0.\n");
+          }
+        }
+        case 2: {
+          while (exit5 != 0) {
+              signin();
+              printf("Pour sortir tapez 0.\n");
+          }
+        default :{
+           printf("Erreur\n");
+           accueil();
+        }
+
+
     if (scanf("%d", &next) == 1)
     {
 
@@ -26,7 +52,7 @@ int main(void)
         while(1)
         {
             // PRESENTATION DU MENU
-            printf("Bienvenue dans le menu\n");
+            printf("Bienvenue dans le menu ! \n");
             printf("1= Nouvelle partie.                        2= Reprendre une partie.\n");
             printf("3= Afficher le score.                      4= Demander de l'aide.\n");
 
