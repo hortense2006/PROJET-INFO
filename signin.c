@@ -19,7 +19,7 @@ int signin()
       printf("Votre pseudo n'a pas le nombre de caracteres requis.\n");
     }
     else{
-        if (user !== '\0' && user != ecriture_pseudo(){
+        if (user !== '\0' && user != ecriture_pseudo(){ // si le joueur n'a rien entré, ou si le nom d'utilisateur n'est pas déjà utilisé.
          printf("Votre nom d'utilisateur a ete enregistre.\n");
           ecriture_pseudo();
          printf("Choisissez a present un mot de passe.\n");
