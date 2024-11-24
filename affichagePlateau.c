@@ -14,10 +14,10 @@
 
 // Affiche le plateau avec ncurses
 void affichagePlateau(Plateau *plateau, plateau->taille,
-                      Joueurs1->pion_visu, Joueurs1->bari_visu, Joueurs1->pos_J, Joueurs1->nb_barrires,
-                      Joueurs2->pion_visu, Joueurs2->bari_visu, Joueurs2->pos_J, Joueurs2->nb_barrires,
-                      Joueurs3->pion_visu, Joueurs3->bari_visu, Joueurs3->pos_J, Joueurs3->nb_barrires,
-                      Joueurs4->pion_visu, Joueurs4->bari_visu, Joueurs4->pos_J, Joueurs4->nb_barrires,)
+                      Joueurs1->pion_visu, Joueurs1->bari_visu, Joueurs1->pos_J,
+                      Joueurs2->pion_visu, Joueurs2->bari_visu, Joueurs2->pos_J,
+                      Joueurs3->pion_visu, Joueurs3->bari_visu, Joueurs3->pos_J,
+                      Joueurs4->pion_visu, Joueurs4->bari_visu, Joueurs4->pos_J)
 {
     clear();
     for (int i = 0; i < plateau->taille; i++)
@@ -63,22 +63,22 @@ void affichagePlateau(Plateau *plateau, plateau->taille,
                 const char *GC = "\033[92m";
                 const char *YC = "\033[93m";
                 const char *BC = "\033[94m";
-                case BARRIER_BASE*Joueurs1->pos_J+Joueurs1->nb_barrires-1:
+                case plateau->plateau[i][j]<(BARRIER_BASE*Joueurs1->pos_J+1) && plateau->plateau[i][j]>=BARRIER_BASE*Joueurs1->pos_J:
                 {
                     printf("%s%c%s\n", Joueurs1->bari_visu, RC, reset);
                     break;
                 }
-                case BARRIER_BASE*Joueurs2->pos_J+Joueurs2->nb_barrires-1:
+                case plateau->plateau[i][j]<(BARRIER_BASE*Joueurs2->pos_J+1) && plateau->plateau[i][j]>=BARRIER_BASE*Joueurs2->pos_J:
                 {
                     printf("%s%c%s\n", Joueurs2->bari_visu, BC, reset);
                     break;
                 }
-                case BARRIER_BASE*Joueurs3->pos_J+Joueurs3->nb_barrires-1:
+                case plateau->plateau[i][j]<(BARRIER_BASE*Joueurs3->pos_J+1) && plateau->plateau[i][j]>=BARRIER_BASE*Joueurs3->pos_J:
                 {
                     printf("%s%c%s\n", Joueurs3->bari_visu, GC, reset);
                     break;
                 }
-                case BARRIER_BASE*Joueurs4->pos_J+Joueurs4->nb_barrires-1:
+                case plateau->plateau[i][j]<(BARRIER_BASE*Joueurs4->pos_J+1) && plateau->plateau[i][j]>=BARRIER_BASE*Joueurs4->pos_J:
                 {
                     printf("%s%c%s\n", Joueurs4->bari_visu, YC, reset);
                     break;
