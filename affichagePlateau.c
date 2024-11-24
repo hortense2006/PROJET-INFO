@@ -21,6 +21,7 @@ void affichagePlateau(Plateau *plateau, plateau->taille,
 {
     clear();
     for (int i = 0; i < plateau->taille; i++)
+    // plateau -> taille associe la taille définie par le joueur du plateau à la variable plateau.
     {
         for (int j = 0; j < plateau->taille; j++)
         {
