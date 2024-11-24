@@ -70,8 +70,8 @@ int placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
             {
                 if (plateau->grille[x][y] != EMPTY && plateau->grille[x][y - 1] != EMPTY)
                 {
-                    plateau->grille[x][y] = BARRIER_BASE;
-                    plateau->grille[x][y - 1] = BARRIER_BASE;
+                    plateau->grille[x][y] = BARRIER_BASE*J +nB;
+                    plateau->grille[x][y - 1] = BARRIER_BASE*J +nB;
                     return plateau;
                 }
                 else
