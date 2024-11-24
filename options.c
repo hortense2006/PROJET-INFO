@@ -44,7 +44,7 @@ int  options()
             scanf("%d",&chiffre1);
             if (chiffre1 == 1) {
                 printf("Vous voulez poser une barriere.\n");
-                barrieres(joueur -> nbbarriere, Plateau *plateau);
+                barrieres(joueur -> nbbarriere, Plateau *plateau); // joueur ->nbbarriere = le nombre de barrières attribué au joueur.
             }
             else {
                 printf("Erreur!\n");
