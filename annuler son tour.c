@@ -23,8 +23,8 @@ int annuler() {
       printf("Saisissez soit 1 soit 2:\n");
       scanf("%d",&chiffrei);
       if(chiffrei == 1) {
-        tour_du_joueur = tour_precedent;
-        compteur = compteur - 1;
+        tour_du_joueur == tour_precedent;
+        compteur == compteur - 1;
       }
       else {
         options();

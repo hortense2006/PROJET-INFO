@@ -8,6 +8,7 @@
 int pion() {
     // DEFINITION DES VARIABLES
     int x,y, i, j, D;
+
   /*VISUEL DES PIONS*/
   printf("Entrez les coordonnees du pion de votre choix:\n");
   scanf("%d""%d",&i,&j);
