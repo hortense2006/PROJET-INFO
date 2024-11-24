@@ -39,5 +39,21 @@ int accueil()
             printf("Erreur\n");
         }
     }
+      struct joueur1{
+        int user;
+        int mdp;
+      }
+      struct joueur2{
+        int user;
+        int mdp;
+      }
+      struct joueur3{
+       int user;
+       int mdp;
+      }
+      struct joueur4{
+        int user;
+        int mdp;
+      }
 return 0;
 }
