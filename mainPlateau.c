@@ -19,9 +19,9 @@
 
 
 // Taile   Start    Joueur    pion    Direction
-int mainPlateau(int T,int S,int j,int p,int D)
+int mainPlateau(int T,int S,int j,int p,int D, char BP)
 {
-    int posX1,posY1,posX2,posY2,posX3,posY3,posX4,posY4;
+
 
     //Taille plateau
     if(T==TPlat1)
@@ -71,46 +71,18 @@ int mainPlateau(int T,int S,int j,int p,int D)
         }
     }
 
-    // Initialisation de ncurses
-    initscr();
-    start_color();
-    init_pair(1, COLOR_RED, COLOR_BLACK);  // Couleur pour le joueur
-    init_pair(2, COLOR_BLUE, COLOR_BLACK); // Couleur pour les barrières
-    keypad(stdscr, TRUE);
-    noecho();
-    curs_set(FALSE);
-
-
-
-    // Ajout d'une barrière pour tester
-    placeBarrier(plateau, 1, 1, d);
-    placeBarrier(plateau, 3, 3, d);
-
-    // Boucle de jeu
-    while ((ch = getch()) != 'q') { // Appuyer sur 'q' pour quitter
-        int newX = playerX, newY = playerY;
-
-        switch (ch) {
-            case KEY_UP:
-                newX -= 2; // Se déplacer vers le haut
-                break;
-            case KEY_DOWN:
-                newX += 2; // Se déplacer vers le bas
-                break;
-            case KEY_LEFT:
-                newY -= 2; // Se déplacer à gauche
-                break;
-            case KEY_RIGHT:
-                newY += 2; // Se déplacer à droite
-                break;
+    if(S==0)
+    {
+        switch(BP)
+        {
+            case 'B':
+            {
+                printf("A quelle coordonné x et y voulez vous\n");
+                placementBarrier(Plateau *plateau, int x, int y, char D, int nB, int J)
+            }
+            break;
         }
-
-        // Vérifie si le déplacement est possible
-        if (canMove(plateau, newX, newY)) {
-            playerX = newX;
-            playerY = newY;
-        }
-
+    }
         // Affiche le plateau mis à jour
         affichagePlateau(plateau, playerX, playerY);
     }
