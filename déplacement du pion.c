@@ -7,11 +7,11 @@
 
 int pion() {
     // DEFINITION DES VARIABLES
-    int x,y, i, j, D;
+    int x,y, visuelpion,D;
 
   /*VISUEL DES PIONS*/
   printf("Entrez les coordonnees du pion de votre choix:\n");
-  scanf("%d""%d",&i,&j);
+  scanf("%d""%d",&visuelpion);
 
   /* PRESENTATION DES OPTIONS*/
   printf("Indiquez la direction D du placement de votre pion:\n");
