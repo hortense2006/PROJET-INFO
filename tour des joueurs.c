@@ -59,6 +59,6 @@ int tour(Partie -> nbjoueurs, Partie -> ordretour, int nbj){
       printf("%d ",tableau[i]);
   }
 
-  return Partie -> ordrejoueurs = "";
+  return Partie -> ordrejoueurs;
 }
 
