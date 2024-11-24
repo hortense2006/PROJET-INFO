@@ -201,6 +201,7 @@ int main(void)
       int user;
       int mdp;
       int score;
+      int  Partie -> ordretour;
 
     };
 }
