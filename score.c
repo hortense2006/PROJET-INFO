@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "sauvegarde_du_pseudo.h"
 int score(int S)
 // S = BOUTON ON/OFF
 {
@@ -18,6 +18,7 @@ int score(int S)
         {
             mTop[0][ny] = ny +1;
             mP[1][ny] = "Pseudo"; //appelle pseudo
+            sauvegardepseudo();
             mS[1][ny] = 0; //appelle score
         }
     }
