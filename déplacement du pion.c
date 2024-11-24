@@ -17,7 +17,7 @@ int pion() {
   printf("1 = Aller vers la gauche.           2. Aller vers la droite.\n");
   printf("3 = Avancer d'une case.              4 = Reculer d'une case.\n");
   scanf("%d",&D);
-  NEOS();
+  NEOS(posX,posY,D);
 
   /* VERIFIER SI LE MOUVEMENT EST POSSIBLE*/
   if (x !='\0') {
