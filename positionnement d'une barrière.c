@@ -5,8 +5,7 @@
 #include "positionnement d'une barrière.h"
 #include "placementbarrière.h"
 
-#define MAX plateau[12][12]
-#define MIN plateau[9][9]
+
 int barriere(joueur -> nbbarriere, Plateau *plateau) {
 
     /*DEFINITION DES VARIABLES*/
