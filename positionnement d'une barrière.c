@@ -7,7 +7,7 @@
 
 #define MAX plateau[12][12]
 #define MIN plateau[9][9]
-int barriere(joueur -> nbrbarriere) {
+int barriere(joueur -> nbbarriere, Plateau *plateau) {
 
     /*DEFINITION DES VARIABLES*/
     char visuel, d;
@@ -17,12 +17,12 @@ int barriere(joueur -> nbrbarriere) {
   printf("Saisissez le caractere de votre choix.\n");
   scanf("%c",&visuel);
 
-  if (joueur -> nbbarriere != 0) {
+  while (joueur -> nbbarriere < 10 ) {
       printf("Vous pouvez placer une barriere.");
       printf("Entrez les coordonnees x, y de la  barriere de votre choix:\n");
       printf("Quelle est la direction d de la barriere N, O, E ou S ?\n");
       scanf("%d%d%c",x,y,d);
-      placebarrier(x,y,d);
+      placementBarriere(Plateau *plateau,x,y,d, joueur -> nbbarriere);
   }
     return 0;
 }
